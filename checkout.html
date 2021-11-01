@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+</head>
+<style>
+    body{
+        font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","Fira Sans",Ubuntu,Oxygen,"Oxygen Sans",Cantarell,"Droid Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Emoji","Segoe UI Symbol","Lucida Grande",Helvetica,Arial,sans-serif;
+    }
+    #navbar-c{
+        height:52px;
+        background-color: #283e4a;
+        display: flex;
+        width:100%;
+    }
+    #navbar-c p{
+        color:white;
+        letter-spacing: 2px;
+         font-weight: 400;
+          margin-left:1%;
+    }
+    #li-icon{
+        width:30px;
+        height:30px;
+        background-color: #283e4a;
+        margin-top:10px;
+        margin-left:14%;
+    }
+    #checkout{
+      
+        margin:auto;
+        width:750px;
+        margin-top:15px;
+       
+    }
+    #c{
+        width:30%;
+        font-size: x-large;
+        background-color:#398b18 ;
+        color:white;
+        text-align:center;
+        padding-top:29px;
+        padding-bottom: 29px;
+        
+    }
+    #onlylap{
+    display: flex;
+    height:87px;
+    box-shadow: 1.5px .5px .5px .1px rgb(172, 172, 172);
+    }
+    #c-side{
+        font-size: x-large;
+        text-align: center;
+        margin-left:2%;
+        margin-top:3%;
+    }
+    #video-info{
+        border: 3px solid rgb(206, 202, 202);
+        width:100%;
+        z-index:10;
+        height:380px;
+        
+    }
+    #amount{
+        border: 2px solid rgb(206, 202, 202);
+        width:100%;
+       
+        height:110px;
+        margin-top:20px;
+
+    }
+    #list{
+        display: flex;
+        
+    }
+    #list h3{
+        font-weight:500;
+    }
+    #round{
+        color:white;
+        padding:1px 9px;
+        border-radius: 50%;
+        background-color:#398b18 ;
+        margin-right:2%;
+    }
+    #card{
+        border: 2px solid rgb(206, 202, 202);
+        width:100%;
+        
+            
+    }
+    #card img{
+        width:50%;
+        padding:2%;
+        margin-left: 3%;
+    }
+    
+    #card-details{
+        width:100%;
+        opacity: .8;
+        
+    }
+    #form{
+        width:60%;
+        margin-left: 23%;
+    }
+    #name{
+        width:90%;
+
+    }
+    hr{
+        opacity: .5;
+    }
+#i-flex{
+    display: flex;
+}
+#sec{
+    width:50%;
+    margin-left: 5%;;
+}
+#sec input{
+    width:90%;
+}
+#exp{
+    width:40%;
+}
+#form input{
+    height:28px;
+}
+#form button{
+    width:30%;
+    height:40px;
+    margin-left:28%;
+    margin-top:35px;
+    margin-bottom: 18px;
+    background-color: #0073b1;
+    color: white;
+    font-size: medium;
+}
+#review{
+    width:100%;
+    border: 2px solid rgb(206, 202, 202);
+}
+#review p{
+    padding:2%;
+    background-color: #ecf5fc;
+    width:90%;
+    text-align: center;
+    font-size: small;
+    margin-left:3%;
+}
+#review ul{
+    margin-top: 30px;
+}
+#review li{
+    font-size:14px;
+    margin-top:4px;
+    opacity: .8;
+}
+#review button{
+    width:20%;
+    height:40px;
+    margin-left:40%;
+    margin-top:15px;
+   
+    background-color: #0073b1;
+    color: white;
+    font-size: medium;
+
+}
+#review h4{
+    font-weight: normal;
+    opacity: .8;
+    text-align: center;
+}
+#faq{
+    border: 2px solid rgb(206, 202, 202);
+    margin-top:20px;
+
+}
+#faq h3{
+   padding:2.5%;
+    background-color:#ecf5fc ;
+    margin-top:0;
+    font-weight: normal;
+    font-size:normal;
+}
+#faqflex{
+    display:flex;
+    margin-left:1%;
+}
+#faq-ans{
+    width:30%;
+    margin-left:2%;
+}
+#faq-ans h5{
+    margin-top:10px;
+    font-weight:500;
+}
+#faq-ans p{
+    font-size: 11px;
+    margin-top:3px;
+    opacity: .8;
+}
+#link{
+margin-left:22%;
+margin-top:25px;
+margin-bottom:25px;
+font-size: smaller;
+}
+
+
+
+</style>
+<body>
+    
+    <div id='navbar-c'>
+        <img id="li-icon" src="https://cdn.iconscout.com/icon/free/png-64/linkedin-2752135-2284952.png"/>
+        <p>SECURE CHECKOUT</p>
+    </div>
+
+    <div id='checkout'>
+
+        <div id='onlylap'>
+            <div id='c'>Checkout</div> <div id='c-side'>you're a step closer to advancing your career!</div>
+        </div>
+          
+      <div id='list'> <h3 id='round'>1</h3><h3>Items in your cart</h3></div>
+
+
+        <div id='video-info'>
+
+        </div>
+
+        <div id='amount'></div>
+
+        <div id='list'> <h3 id='round'>2</h3><h3>Payment</h3></div>
+
+        <div id='card'>
+
+              <img src="https://static-exp1.licdn.com/sc/h/8bca1rltjmsti0v31srweuz2z"/>
+              <hr/>
+
+              <div id='card-details'>
+
+                  <form id='form'>
+                    <div>First name* </div>  
+                      <input id='name'/>
+
+                      <div>Last name* </div>
+                      <input id='name'/>
+
+                      <div>Credit or debit card number* </div>
+                      <input id='name'/>
+                      
+                      <div id='i-flex'> 
+                     <div id='exp'>Expiration date* <input/></div>  <div id="sec">Security code* <input/></div>
+                      </div>
+
+                      <div>Country* </div>
+                      <input id='name'/>
+
+                      <div id='i-flex'> 
+                        <div id='exp'>Postal code* <input/></div>  <div id="sec">GST<input placeholder="Optional"/></div>
+                         </div>
+                             
+                         <button>Review order</button>
+                    
+                  </form>
+               
+
+              </div>
+             
+        </div>
+
+        <div id='list'> <h3 id='round'>3</h3><h3>Review your order</h3></div>
+
+        <div id='review'> 
+            <ul>
+                <li>You will only be charged once for the purchase of this course.</li>
+                <li>You will have access to this course through your LinkedIn Learning account.</li>
+                <li>Any future updates to this course will be automatically distributed to you at no additional cost.
+                </li>
+            </ul>
+            <p>By placing this order you agree to our terms of service. To ensure continued service, we'll store and update (e.g., upon expiration) your payment method. Learn about our refund policy.</p>
+        <button>Place order</button>
+        <h4>Secure checkout</h4>
+        </div>
+        
+        <div id='faq'>
+               <h3>Frequently asked questions</h3>
+
+               <div id='faqflex'>
+
+                   <div id='faq-ans'> 
+                       <h5>How long will I have access to the course?</h5>
+                       <p>Courses will generally remain available for as long as you keep your LinkedIn account. On rare occasions we may need to remove a course for legal or other reasons. In such rare cases, we will notify you of the change.</p>
+                   </div>
+
+                   <div id='faq-ans'> 
+                    <h5>If a course isn't what I wanted, can I get a refund?</h5>
+                    <p>We apologize if the course didn't meet your expectations. If you are unsatisfied, we offer refunds within 30 days of your purchase. Refunds are not available after 30 days from purchase. Learn about our refund policy.</p>
+                    </div>
+
+                <div id='faq-ans'> 
+                    <h5>What else do I get access to when I buy a course?</h5>
+                   <p>You will gain access to all supplemental materials of the course, including transcripts, Q&A, and exercise files and quizzes (when applicable).</p>
+                   </div>
+
+               </div>
+        </div>
+
+    </div>
+
+    <div id='link'>
+        <span >LinkedIn Corporation © 2021 -</span>  <span > <a href="#">Privacy Policy</a></span>
+    </div>
+  
+    
+</body>
+</html>
