@@ -49,6 +49,13 @@
         margin-top:15px;
        
     }
+    #onlylap{
+        margin-left:1%;
+        width:98%;
+    display: flex;
+    height:87px;
+    box-shadow: 1.5px .5px .5px .1px rgb(172, 172, 172);
+    }
     #c{
         width:30%;
         font-size:x-large;
@@ -59,11 +66,7 @@
         padding-bottom: 29px;
         
     }
-    #onlylap{
-    display: flex;
-    height:87px;
-    box-shadow: 1.5px .5px .5px .1px rgb(172, 172, 172);
-    }
+    
     #c-side{
         font-size:x-large;
         text-align: center;
@@ -230,6 +233,36 @@ select{
     height:35px;
     
 }
+#tax{
+    font-size:normal;
+    font-weight:340;
+    margin-left:2%;
+    font-size: 14px;
+}
+#taxprice{
+    font-size:normal;
+    font-weight:340;
+    margin-left:76%;
+    font-size: 14px;
+
+}
+#totall{
+    margin-left:2%;
+    font-weight: 600; 
+
+}
+#tprice{
+    font-weight: 600;
+    margin-left: 79%;
+}
+#amount hr{
+    width:95%;
+margin:0;
+margin-left:2%;
+}
+#taxflex{
+    display: flex;  
+}
 
 
 </style>
@@ -255,7 +288,12 @@ select{
 
         </div>
 
-        <div id='amount'></div>
+        <div id='amount'>
+      <div id='taxflex'> <p id='tax'>Estimated tax (18%)</p> <p id='taxprice'></p></div>
+         <hr/>
+        <div id='taxflex'> <p id='totall'>Today's total</p><p id='tprice'></p> </div>
+        
+        </div>
 
         <div id='list'> <h3 id='round'>2</h3><h3>Payment</h3></div>
 
@@ -277,7 +315,7 @@ select{
                       <input id='name'/>
                       
                       <div id='i-flex'> 
-                     <div id='exp'>Expiration date* <input  placeholder='MM/YY'/></div>  <div id="sec">Security code* <input/></div>
+                     <div id='exp'>Expiration date* <input  placeholder='MM/YY'/></div>  <div id="sec">Security code* <input placeholder="CVV"/></div>
                       </div>
 
                       <div>Country* </div>
