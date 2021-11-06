@@ -8,8 +8,8 @@
 </head>
 <style>
     body{
-    
-        font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","Fira Sans",Ubuntu,Oxygen,"Oxygen Sans",Cantarell,"Droid Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Emoji","Segoe UI Symbol","Lucida Grande",Helvetica,Arial,sans-serif;
+    margin:0;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","Fira Sans",Ubuntu,Oxygen,"Oxygen Sans",Cantarell,"Droid Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Emoji","Segoe UI Symbol","Lucida Grande",Helvetica,Arial,sans-serif;
     }
     img,button{
     cursor: pointer;
@@ -22,10 +22,10 @@
         
     }
     #navbar-c p{
-        color:white;
+        color: #fff;
         letter-spacing: 2px;
-         font-weight: 400;
-          margin-left:1%;
+        font-weight: 400;
+          
     }
     #li-icon{
         width:30px;
@@ -34,14 +34,7 @@
         margin-top:10px;
         margin-left:14%;
     }
-    #set-icon{
-        width:25px;
-        height:25px;
-        background-color: #283e4a;
-        margin-top:14px;
-        margin-left:64%;
-
-    }
+    
     #checkout{
       
         margin:auto;
@@ -57,8 +50,8 @@
     box-shadow: 1.5px .5px .5px .1px rgb(172, 172, 172);
     }
     #c{
-        width:30%;
-        font-size:x-large;
+        width:37%;
+        font-size:20px;
         background-color:#398b18 ;
         color:white;
         text-align:center;
@@ -68,9 +61,9 @@
     }
     
     #c-side{
-        font-size:x-large;
-        text-align: center;
+        font-size:21px;
         margin-left:2%;
+      
         margin-top:3%;
     }
     #video-info{
@@ -179,7 +172,7 @@
     padding:2%;
     background-color: #f3f6f8;
     width:90%;
-    text-align: center;
+    
     font-size: small;
     margin-left:3%;
     font-weight: 350;
@@ -204,11 +197,7 @@
     font-size: medium;
 
 }
-#review h4{
-    font-weight: normal;
-    opacity: .8;
-    text-align: center;
-}
+
 #faq{
     border: 2px solid rgb(206, 202, 202);
     margin-top:20px;
@@ -281,15 +270,63 @@ margin-left:2%;
     display: flex;  
 }
 
+/*icons*/
+.lock-icon{
+    fill:currentColor;
+        color:#c7d1d8;
+        margin-top:18px;
+        margin-left:.7%;
+        width:24px;
+        height:24px;
+
+    
+    }
+    
+    .set-icon{
+        fill:currentColor;
+        color:#c7d1d8;
+        background-color: #283e4a;
+        margin-top:14px;
+        margin-left:56%;
+        width:24px;
+        height:24px;
+
+    }
+    .securelock{
+        display: flex;
+      width:20%;
+      height:fit-content;
+       margin-left:40%;
+    }
+    .securelock h4{
+        font-weight: 400;
+        color:#696c6f;
+    }
+   .s-lock-icon{
+    color:#696c6f;
+       margin-top:24px;
+       fill:currentColor;
+        width:20px;
+        height:24px;
+   }
+   
 
 </style>
 <body>
     
     <div id='navbar-c'>
         <img id="li-icon" src="https://cdn.iconscout.com/icon/free/png-64/linkedin-2752135-2284952.png"/>
-        <img src=''/>
+        
+
+        <svg class='lock-icon'>
+            <path d="M12,7H11V4A3,3,0,0,0,5,4V7H4A1,1,0,0,0,3,8v6a1,1,0,0,0,1,1h8a1,1,0,0,0,1-1V8A1,1,0,0,0,12,7ZM7,3.88a1,1,0,0,1,2,0V7H7V3.88ZM11,13H5V9h6v4Z" ></path>
+           </svg>
+
         <p> SECURE CHECKOUT</p>
-        <img id="set-icon" src="https://img.icons8.com/color/2x/settings--v2.gif"/>
+
+        <svg class="set-icon">
+            <path d="M12,9a3,3,0,1,0,3,3A3,3,0,0,0,12,9Zm0,5.13A2.13,2.13,0,1,1,14.12,12,2.12,2.12,0,0,1,12,14.13Zm7.91-2.87L22,9.38,19.26,4.62,16.6,5.5a1,1,0,0,1-1.29-.75L14.74,2H9.26L8.69,4.75A1,1,0,0,1,7.4,5.5L4.74,4.62,2,9.38l2.09,1.87a1,1,0,0,1,0,1.49L2,14.62l2.74,4.76L7.4,18.5a1,1,0,0,1,1.29.75L9.26,22h5.48l0.57-2.75a1,1,0,0,1,1.29-.75l2.66,0.88L22,14.62l-2.09-1.87A1,1,0,0,1,19.91,11.25ZM18.4,17.12l-1.22-.4a2.86,2.86,0,0,0-3.7,2.14l-0.26,1.26H10.78l-0.26-1.26a2.86,2.86,0,0,0-3.7-2.14l-1.22.4L4.38,15l1-.86a2.88,2.88,0,0,0,0-4.29L4.38,9,5.6,6.88l1.22,0.4a2.86,2.86,0,0,0,3.7-2.14l0.26-1.26h2.44l0.26,1.26a2.86,2.86,0,0,0,3.7,2.14l1.22-.4L19.62,9l-1,.86a2.88,2.88,0,0,0,0,4.29l1,0.86Z"></path>
+        </svg>
     </div>
 
     <div id='checkout'>
@@ -367,7 +404,15 @@ margin-left:2%;
             </ul>
             <p>By placing this order you agree to our terms of service. To ensure continued service, we'll store and update (e.g., upon expiration) your payment method. Learn about our refund policy.</p>
         <button>Place order</button>
-        <h4>Secure checkout</h4>
+        
+      <div class='securelock'>
+          <div class='s-lock-icon'>
+        <svg >
+            <path d="M12,7H11V4A3,3,0,0,0,5,4V7H4A1,1,0,0,0,3,8v6a1,1,0,0,0,1,1h8a1,1,0,0,0,1-1V8A1,1,0,0,0,12,7ZM7,3.88a1,1,0,0,1,2,0V7H7V3.88ZM11,13H5V9h6v4Z" ></path>
+           </svg>
+
+        </div><h4>Secure checkout</h4></div> 
+
         </div>
         
         <div id='faq'>
