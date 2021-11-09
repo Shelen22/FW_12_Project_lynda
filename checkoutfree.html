@@ -166,11 +166,24 @@
     }
     #wat1 p,#wat2 p,#wat3 p,#wat4 p,#wat5 p,#wat6 p{
         margin:2%;
+        color:#7f8285;
+        font-size: 14px;
         
     }
     #wat1:hover .show1,#wat2:hover .show2,#wat3:hover .show3,#wat4:hover .show4,#wat5:hover .show5,#wat6:hover .show6{
         display: block;
     }
+    .arrow{
+        margin-left:55%;
+        
+        font-size: large;
+        
+    }
+    .arrow svg{
+        width:22px;
+        height: 16px;  
+    }
+    
    
 </style>
 <body>
@@ -279,7 +292,9 @@
     <h2 id='faqh2'>Frequently asked questions</h2>
 
     <div id='wat1'>
-        <p>What happens at the end of my free trial? </p>
+        <p>What happens at the end of my free trial? <span class='arrow'><svg>
+            <path d="M2 7l10 7.5L22 7v2.5L12 17 2 9.5z"></path>
+          </svg></span></p>
         
         <div class='show1'>Your membership will automatically renew at the end of your free trial. You can cancel at any time prior to the renewal at linkedin.com/settings. Learn more about subscription terms
             
