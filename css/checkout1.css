@@ -1,0 +1,258 @@
+body{
+    margin:0;
+    background-color: #F3F2EF;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","Fira Sans",Ubuntu,Oxygen,"Oxygen Sans",Cantarell,"Droid Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Emoji","Segoe UI Symbol","Lucida Grande",Helvetica,Arial,sans-serif;
+    }
+    img,button{
+    cursor: pointer;
+}
+    #navbar-c{
+        width:100%;
+        height:52px;
+        background-color: #fff;
+        display: flex;
+        
+    }
+    #navbar-c p{
+        
+        letter-spacing: 2px;
+        font-weight: 400;
+          
+    }
+    #li-icon{
+        width:30px;
+        height:30px;
+        background-color: #283e4a;
+        margin-top:10px;
+        margin-left:14%;
+    }
+    #checkout{
+      
+        margin:auto;
+        width:750px;
+        margin-top:15px;
+       
+    }
+    #onlylap{
+        margin-left:1%;
+        width:98%;
+        display: flex;
+        height:87px;
+        background-color: #fff;
+        box-shadow: 1px 1px 1px 1px rgb(196, 193, 193);
+    }
+    #c{
+        
+        width:37%;
+        font-size:20px;
+        background-color:#398b18 ;
+        color:white;
+        text-align:center;
+        padding-top: 20px; 
+    }
+    
+    #c-side{
+    
+        font-size:21px;
+        margin-left:2%;
+        margin-top:3%;
+    }
+   
+    #amount{
+        background-color: #fff;
+        border: 2px solid rgb(206, 202, 202);
+        width:100%;
+        height:110px;
+        margin-top:10px;
+
+    }
+    #save36 {
+        margin:0;
+        margin-left:5%;
+        font-weight:350;
+    }
+    #save36 strong{
+        font-weight: 500;
+    }
+    #list{
+        
+        display: flex; 
+
+    }
+    #list h3{
+        font-weight:500;
+        margin-bottom:10px;
+    }
+    
+    #round{
+        color:white;
+       width:28px;
+       height:28px;
+        border-radius: 50%;
+        background-color:#398b18 ;
+        margin-right:2%;
+        text-align: center;
+    }
+    #card{
+        background-color: #fff;
+        border: 2px solid rgb(206, 202, 202);
+        width:100%;
+               
+    }
+    #card img{
+        width:50%;
+        padding:2%;
+        margin-left: 3%;
+    }
+    
+    #card-details{
+        width:100%;
+        opacity: .8;
+        
+    }
+    #form{
+        width:60%;
+        margin-left: 23%;
+    }
+    #name{
+        width:90%;
+
+    }
+    hr{
+        opacity: .5;
+    }
+#i-flex{
+    display: flex;
+}
+#sec{
+    width:50%;
+    margin-left: 5%;;
+}
+#sec input{
+    width:90%;
+    margin-top:5px;
+}
+#exp{
+    width:40%;
+   
+}
+#exp input{
+    margin-top:5px;
+}
+#form{
+    margin-top:20px;
+}
+#form input{
+    height:28px;
+    margin-bottom:14px;
+}
+.info{
+    font-size: 14px;
+    margin-bottom: 4px;
+    opacity: 2;
+}
+#form button{
+    width:30%;
+    height:40px;
+    margin-left:28%;
+    margin-top:35px;
+    margin-bottom: 18px;
+    background-color: #0073b1;
+    color: white;
+    font-size: medium;
+}
+
+
+#faq{
+    background-color: #fff;
+    border: 2px solid rgb(206, 202, 202);
+    margin-top:20px;
+}
+#faq h3{
+   padding:2.5%;
+    background-color:#f3f6f8 ;
+    margin-top:0;
+    font-weight: normal;
+    font-size:normal;
+}
+#faqflex{
+    display:flex;
+    margin-left:1%;
+}
+#faq-ans{
+    width:30%;
+    margin-left:2%;
+}
+#faq-ans h5{
+    margin-top:10px;
+    font-weight:500;
+}
+#faq-ans p{
+    font-size: 11px;
+    margin-top:3px;
+    opacity: .8;
+}
+#link{
+margin-left:27%;
+margin-top:25px;
+margin-bottom:25px;
+font-size: 12px;
+}
+select{
+    width:92%;
+    height:35px;
+    margin-bottom: 12px;
+    
+}
+#tax{
+   
+    font-weight:340;
+    margin-left:2%;
+    font-size: 14px;
+}
+#taxprice{
+  
+    font-weight:340;
+    margin-left:76%;
+    font-size: 14px;
+
+}
+#totall{
+    margin-left:2%;
+    font-weight: 600; 
+
+}
+#tprice{
+    font-weight: 600;
+    margin-left: 79%;
+}
+#amount hr{
+    width:95%;
+    margin:0;
+    margin-left:2%;
+}
+#taxflex{
+    display: flex;  
+}
+
+/*icons*/
+.lock-icon{
+    fill:currentColor;
+        
+        margin-top:18px;
+        margin-left:.7%;
+        width:24px;
+        height:24px;
+    }
+    
+    .set-icon{
+        fill:currentColor;
+    
+      
+        margin-top:14px;
+        margin-left:56%;
+        width:24px;
+        height:24px;
+
+    }
+ 
