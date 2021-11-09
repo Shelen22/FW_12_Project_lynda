@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,100;1,200;1,300;1,800&display=swap" rel="stylesheet">
+</head>
+<style>
+    .head{
+        margin-top:60px;
+    }
+    #mainbox{
+        margin:2px;
+        border:1px solid rgb(238, 236, 236);
+        width:1300px;
+        height:750px;
+        display:flex;
+        margin-top: 80px;
+        margin-left: 20px;
+    }
+    #mainbox>div{
+        border:1px solid rgb(238, 236, 236);
+        width:50%;
+
+    }
+    .right{
+        text-align: center;
+        margin-top: 80px;
+    }
+    #mainbox>.leftbox{
+        padding-left: 20px;
+    }
+    #mainbox>.rightbox{
+        padding-left: 20px;
+    }
+    #mainbox>.leftbox{
+        font-family: 'Poppins', sans-serif;
+    }
+    #mainbox>.rightbox{
+        font-family: 'Poppins', sans-serif;
+    }
+    #mainbox>.leftbox>.data>.priva{
+        margin-top: 28px;
+    }
+    
+    .head>img{
+        margin-left: 25px;
+        height:53px;
+        width:119px;
+        margin-top:30px;
+    
+    }
+   
+    
+
+    
+    
+
+</style>
+<body>
+    <div id="mainbox">
+        <form  class="leftbox" id="myform" onsubmit="signin(event)">
+            <h1 >Sign In<a style="margin-left: 428px;margin-top:-10px;font-size:14px;color:rgb(150, 182, 245)";>&nbsp Required *</a></h1>
+            <p>Log in with your email address and password.</p>
+            <p style="color:red">Please do not reuse a password you have used on another service or a password that is easily guessed.</p>
+            <h4>EMAIL ADDRESS <b style="color:cornflowerblue">*</b></h4>
+            <div>
+                <label></label>
+                <input style="width:600px;height:50px;background-color:rgb(231, 230, 230);border:none;"type="text" id="email"  placeholder=" ">
+                <h4>PASSWORD <c style="color:cornflowerblue">*</c></h4>
+                <input style="width:600px;height:50px;background-color:rgb(231, 230, 230);border:none;"type="password"id="password" placeholder="">
+                <P>Password must be at least 8 characters, and contain both numbers and alphabet letters.</P>
+                <div class="term"><a style="color:rgb(12, 10, 10)" href="#"><h5>TERMS OF USE</h5></a></div>
+                <div class="privacy"><a style="color:rgb(10, 10, 10)" href="#"><h5>PRIVACY POLICY</h5></a></div>
+                <button id ="btns" style="background-color:black ;width:350px;height:60px;color:white;font-weight: 700;font-size: 18px;">LOG IN</button>
+                <div class="priva"><a style="color:rgb(12, 10, 10)" href="#"><h5>FORGOT YOUR PASSWORD?</h5></a></div>
+            </div>
+        </form>
+        <div class="rightbox">
+            <div class="form">
+                <h1>Sign Up</h1>
+                <P>If you create an account, you can get personalized services like checking purchase history and getting discount coupons with your membership. Register today for free!</P>
+                <a href="createanaccount.html"><button style="background-color:black ;width:350px;height:60px;color:white;font-weight: 700;font-size: 18px;">CREATE AN ACCOUNT</button></a>
+                            
+            </div>
+        </div>
+        
+        
+     </div>
+    
+    
+</body>
+</html>
+<script>
+    function signin(e){
+        e.preventDefault();
+        let myform=document.getElementById("myform")
+        let email=myform.email.value;
+        let password=myform.password.value;
+        let all_users=JSON.parse(localStorage.getItem("users"));
+        all_users.forEach(function (user) {
+            if(email===user.email && password===user.password){
+                alert("Login Successfull");
+                window.location.href="navven.html";
+            }
+            
+            
+        });
+
+    }
+    
+</script>
