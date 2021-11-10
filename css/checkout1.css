@@ -34,6 +34,7 @@ body{
        
     }
     #onlylap{
+        border-radius: 10px;
         margin-left:1%;
         width:98%;
         display: flex;
@@ -42,7 +43,8 @@ body{
         box-shadow: 1px 1px 1px 1px rgb(196, 193, 193);
     }
     #c{
-        
+        border-bottom-left-radius: 10px;
+        border-top-left-radius:10px ;
         width:37%;
         font-size:20px;
         background-color:#398b18 ;
@@ -60,9 +62,9 @@ body{
    
     #amount{
         background-color: #fff;
-        border: 2px solid rgb(206, 202, 202);
+        border: 1px solid rgb(206, 202, 202);
         width:100%;
-        height:110px;
+        border-radius: 10px;
         margin-top:10px;
 
     }
@@ -95,8 +97,9 @@ body{
     }
     #card{
         background-color: #fff;
-        border: 2px solid rgb(206, 202, 202);
+        border: 1px solid rgb(206, 202, 202);
         width:100%;
+        border-radius: 10px;
                
     }
     #card img{
@@ -165,8 +168,9 @@ body{
 
 #faq{
     background-color: #fff;
-    border: 2px solid rgb(206, 202, 202);
+    border: 1px solid rgb(206, 202, 202);
     margin-top:20px;
+    border-radius: 10px;
 }
 #faq h3{
 padding: .01%;
@@ -215,7 +219,7 @@ select{
 #taxprice{
   
     font-weight:340;
-    margin-left:76%;
+    margin-left:70%;
     font-size: 14px;
 
 }
@@ -226,12 +230,17 @@ select{
 }
 #tprice{
     font-weight: 600;
-    margin-left: 79%;
+    margin-left: 77%;
 }
 #amount hr{
     width:95%;
     margin:0;
     margin-left:2%;
+}
+#amount #hrline{
+    width:100%;
+    margin:0;
+    margin-top:10px;
 }
 #taxflex{
     display: flex;  
@@ -256,5 +265,63 @@ select{
         width:24px;
         height:24px;
 
+    }
+    #selectt{
+     width:100%;
+     display: flex;
+    }
+    #monthly{
+        background-color: #fff;
+        text-align: center;
+        width:46%;
+        border:  1px solid rgb(206, 202, 202);
+        padding:2%;
+           border-radius: 10px;
+           margin-top: 10px;
+    }
+    #monthly h3,#annually h3{
+        margin:auto;
+        font-weight: 500;
+    }
+    #monthly p{
+    font-size: 14px;
+        width:44%;
+        margin:auto;
+        font-weight: 200;
+    
+    }
+    #annually{
+        background-color: #fff;
+        text-align: center;
+        width:50%;
+        border:  1px solid rgb(206, 202, 202);
+       margin-left:1%;
+           border-radius: 10px;
+           margin-top: 10px;
+    }
+    #annually p{
+        font-size: 14px;
+        width:70%;
+        margin:auto;
+        font-weight: 200;
+
+    }
+    #annually h3{
+        margin-top: 15px;
+        margin-left: 15%;;
+        text-align: center;
+    }
+    #savee{
+        margin-bottom: 0;
+        float: right;
+        border: 1px solid #398b18;
+        background-color: #398b18;
+        color: #fff;
+        font-weight: 500;
+    }
+    #amount #ends{
+        padding:2%;
+        text-align: justify;
+        font-size:14px;
     }
  
