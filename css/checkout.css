@@ -151,6 +151,7 @@ body{
     background-color: #0073b1;
     color: white;
     font-size: medium;
+    transition: .8s;
 }
 #review{
     width:100%;
@@ -183,7 +184,7 @@ body{
     background-color: #0073b1;
     color: white;
     font-size: medium;
-
+transition: .8s;
 }
 
 #faq{
@@ -340,5 +341,5 @@ select{
     height:24px;
 }
 #form button:hover,#review button:hover{
-    background-color: #0c67cf;
+    background-color: #094f9e;
 }
