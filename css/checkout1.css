@@ -324,4 +324,16 @@ select{
         text-align: justify;
         font-size:14px;
     }
+    .show-a #taxprice{
+          margin-left:54%;
+         
+         
+    }
+    #d-rupe{
+        color:#398b18;
+        font-size:14px;
+        float: right;
+         margin-right: 3%;
+         margin-bottom:4px;
+    }
  
