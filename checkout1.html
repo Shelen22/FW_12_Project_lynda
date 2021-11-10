@@ -39,7 +39,7 @@
 
      <div id='selectt'>
 
-        <div id='monthly'>
+        <div id='monthly' onclick="showmonthly()">
             <h3>Monthly</h3>
             <p>1-month free trial
                 then ₹1,400.00 / month</p>
@@ -65,13 +65,13 @@
         <p id='ends'>You can cancel anytime before trial ends to avoid being charged and we’ll send an email reminder 7 days before the trial ends.</p>
         </div>
 
-        <div id='amount' class='show-a'>
-            <div id='taxflex'> <p id='tax'>Total after free trial (₹900.00 x 12 months)</p> <p id='taxprice'>₹10,800.00</p></div>
+        <div id='amount-a'>
+            <div id='taxflex-a'> <p id='tax-a'>Total after free trial (₹900.00 x 12 months)</p> <p id='taxprice-a'>₹10,800.00</p></div>
             <div id='d-rupe'>*₹6,000.00 saving when you buy annual</div>
                <hr/>
-              <div id='taxflex'> <p id='totall'>Today's total</p><p id='tprice'>₹0.00</p> </div>
+              <div id='taxflex-a'> <p id='totall-a'>Today's total</p><p id='tprice-a'>₹0.00</p> </div>
               <hr id='hrline'/>
-              <p id='ends'>You can cancel anytime before trial ends to avoid being charged and we’ll send an email reminder 7 days before the trial ends.</p>
+              <p id='ends-a'>You can cancel anytime before trial ends to avoid being charged and we’ll send an email reminder 7 days before the trial ends.</p>
               </div>
 
         <div id='list'> <h3 id='round'>2</h3><h3>Payment</h3></div>
@@ -154,3 +154,19 @@
     
 </body>
 </html>
+
+<script>
+    function showannual(){
+        document.getElementById('amount').style.display = 'none';
+        document.getElementById('amount-a').style.display = 'block';
+        document.getElementById('monthly').style.boxShadow = 'none';
+        document.getElementById('annually').style.boxShadow = '0 4px 0 #398b18';
+
+    }
+    function showmonthly(){
+        document.getElementById('amount').style.display = 'block';
+        document.getElementById('amount-a').style.display = 'none';
+        document.getElementById('annually').style.boxShadow = 'none';
+        document.getElementById('monthly').style.boxShadow = '0 4px 0 #398b18';
+    }
+</script>
