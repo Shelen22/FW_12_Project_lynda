@@ -187,7 +187,7 @@ body{
 }
 
 #faq{
-    border: 2px solid rgb(206, 202, 202);
+    border: 2px solid rgba(214, 212, 212, 0.986);
     margin-top:20px;
 }
 #faq h3{
@@ -338,4 +338,7 @@ select{
 .box-icons{
     width:24px;
     height:24px;
+}
+#form button:hover,#review button:hover{
+    background-color: #0c67cf;
 }
