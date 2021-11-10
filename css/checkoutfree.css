@@ -111,6 +111,12 @@ body{
         margin-top:20px;
         margin-bottom:20px;
         font-weight: bold;
+        transition: .5s;
+        cursor: pointer;
+    }
+    #btnfree:hover{
+        background-color: #06488a;
+        
     }
     a{
         color:#0a66c2;
@@ -221,6 +227,4 @@ body{
    #fixedd{
        height:57px;
    }
-   button{
-       cursor: pointer;
-   }
+  
