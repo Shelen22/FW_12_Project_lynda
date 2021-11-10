@@ -160,17 +160,17 @@
         document.getElementById('amount').style.display = 'none';
         document.getElementById('amount-a').style.display = 'block';
         document.getElementById('monthly').style.boxShadow = 'none';
-        document.getElementById('monthly').style.transition ='1s';
-        document.getElementById('annually').style.transition ='1s';
         document.getElementById('annually').style.boxShadow = '0 4px 0 #398b18';
+        document.getElementById('annually').style.border = '2px solid black';
+        document.getElementById('monthly').style.border = 'none';
       
     }
     function showmonthly(){
         document.getElementById('amount').style.display = 'block';
         document.getElementById('amount-a').style.display = 'none';
         document.getElementById('annually').style.boxShadow = 'none';
-        document.getElementById('monthly').style.transition ='1s';
-        document.getElementById('annually').style.transition ='1s';
         document.getElementById('monthly').style.boxShadow = '0 4px 0 #398b18';
+        document.getElementById('monthly').style.border = '2px solid black';
+        document.getElementById('annually').style.border = 'none';
     }
 </script>
