@@ -169,11 +169,13 @@ body{
     margin-top:20px;
 }
 #faq h3{
-   padding:2.5%;
-    background-color:#f3f6f8 ;
-    margin-top:0;
+padding: .01%;
+padding-left: 3%;;
     font-weight: normal;
     font-size:normal;
+}
+#faq hr{
+    margin-top: 0;
 }
 #faqflex{
     display:flex;
