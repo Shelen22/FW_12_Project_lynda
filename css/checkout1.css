@@ -160,10 +160,15 @@ body{
     margin-left:28%;
     margin-top:35px;
     margin-bottom: 18px;
-    background-color: #0073b1;
+    background-color: #063ea5;
     color: #fff;
     font-size: medium;
     border-radius: 40px;
+    border:none;
+    transition: 1s;
+}
+#form button:hover{
+     background-color: #15346b;
 }
 
 
