@@ -1,7 +1,6 @@
 *{
   margin: 0;
-  padding: 0;
-  
+  padding: 0; 
 }
 #div1{
    /* border: 2px solid red; */
@@ -18,7 +17,7 @@
   /* border: 2px solid green; */
   padding: 42px 0px 5px 116px;
 }
- .text-area h2{
+ .text-area>h2{
    font-size: 30px;
    /* color: inherit; */
    font-weight:500;
@@ -78,6 +77,7 @@
    bottom: 0;
    position: fixed;
    height:110px;
+   background-color: #fff;
    width: 100%;
    box-shadow: 0 0 0 1px rgb(0 0 0 / 15%),
                0 6px 9px rgb(0 0 0 / 20%);
@@ -87,7 +87,7 @@
   gap: 30px;
   /* margin-top: 10px; */
   padding: 35px 35px 10px;
-  margin-left:20%;
+  margin-left:17%;
 }
 #footer > ul > li{
   font-size:13px;
