@@ -86,7 +86,7 @@
   display: flex;
   gap: 30px;
   /* margin-top: 10px; */
-  padding: 35px;
+  padding: 35px 35px 10px;
   margin-left:20%;
 }
 #footer > ul > li{
@@ -98,4 +98,21 @@
 #footer > ul > li:hover{
   cursor: pointer;
   text-decoration: underline;
+}
+#last-line{
+  align-items: center;  
+  justify-content:center;
+  margin-bottom:60px;
+  display: flex;
+}
+#last-line > h1{
+  font-size: 20px;
+}
+#last-line > span{
+  font-size: 12px;
+  margin-left: 14px;
+}
+#last-line > img{
+   width:20px;
+   height:20px;
 }
