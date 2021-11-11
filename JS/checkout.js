@@ -111,3 +111,36 @@ name: "Python programming for beginers",
 price: 1500,
 time: 40,
 title: "PYTHON"}
+
+
+function update(){
+
+    var img = document.createElement('img');
+    img.src='https://www.incimages.com/uploaded_files/image/1920x1080/public-speaking-1940x900_35061.jpg'
+
+   let div = document.createElement('div'); div.setAttribute('id','divv')
+
+   let course = document.createElement('div'); course.setAttribute('id','cours')
+   course.innerText = "COURSE";
+
+   let title = document.createElement('div');  title.setAttribute('id','title')
+   title.innerText = obj.name;
+
+   let by = document.createElement('div'); by.setAttribute('id','by');
+   by.innerText = obj.by;
+
+   let price = document.createElement('div'); price.setAttribute('id','pricefinal')
+   price.innerText = '₹'+obj.price+'.00';
+
+   div.append(title,by,course);
+
+    var imgdiv = document.getElementById('video-img');
+    imgdiv.append(img,div,price); 
+    
+    let tax = .36*obj.price;
+    document.getElementById('taxprice').innerHTML = '₹'+tax+'.00';
+
+    let sum = tax+obj.price;
+    document.getElementById('tprice').innerHTML = '₹'+sum+'.00';
+}
+update();
