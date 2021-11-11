@@ -344,7 +344,7 @@ select{
 #btnpay:hover,#review button:hover{
     background-color: #094f9e;
 }
- #wrongf,#wrongl,#wrongc,#wrongcvv,#wrongpin{
+ #wrongf,#wrongl,#wrongc,#wrongcvv,#wrongpin,#wronge{
     font-size:12px;
     color:red;
     
