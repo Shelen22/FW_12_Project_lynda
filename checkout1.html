@@ -83,36 +83,37 @@
 
               <div id='card-details'>
 
-                  <form id='form'>
+                <form id='form'>
                     <div class='info'>First name* </div>  
-                      <input id='name'/>
+                      <input id='namef' type='text'/> <div id='wrongf'></div>
 
                       <div class='info'>Last name* </div>
-                      <input id='name'/>
+                      <input id='namel' type='text'/> <div id='wrongl'></div>
 
                       <div class='info'>Credit or debit card number* </div>
-                      <input id='name'/>
+                      <input id='namec' type='number'/> <div id='wrongc'></div>
                       
                       <div id='i-flex'> 
-                     <div id='exp' class='info'>Expiration date* <input  placeholder='MM/YY'/></div>  <div id="sec" class='info'>Security code* <input placeholder="CVV"/></div>
+                     <div id='exp' class='info'>Expiration date* <input id='expdate' placeholder='MM/YY'/><div id='wronge'></div></div>  <div id="sec" class='info'>Security code* <input id='cvv'placeholder="CVV" type='number'/><div id='wrongcvv'></div></div>
                       </div>
 
                       <div class='info'>Country* </div>
                       <select>
                           <option>India</option>
-                          <option>Brazil</option>
-                          <option>Srilanka</option>
-                          <option>USA</option>
                       </select> 
 
                       <div id='i-flex'> 
-                        <div id='exp' class='info'>Postal code* <input/></div>  <div id="sec" class='info'>GST<input placeholder="Optional"/></div>
+                        <div id='exp' class='info' >Postal code* <input id='pincode'type='number'/><div id='wrongpin'></div></div>  <div id="sec" class='info'>GST<input placeholder="Optional"/></div>
                          </div>
                              
-                         <button>Review order</button>
+                        
                     
                   </form>
-               
+                             
+                        
+                    
+                  </form>
+                  <button id='btnpay' onclick="payment()">Review order</button>
 
               </div>
              
@@ -155,22 +156,6 @@
 </body>
 </html>
 
-<script>
-    function showannual(){
-        document.getElementById('amount').style.display = 'none';
-        document.getElementById('amount-a').style.display = 'block';
-        document.getElementById('monthly').style.boxShadow = 'none';
-        document.getElementById('annually').style.boxShadow = '0 4px 0 #398b18';
-        document.getElementById('annually').style.border = '2px solid black';
-        document.getElementById('monthly').style.border = 'none';
-      
-    }
-    function showmonthly(){
-        document.getElementById('amount').style.display = 'block';
-        document.getElementById('amount-a').style.display = 'none';
-        document.getElementById('annually').style.boxShadow = 'none';
-        document.getElementById('monthly').style.boxShadow = '0 4px 0 #398b18';
-        document.getElementById('monthly').style.border = '2px solid black';
-        document.getElementById('annually').style.border = 'none';
-    }
+<script src='JS/checkout1.js'>
+    
 </script>
