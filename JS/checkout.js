@@ -101,3 +101,13 @@ function payment(){
     }
 
 }
+
+let obj = {
+    by: "By:Kethrin",
+date: "19th September 2020",
+img: "https://www.incimages.com/uploaded_files/image/1920x1080/public-speaking-1940x900_35061.jpg",
+link: "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS",
+name: "Python programming for beginers",
+price: 1500,
+time: 40,
+title: "PYTHON"}
