@@ -41,9 +41,28 @@ body{
     }
     #trial-img{
         width:30%;
-        height: 90px;
+       
         margin: auto;
-        border: 1px solid black;
+      
+        display: flex;
+    }
+    #trial-img img{
+        width:26%;
+        height:70px;
+        float:left;
+        margin-left:2%;
+    
+    }
+  #course,#by{
+      margin-left:5%;
+      opacity:.8;
+      text-align: start;
+  }
+    #title{
+        width:100%;
+      text-align: start; 
+      margin-left: 5%; 
+      font-weight: 500;
     }
     #flexx{
         display: flex;
