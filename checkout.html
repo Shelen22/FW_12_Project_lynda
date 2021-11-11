@@ -127,35 +127,32 @@
 
                   <form id='form'>
                     <div class='info'>First name* </div>  
-                      <input id='name'/>
+                      <input id='namef' type='text'/> <div id='wrongf'></div>
 
                       <div class='info'>Last name* </div>
-                      <input id='name'/>
+                      <input id='namel' type='text'/> <div id='wrongl'></div>
 
                       <div class='info'>Credit or debit card number* </div>
-                      <input id='name'/>
+                      <input id='namec' type='number'/> <div id='wrongc'></div>
                       
                       <div id='i-flex'> 
-                     <div id='exp' class='info'>Expiration date* <input  placeholder='MM/YY'/></div>  <div id="sec" class='info'>Security code* <input placeholder="CVV"/></div>
+                     <div id='exp' class='info'>Expiration date* <input id='expdate' placeholder='MM/YY'/><div id='wronge'></div></div>  <div id="sec" class='info'>Security code* <input id='cvv'placeholder="CVV" type='number'/><div id='wrongcvv'></div></div>
                       </div>
 
                       <div class='info'>Country* </div>
                       <select>
                           <option>India</option>
-                          <option>Brazil</option>
-                          <option>Srilanka</option>
-                          <option>USA</option>
                       </select> 
 
                       <div id='i-flex'> 
-                        <div id='exp' class='info'>Postal code* <input/></div>  <div id="sec" class='info'>GST<input placeholder="Optional"/></div>
+                        <div id='exp' class='info' >Postal code* <input id='pincode'type='number'/><div id='wrongpin'></div></div>  <div id="sec" class='info'>GST<input placeholder="Optional"/></div>
                          </div>
                              
-                         <button>Review order</button>
+                        
                     
                   </form>
                
-
+                  <button id='btnpay' onclick='payment()'>Review order</button>
               </div>
              
         </div>
@@ -211,8 +208,8 @@
         <span >LinkedIn Corporation © 2021 -</span>  <span > <a href="">Privacy Policy</a></span>
     </div>
 
-    
   
     
 </body>
+<script src='JS/checkout.js'></script>
 </html>

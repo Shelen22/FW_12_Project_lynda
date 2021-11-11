@@ -98,14 +98,13 @@ body{
     
     #card-details{
         width:100%;
-        opacity: .8;
         
     }
     #form{
         width:60%;
         margin-left: 23%;
     }
-    #name{
+    #namef,#namel,#namec{
         width:90%;
 
     }
@@ -135,21 +134,22 @@ body{
 }
 #form input{
     height:28px;
-    margin-bottom:14px;
+   
 }
 .info{
     font-size: 14px;
     margin-bottom: 4px;
     opacity: 2;
+    margin-top:14px;
 }
-#form button{
-    width:30%;
+ #btnpay{
+    width:20%;
     height:40px;
-    margin-left:28%;
+    margin-left:39%;
     margin-top:35px;
     margin-bottom: 18px;
     background-color: #0073b1;
-    color: white;
+    color: #fff;
     font-size: medium;
     transition: .8s;
 }
@@ -340,6 +340,11 @@ select{
     width:24px;
     height:24px;
 }
-#form button:hover,#review button:hover{
+#btnpay:hover,#review button:hover{
     background-color: #094f9e;
+}
+ #wrongf,#wrongl,#wrongc,#wrongcvv,#wrongpin,#wronge{
+    font-size:12px;
+    color:red;
+    
 }

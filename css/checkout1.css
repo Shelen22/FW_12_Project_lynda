@@ -109,15 +109,13 @@ body{
     }
     
     #card-details{
-        width:100%;
-        opacity: .8;
-        
+        width:100%; 
     }
     #form{
         width:60%;
         margin-left: 23%;
     }
-    #name{
+    #namel,#namef,#namec{
         width:90%;
 
     }
@@ -147,17 +145,18 @@ body{
 }
 #form input{
     height:28px;
-    margin-bottom:14px;
+    
 }
 .info{
     font-size: 14px;
     margin-bottom: 4px;
     opacity: 2;
+    margin-top:14px;
 }
-#form button{
-    width:30%;
+#btnpay{
+    width:20%;
     height:40px;
-    margin-left:28%;
+    margin-left:39%;
     margin-top:35px;
     margin-bottom: 18px;
     background-color: #063ea5;
@@ -167,7 +166,7 @@ body{
     border:none;
     transition: 1s;
 }
-#form button:hover{
+#btnpay:hover{
      background-color: #15346b;
 }
 
@@ -351,5 +350,11 @@ select{
     }
     #amount-a{
         display:none;
+    }
+
+    #wrongf,#wrongl,#wrongc,#wrongcvv,#wrongpin,#wronge{
+        font-size:12px;
+        color:red;
+        
     }
  
