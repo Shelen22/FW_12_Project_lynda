@@ -98,7 +98,6 @@ body{
     
     #card-details{
         width:100%;
-        opacity: .8;
         
     }
     #form{
@@ -135,12 +134,13 @@ body{
 }
 #form input{
     height:28px;
-    margin-bottom:14px;
+   
 }
 .info{
     font-size: 14px;
     margin-bottom: 4px;
     opacity: 2;
+    margin-top:14px;
 }
  #btnpay{
     width:20%;
@@ -343,4 +343,9 @@ select{
 }
 #btnpay:hover,#review button:hover{
     background-color: #094f9e;
+}
+ #wrongf,#wrongl,#wrongc,#wrongcvv,#wrongpin{
+    font-size:12px;
+    color:red;
+    
 }
