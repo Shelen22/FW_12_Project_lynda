@@ -3,7 +3,7 @@
     margin: 0;
 }
 
-.main2 {
+.main3 {
     width: 100%;
     /* height: 428px; */
     /* margin: 200px auto; */
@@ -15,7 +15,7 @@
 }
 
 
-#span_3,#span_4 {
+#span_1,#span_2 {
     /* position: absolute;
     top: 34%; */
     font-size: 40px;
@@ -26,7 +26,7 @@
     /* background-color: red; */
 }
 
-.section2 {
+.section3 {
     width: 98%;
     height: 253px;
    
@@ -41,11 +41,11 @@
     
 }
 
-.section2::-webkit-scrollbar {
+.section3::-webkit-scrollbar {
     visibility: hidden;
 }
 
-.div2 {
+.div3 {
 	display: flex;
     flex-direction: column;
     min-width: 250px;
@@ -64,7 +64,7 @@
     /* border: 2px solid rgba(0, 0, 0, 0.2); */
 }
 
-.div2:hover{
+.div3:hover{
    
     border: 2px solid rgba(0, 0, 0, 0.2);
     min-width: 360px;
@@ -77,26 +77,26 @@
     display: none;
     color: #4f585e;
 }
-.div2:hover .a7{
+.div3:hover .a7{
  display: block;
  color: #4f585e;
 }
 /* ---------------for first div----------------- */
 
-.div2_inner_box{
+.div3_inner_box{
     display: flex;
     text-align: center;
     margin: 20px;
     color: #4f585e;
 }
-.div2_offer{
+.div3_offer{
     display: flex;
     width: 100%;
     height: 60px;
     /* background-color: blue; */
     justify-content: space-between;
 }
-.div2_offer1{
+.div3_offer1{
     display: flex;
     text-align: center;
     height: 60px;
@@ -111,7 +111,7 @@
     align-items: center;
 }
 
-.carousal_2{
+.carousal_3{
     width: 100%;
     height: 365px;
     /* background-color: #f3f2ee; */
@@ -120,8 +120,8 @@
    
 }
 
-.div2 .a1{
-    background-color:green;
+.div3 .a1{
+    /* background-color:green; */
      width: 100%;
      height: 140px;
     
@@ -141,7 +141,7 @@
      font-weight: 50;
      /* position: relative; */
   }
-  .div2 .a3{
+  .div3 .a3{
     width: 100%;
   }
   .a3 ,.a6{
