@@ -1,0 +1,187 @@
+body{
+    font-family: Open Sans, sans-serif;
+}
+.zero_margin{
+    margin: 0%;
+}
+.zero_padding{
+    padding: 0%;
+}
+#cont{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding:3px;
+}
+#cont>div:nth-child(2){
+    display: flex;
+    border:1px solid black;
+    gap: 8px;
+    padding:5px;
+}
+#freeAndbuy{
+    display: flex;
+    gap:15px
+}
+
+#cont>div:nth-child(2)>div:nth-child(1){
+   width: 900px;
+}
+
+#bigimg{
+    height: 500px;
+    position: right;
+    background-image: linear-gradient(to left,rgba(255, 255, 255, 0.4),rgba(255,255,255,1)60%)
+}
+#imgdiv{
+    border:1px solid black;
+    height: 480px;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding:20px 0px 0px 60px; 
+}
+#bottom_left{
+    padding:60px
+}
+#bluebox{
+    background-color: rgb(20, 131, 235);
+    padding: 17px 100px 17px 100px;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+}
+#whitebox{
+    background-color: rgb(246, 248, 250);
+    padding: 17px 100px 17px 100px;
+    font-size: x-large;
+    border:1px solid rgb(20, 131, 235);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#head_detail{
+    padding-top: 2%;
+    font-size: 40px
+}
+#course_descrip{
+    height: 120px;
+    overflow-y: scroll;
+}
+p{
+    font-size: large;
+    padding-bottom: 18px;
+}
+ul{
+    list-style-type:none;
+}
+.list{
+    display: flex;
+    gap:2px;
+}
+.sub_head{
+    font-size: x-large;
+}
+.circle_border{
+    border:1px solid black;
+    border-radius: 50px;
+    padding: 3px 12px 3px 12px;
+    font-size: large;
+    font-weight: 600;
+    color:rgb(63, 102, 104)
+}
+.circle_border:hover{
+    border: 3px solid rgb(44, 74, 75);
+    cursor: pointer;
+    padding: 2.5px 10px 2.5px 10px;
+    transition: 0.2s;
+}
+#circle_border_div{
+    display: flex;
+    gap: 10px;
+}
+#certificate{
+    width: 200px;
+    height: 155px;
+}
+#certi_cont_div{
+    display: flex;
+}
+#check li::before{
+    content: '✓';
+}
+li{
+    margin: 1px;
+    font-size: 18px;
+}
+
+.instruct_img{
+    width: 90px;
+    height: 90px;
+}
+.instructor_div{
+    display: flex;
+    gap:22px;
+    padding: 12px;   
+}
+#suggest_course{
+    display: grid;
+    grid-template-columns:28% 28% 28%;
+    gap: 70px;
+}
+
+/* bottom right css starts here */
+
+#bottom_right{
+    width: 450px;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    gap:20px
+}
+#share_box{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 1px 2px rgb(171, 180, 180);
+    padding: 10px;
+    border: 1px solid rgb(179, 183, 184);
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(79, 83, 83);  
+    display: flex;
+    font-size: 22px;
+}
+#scroll_box{
+    border: 1px solid rgb(179, 183, 184);
+    padding: 20px;
+    box-shadow: 0px 1px 2px rgb(171, 180, 180);
+    border: 1px solid rgb(179, 183, 184);
+}
+
+#intro_div{
+    display: flex;
+    justify-content: space-between;
+}
+#getting_started_div{
+    display: flex;
+    justify-content: space-between;
+}
+#Basics_div{
+    display: flex;
+    justify-content: space-between;
+}
+#Conclusions_div{
+    display: flex;
+    justify-content: space-between;
+}
+#intro_main{
+    display: flex;
+    flex-direction: column;
+}
+#related_box>div{
+    display: flex;
+    gap:40px
+}
+.click:hover{
+    cursor: pointer;
+}
+#related_box_main{
+    box-shadow: 0px 1px 2px rgb(171, 180, 180);
+    border: 1px solid rgb(179, 183, 184);
+    padding: 20px;
+}
