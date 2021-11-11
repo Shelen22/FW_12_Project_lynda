@@ -127,16 +127,16 @@
 
                   <form id='form'>
                     <div class='info'>First name* </div>  
-                      <input id='name'/>
+                      <input id='namef' type='text'/>
 
                       <div class='info'>Last name* </div>
-                      <input id='name'/>
+                      <input id='namel' type='text'/>
 
                       <div class='info'>Credit or debit card number* </div>
-                      <input id='name'/>
+                      <input id='namec' type='number'/>
                       
                       <div id='i-flex'> 
-                     <div id='exp' class='info'>Expiration date* <input  placeholder='MM/YY'/></div>  <div id="sec" class='info'>Security code* <input placeholder="CVV"/></div>
+                     <div id='exp' class='info'>Expiration date* <input id='expdate' placeholder='MM/YY'/></div>  <div id="sec" class='info'>Security code* <input id='cvv'placeholder="CVV" type='number'/></div>
                       </div>
 
                       <div class='info'>Country* </div>
@@ -148,14 +148,14 @@
                       </select> 
 
                       <div id='i-flex'> 
-                        <div id='exp' class='info'>Postal code* <input/></div>  <div id="sec" class='info'>GST<input placeholder="Optional"/></div>
+                        <div id='exp' class='info' >Postal code* <input type='number'/></div>  <div id="sec" class='info'>GST<input placeholder="Optional"/></div>
                          </div>
                              
-                         <button>Review order</button>
+                        
                     
                   </form>
                
-
+                  <button id='btnpay' onclick='payment()'>Review order</button>
               </div>
              
         </div>
@@ -215,4 +215,5 @@
   
     
 </body>
+<script src='checkout.js'></script>
 </html>
