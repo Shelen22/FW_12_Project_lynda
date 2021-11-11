@@ -12,12 +12,6 @@ let data = [
     }
 ]
 
-// title:"PYTHON",
-// introduction :['Learing Python','What you shoyl know','Exercise files'],
-// Getting_Started:['Installing python','How to run the python examples','Installing VS Code','Chapter Quiz'],
-// Basics:['Your first python program','Running Python frm VS Code','Variables and expressions','Python fuunctions'],
-// Conclusions:['Next steps']
-
 
 if(sessionStorage.getItem('course') == null){
     sessionStorage.setItem('course',JSON.stringify([]))
@@ -120,7 +114,42 @@ var data_R = [
         Getting_Started:['Installing python','How to run the python examples','Installing VS Code','Chapter Quiz'],
         Basics:['Your first python program','Running Python frm VS Code','Variables and expressions','Python fuunctions'],
         Conclusions:['Next steps']
-    }
+    },
+    {
+        title:'MS Excel',
+        introduction:['Welcome','Using the exercise files'],
+        Getting_Started:['Using the menu system','using the Quick Access Toolbar','Understanding workbooks and worksheets','Using the Formula bar','Using the Status Bar','Using navigation tools','using shortcutmenus and the Mini toolbar','Creating new workbooks','Using Excel Help'],
+        Basics:['Entering data with Autofill','Working with dates and times','Using Undo and Redo','Adding comments','Using Save or Save As'],
+        Conclusions:['Goodbye']
+    },
+    {
+        title:'Sql',
+        introduction:['Understanding SQL','How to use the exercise files','Course overview'],
+        Getting_Started:['Database organization','The SELECT statement','Selecting rows','Selecting columns','Counting rows','Inserting data','Updating data','Deleting data'],
+        Basics:['Creating a table','Deleting a table','Inserting rows','Deleting rows','The Null value','Constraing columns','Changing a schema','ID columns','Filtering data'],
+        Conclusions:['Goodbye']
+    },
+    {
+        title:'Django',
+        introduction:['Rapidly create web applications','what you should know','GitHub and exercise files'],
+        Getting_Started:['what is Django','install Python and Django','Create a Django project','Create A  Django app'],
+        Basics:['Understand URL patterns','Implement URL patterns','Implement Django views'],
+        Conclusions:['Next steps']
+    },
+    {
+        title:'MEDIA QUERIES',
+        introduction:['Go cross-platform with responsive design','What you should know'],
+        Getting_Started:['Viewpost','Required CSS','Display properly','Positioning','Floats','Units'],
+        Basics:['intro to CSS Grid','Defining rows and columns','Grid gap','Sizing rows and columns','Placing grid items','Grid alignment overview','Aligning tracks','Aligning grid items within tracks','Aligning individual grid items'],
+        Conclusions:['Next steps']
+    },
+    {
+        title:'Async',
+        introduction:['impplementing smart asynchronous code','What you should know','Environment setup','Getting an OpenWetherMap API key'],
+        Getting_Started:['Understanding what aysnchronous means','Defining asynchronous programming','Using callbacks in asynchronous programming','Implementing callbacks for problem-solving','Using error checking with multiple callbacks'],
+        Basics:['Undesrtanding the async functions with await statements','Using statements to handle errors in async/await code','Making async/await code backward compatible with polyfill'],
+        Conclusions:['Asynchronous coding experience']
+    },
    
 ]
 
