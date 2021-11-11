@@ -164,7 +164,7 @@ function showData_R(){
                 click.textContent = '>'
                 click.className = 'click'
                 click.addEventListener('click',intro) 
-                var h3_1 = document.createElement('h3')
+                var h3_1 = document.createElement('h4')
                 var div1_1 = document.createElement('div')
                 var div1_2 = document.createElement('div')
                 var div1_main = document.createElement('div')
@@ -181,7 +181,7 @@ function showData_R(){
                 click.textContent = '>'
                 click.className = 'click'
                 click.addEventListener('click',started)
-                var h3_2  = document.createElement('h3')
+                var h3_2  = document.createElement('h4')
                 var div2_main = document.createElement('div')
                 var div2_1 = document.createElement('div')
                 var div2_2 = document.createElement('div')
@@ -196,7 +196,7 @@ function showData_R(){
                 click.textContent = '>'
                 click.className = 'click'
                 click.addEventListener('click',basics)
-                var h3_3  = document.createElement('h3')
+                var h3_3  = document.createElement('h4')
                 var div3_main = document.createElement('div')
                 var div3_1 = document.createElement('div')
                 var div3_2 = document.createElement('div')
@@ -211,7 +211,7 @@ function showData_R(){
                 click.textContent = '>'
                 click.className = 'click'
                 click.addEventListener('click',con)
-                var h3_4  = document.createElement('h3')
+                var h3_4  = document.createElement('h4')
                 var div4_main = document.createElement('div')
                 var div4_1 = document.createElement('div')
                 var div4_2 = document.createElement('div')
