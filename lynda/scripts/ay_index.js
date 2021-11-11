@@ -232,15 +232,15 @@ showData_R()
 
 
 function intro(){
-    console.log('intro triggered')
-    var intro_cont_div = document.getElementById('intro_cont')
-    intro_cont_div.innerHTML = null
-    for( var i = 0 ; i < data_R[0].introduction.length ; i++){
+    // console.log('intro triggered')
+        var intro_cont_div = document.getElementById('intro_cont')
+        intro_cont_div.innerHTML = null
+        for( var i = 0 ; i < data_R[0].introduction.length ; i++){
         var li = document.createElement('li')
         
         li.textContent = data_R[0].introduction[i]
         intro_cont_div.append(li)
-    }
+        }
 }
 
 function started(){
@@ -339,3 +339,20 @@ data_related.forEach((el)=>{
     parent_related_box.append(main)
 
 })
+
+
+
+
+
+
+
+
+
+
+// buy the course function starts frm here ---------
+
+document.getElementById('whitebox').addEventListener('click',buy)
+
+function buy(){
+    console.log('buy course triggered ')
+}
