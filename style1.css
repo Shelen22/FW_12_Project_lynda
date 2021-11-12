@@ -46,6 +46,7 @@
     top: -6px;
     overflow: visible;
     
+    
 }
 
 .section1::-webkit-scrollbar {
@@ -128,7 +129,7 @@
     /* background-color: #f3f2ee; */
     margin-bottom: 20px;
     overflow: hidden;
-    margin-left: 30px;
+    margin:auto;
    
 }
 
