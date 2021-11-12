@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons">
+    <title>Linkedin Signup , Login | Linkedin Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;1,100;1,300&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="./style/signin.css">
+</head>
+<style>
+   
+</style>
+
+<body>
+    <div class="top"></div>
+    <div class="block"></div>
+    <selection class="mid">
+        <div class="middle-part">
+            <h3>Linkedin <span class="in">in</span></h3>
+            <div class="text">
+                <h2>Welcome Back</h2>
+                <p>Don't miss your next opportunity. Sign in to stay updated on your professional world.</p>
+            </div>
+            <div class="input-group" id='email'>
+                <input type="text" id="em" required>
+                <span>Username</span>
+            </div>
+            <div class="input-group" id="password">
+                <input type="password" id="pass" required>
+                <span>Password</span>
+            </div>
+            <input type="button" value="Sign In" onclick='login(event)'>
+            <div class="mid-last">
+                <h1><a href="#">Forgot Password</a></h1>
+                <h2>New to Linkedin ? <span class="join">Join Now</span></h2>
+            </div>
+        </div>
+    </selection>
+
+    <footer>
+        <ul>
+            <li class="footer-black">Linked<span class="last-in">in</span>&copy;2021</li>
+            <li>User Agreement</li>
+            <li>Privacy Policy</li>
+            <li>Community Guidelines</li>
+            <li>Cookie Policy</li>
+            <li>Copyright Policy</li>
+            <li>Send Feedback</li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
+
+<script>
+    async function login(e) {
+        e.preventDefault();
+
+        let pass = document.getElementById('pass');
+        let em = document.getElementById('em');
+
+        let user_data = {
+            username: em.value,
+            password: pass.value
+        }
+
+        let data = JSON.stringify(user_data);
+        console.log(data);
+
+        let res = await fetch("https://masai-api-mocker.herokuapp.com/auth/login", {
+            method: "POST",
+            body: data,
+            headers: {
+                "Content-Type": "application/json",
+            },
+        })
+
+        res = await res.json();
+        console.log(res);
+
+        let token = res.token;
+        fetchmyData(user_data.username,token);
+    }
+
+    function fetchmyData(username, token) {
+        fetch(`https://masai-api-mocker.herokuapp.com/user/${username}`, {
+            headers: {
+                "Content-Type": "application/json",
+                "Authorization": `Bearer ${token}`,
+            },
+        })
+            .then((res) => {
+                return res.json();
+            })
+            .then((res) => {
+                console.log("res:", res);
+                if(res.name){
+                     localStorage.setItem("user", JSON.stringify(res));
+                     window.location.href = "Home.html";
+                    }
+                else {
+                    alert('invalid login credentials');
+                }
+            })
+            .catch((err) => {
+                console.log("err:", err);
+            })
+    }
+
+
+</script>

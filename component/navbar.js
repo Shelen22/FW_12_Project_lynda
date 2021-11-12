@@ -31,7 +31,7 @@ function navbar(){
                 <p>Language</p>
             </div>
         </div>
-        <div id="sign-up" >Sign Up</div>
+        <div id="sign-up"><a href="./signup.html">Sign Up</a></div>
     </navbar>
 </div>
 <div id="second">
