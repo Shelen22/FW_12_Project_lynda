@@ -1,5 +1,5 @@
 body{
-    font-size: small;
+    /* font-size: small; */
     font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","Fira Sans",Ubuntu,Oxygen,"Oxygen Sans",Cantarell,"Droid Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Emoji","Segoe UI Symbol","Lucida Grande",Helvetica,Arial,sans-serif;
 }
 .zero_margin{
@@ -352,7 +352,7 @@ a{
 .menu > h3,h5{
   color: grey;
   font-size: 13px;
-  /* text-align: center; */
+  text-align: center;
   line-height: 0;
 }
 .menu > h3 a{
