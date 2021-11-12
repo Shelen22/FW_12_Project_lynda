@@ -110,18 +110,21 @@
   if(localStorage.getItem('user') !== null){
         reg.innerHTML = JSON.parse(localStorage.getItem('user'));
         reg2.innerHTML = JSON.parse(localStorage.getItem('user'));
+        let signup = document.querySelector(".sign-up");
+         signup.style.display ="none";
+         let signup2 = document.querySelector(".sign-up-remove");
+         signup2.style.display ="block";
     }
    
     let signout = document.getElementById('signout');
     signout.addEventListener('click', signout2 =>{
         localStorage.removeItem('user');
+        
         let menu = document.getElementById("menu");
         menu.style.display = "none";
         reg2.innerHTML = "username";
         reg.innerHTML = "username";
-
+        
     })
-   
-//legend legend
 
 </script>
