@@ -29,7 +29,7 @@ body{
     #trial{
         margin:auto;
         width:100%;
-        border:1px solid #FDFAF5;;
+        border:1px solid #FDFAF5;
         text-align: center;
         background-color: #FDFAF5;
         
@@ -246,4 +246,27 @@ body{
    #fixedd{
        height:57px;
    }
-  
+  #thanks{
+      height: 57px;
+      background-color: #FDFAF5;
+  }
+  #happy{
+    padding:60px;
+    background-color: #FDFAF5; 
+    text-align: center;
+
+  }
+  #happy h1{
+      font-style: oblique;
+  }
+ 
+  #downspace{
+      height:20px;
+  }
+  #ordersuccess{
+     font-weight: 700;
+     letter-spacing: 2px;
+     color:#057642;
+     margin-top:20px;
+     
+  }
