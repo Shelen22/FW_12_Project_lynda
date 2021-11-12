@@ -158,6 +158,10 @@
                 <label for="email">Email</label>
                 <input type="email" id="email" />
             </div>
+            <div >
+                <label for="username">Username</label>
+                <input type="text" id="username" />
+            </div>
 
             <div id="">
                 <label for="password">Password(6 or more characters)</label>
@@ -192,7 +196,7 @@
 
 </html>
 <script>
-    let userId = 2;
+    let userId = Math.floor( Math.random()*999 ) + 100;
     //    const myForm=document.querySelector(`.my-form`);
     //    const emailInput=document.querySelector(`#email-input`);
     //    const passwordInput=document.querySelector(`#password-input`);
@@ -224,8 +228,8 @@
             name: `user${userId}`,
             email: form.email.value,
             password: form.password.value,
-            username: `username${userId}`,
-            mobile: `99${userId}8377389`,
+            username: form.username.value,
+            mobile: `99${userId}8389`,
             description: `filler`
         }
 
