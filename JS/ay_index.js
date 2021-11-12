@@ -31,7 +31,7 @@ function showdata(){
     dis_data.forEach((el)=>{
         parent.style.backgroundImage = `linear-gradient(to left,rgba(255, 255, 255, 0.4),rgba(255,255,255,1)60%),url(images/${el.image})`  
         
-        var title = document.createElement('h2')
+        var title = document.createElement('h4')
         title.textContent = el.name
 
         var release = document.createElement('p');
