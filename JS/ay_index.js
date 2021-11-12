@@ -236,12 +236,14 @@ function intro(){
     // console.log('intro triggered')
         var intro_cont_div = document.getElementById('intro_cont')
         intro_cont_div.innerHTML = null
+        var ul = document.createElement('ul') 
+        ul.style.listStyle = 'circle' 
+
         for( var i = 0 ; i < data_R[0].introduction.length ; i++){
         var li = document.createElement('li')
-        li.className = '.li'
-        
         li.textContent = data_R[0].introduction[i]
-        intro_cont_div.append(li)
+        ul.append(li)
+        intro_cont_div.append(ul)
         }
 }
 
@@ -249,12 +251,14 @@ function started(){
     console.log('strated triggerd')
     var started_cont_div = document.getElementById('getting_started_cont')
     started_cont_div.innerHTML = null
+    var ul = document.createElement('ul') 
+    ul.style.listStyle = 'circle' 
+
     for( var i = 0 ; i < data_R[0].Getting_Started.length ; i++){
         var li = document.createElement('li')
-        li.className = '.li'
-        
         li.textContent = data_R[0].Getting_Started[i]
-        started_cont_div.append(li)
+        ul.append(li)
+        started_cont_div.append(ul)
     }
 }
 
@@ -262,12 +266,14 @@ function basics(){
     console.log('basics triggerd')
     var basics_cont_div = document.getElementById('Basics_cont')
     basics_cont_div.innerHTML = null
+    var ul = document.createElement('ul') 
+    ul.style.listStyle = 'circle' 
+
     for( var i = 0 ; i < data_R[0].Basics.length ; i++){
         var li = document.createElement('li')
-        li.className = '.li'
-        
         li.textContent = data_R[0].Basics[i]
-        basics_cont_div.append(li)
+        ul.append(li)
+        basics_cont_div.append(ul)
     }
 }
 
@@ -275,12 +281,14 @@ function con(){
     console.log('conclude triggerd')
     var conclude_cont_div = document.getElementById('Coclusion_cont')
     conclude_cont_div.innerHTML = null
+    var ul = document.createElement('ul') 
+    ul.style.listStyle = 'circle' 
+
     for( var i = 0 ; i < data_R[0].Conclusions.length ; i++){
-        var li = document.createElement('li')
-        li.className = '.li'
-        
+        var li = document.createElement('li')        
         li.textContent = data_R[0].Conclusions[i]
-        conclude_cont_div.append(li)
+        ul.append(li)
+        conclude_cont_div.append(ul)
     }
 }
 
