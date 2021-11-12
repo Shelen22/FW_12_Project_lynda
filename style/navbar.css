@@ -1,8 +1,8 @@
-* {
+/* * {
     font-family: 'Nunito', sans-serif;
     padding: 0;
     margin: 0;
-}
+} */
 
 #nav {
     background-color: white;
@@ -22,7 +22,7 @@
     width: 85%;
     height: 40px;
     display: flex;
-    margin: 8px 120px;
+    margin: .6% 10%;
 }
 
 .logo {
@@ -46,13 +46,13 @@
 }
 
 #browse {
-    margin: 0px 30px;
+    margin: 0px 3.5%;
     opacity: .6;
     cursor: pointer;
 }
 
 #browse>img {
-    margin-left: 10px;
+    margin-left: 15%;
 }
 
 #browse>div {
@@ -68,7 +68,7 @@
     background-color: rgb(200, 216, 221);
     border-radius: 0px 6px 6px 0px;
     border: none;
-    width: 50px;
+    width: 16%;
 }
 
 #search>input {
@@ -142,7 +142,7 @@ top: 50px;
 right: 370px;
 padding: 10px 0px;
 background: white;
-width:260px;  
+width:260px; 
 height: max-content;
 transition: .5s;
 color: black;
@@ -200,7 +200,7 @@ transition: .5s;
    color: blue;
    box-sizing: border-box;
    border: 1px solid blue;
-   width: 80px;
+   width: 8%;
    display:block;
    padding: 7px;
    text-align: center;
