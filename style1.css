@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+  
 }
 
 .main1 {
@@ -16,24 +17,21 @@
 
 
 #span_5,#span_6 {
-    /* position: absolute;
-    top: 34%; */
-    font-size: 40px;
-    font-weight: 1000;
-    cursor: pointer;
-    left: .5%;
-    z-index: 1;border-radius: 55%;
-    border-radius: 55%;
-    margin-left: 5px;
-    margin-right: 10px;
+     cursor: pointer;
+     float:left;
+    z-index: 1;
+    border-radius: 50%;
+     padding:0 10px;
     border: 1px solid black;
+    transition: .5s;
+    margin:5px;
+    font-size:30px;
 }
-#span_5{
-    font-size: 30px;
+#span_5:hover,#span_6:hover{
+    background-color: rgb(194, 189, 189);
 }
-#span_6{
-    font-size: 30px;
-}
+
+
 
 .section1 {
     width: 98%;
@@ -47,6 +45,7 @@
     position: relative;
     top: -6px;
     overflow: visible;
+    
     
 }
 
@@ -78,9 +77,14 @@
     border: 2px solid rgba(0, 0, 0, 0.2);
     min-width: 300px;
     height: 400px;
-    
+   
     overflow: visible;
+<<<<<<< HEAD
     transform:scaleY(1.2)
+=======
+    transform: scale(1.05);
+  
+>>>>>>> 95bb3de19f1618ac35c0df5c1fff61e0827d0f1d
     
 }
 .a7{
@@ -124,12 +128,12 @@
 }
 
 .carousal_1{
-    width: 1200px;
+    width:80%;
     height: 365px;
     /* background-color: #f3f2ee; */
     margin-bottom: 20px;
     overflow: hidden;
-    margin-left: 30px;
+    margin:auto;
    
 }
 
