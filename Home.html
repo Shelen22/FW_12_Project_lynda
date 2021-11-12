@@ -5,26 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="navbar.css"/>
-    <link rel="stylesheet" href="home.css"/>
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="home.css" />
   </head>
   <body>
     <div id="nab"></div>
     <div id="div1">
       <div class="text-area">
-        <h2>username, grow your skills and advance your career with LinkedIn Learning</h2>
+        <h2>
+          username, grow your skills and advance your career with LinkedIn
+          Learning
+        </h2>
         <div id="div2">
-          <img src="https://static-exp1.licdn.com/sc/h/8le3lme5t31ikkcrqzon06b5x" alt="">
+          <img
+            src="https://static-exp1.licdn.com/sc/h/8le3lme5t31ikkcrqzon06b5x"
+            alt=""
+          />
           <p>Millions of members are on LinkedIn Learning</p>
         </div>
-        <div class="strt-free">
-           Start my free month
-        </div>
+        <div class="strt-free">Start my free month</div>
         <p class="learn">Need to train your team? Learn More.</p>
       </div>
 
       <div class="site">
-        <img src="https://static-exp1.licdn.com/sc/h/cch95u9n3wpbme2zzh5n4uwg0"/>
+        <img
+          src="https://static-exp1.licdn.com/sc/h/cch95u9n3wpbme2zzh5n4uwg0"
+        />
       </div>
     </div>
     <!-- footer start from here -->
@@ -35,15 +41,26 @@
         <li>Become a Instructor</li>
         <li>Buy for my team</li>
         <li>Help</li>
-        <li>Privacy & Terms<img src="https://img.icons8.com/small/16/000000/private-pv2.png"/></li>
+        <li>
+          Privacy & Terms<img
+            src="https://img.icons8.com/small/16/000000/private-pv2.png"
+          />
+        </li>
         <li>Accessibility</li>
-        <li>Apps<img src="https://img.icons8.com/small/16/000000/private-pv2.png"/></li>
+        <li>
+          Apps<img
+            src="https://img.icons8.com/small/16/000000/private-pv2.png"
+          />
+        </li>
       </ul>
       <div id="last-line">
-        <h1>Linked</h1><img src="https://th.bing.com/th?q=LinkedIn+Logo+HD&w=120&h=120&c=1&rs=1&qlt=90&cb=1&pid=InlineBlock&mkt=en-IN&adlt=moderate&t=1&mw=247"
-        alt="iN">
+        <h1>Linked</h1>
+        <img
+          src="https://th.bing.com/th?q=LinkedIn+Logo+HD&w=120&h=120&c=1&rs=1&qlt=90&cb=1&pid=InlineBlock&mkt=en-IN&adlt=moderate&t=1&mw=247"
+          alt="iN"
+        />
         <span>LinkedIn Corporation © 2021</span>
-        </div>
+      </div>
     </div>
     <!-- footer end -->
   </body>
@@ -61,8 +78,30 @@
   });
 
   let drop = document.getElementById("menu");
-  drop.addEventListener("mouseleave",users =>{
+  drop.addEventListener("mouseleave", (users) => {
     let menu = document.getElementById("menu");
-      menu.style.display = "none";
+    menu.style.display = "none";
   });
+
+  let search_btn = document.getElementById("search-btn");
+  search_btn.addEventListener("click", search);
+
+  async function search() {
+    let input_search = document.getElementById("search-input").value;
+
+    let res = await fetch("./search-js/search.json");
+    let d = await res.json();
+
+    let data = d.data;
+    // console.log('data:', data)
+
+    let scrh = data.filter((el) => {
+       
+      if (el.title.toLowerCase().includes(input_search)) {
+        return el;
+      }
+    });
+     console.log("scrh:", scrh);
+     localStorage.setItem("search",JSON.stringify(scrh));
+  }
 </script>

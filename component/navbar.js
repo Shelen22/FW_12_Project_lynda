@@ -12,7 +12,7 @@ function navbar(){
         </div>
         <div id="search">
             <input type="text" id="search-input" placeholder="Search for skills, subject or software" />
-            <button>
+            <button id="search-btn">
                 <img src="https://img.icons8.com/material-rounded/24/000000/search.png" />
             </button>
         </div>
