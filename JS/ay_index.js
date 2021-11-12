@@ -231,64 +231,104 @@ function showData_R(){
 
 showData_R()
 
-
+var flag_intro = true
 function intro(){
     // console.log('intro triggered')
-        var intro_cont_div = document.getElementById('intro_cont')
-        intro_cont_div.innerHTML = null
-        var ul = document.createElement('ul') 
-        ul.style.listStyle = 'circle' 
+        if(flag_intro){
+            flag_intro = false
 
-        for( var i = 0 ; i < data_R[0].introduction.length ; i++){
-        var li = document.createElement('li')
-        li.textContent = data_R[0].introduction[i]
-        ul.append(li)
-        intro_cont_div.append(ul)
+            document.getElementById('intro_cont').style.display = 'block'
+            
+            var intro_cont_div = document.getElementById('intro_cont')
+            intro_cont_div.innerHTML = null
+            var ul = document.createElement('ul') 
+            ul.style.listStyle = 'circle' 
+
+            for( var i = 0 ; i < data_R[0].introduction.length ; i++){
+            var li = document.createElement('li')
+            li.textContent = data_R[0].introduction[i]
+            ul.append(li)
+            intro_cont_div.append(ul)
+            }
+        }else{
+            document.getElementById('intro_cont').style.display = 'none'
+            flag_intro = true
         }
 }
 
+var flag_started = true
 function started(){
-    console.log('strated triggerd')
-    var started_cont_div = document.getElementById('getting_started_cont')
-    started_cont_div.innerHTML = null
-    var ul = document.createElement('ul') 
-    ul.style.listStyle = 'circle' 
+    // console.log('strated triggerd')
+    if(flag_started){
+        flag_started = false
 
-    for( var i = 0 ; i < data_R[0].Getting_Started.length ; i++){
+        document.getElementById('getting_started_cont').style.display = 'block'
+
+        var started_cont_div = document.getElementById('getting_started_cont')
+        started_cont_div.innerHTML = null
+        var ul = document.createElement('ul') 
+        ul.style.listStyle = 'circle' 
+
+        for( var i = 0 ; i < data_R[0].Getting_Started.length ; i++){
         var li = document.createElement('li')
         li.textContent = data_R[0].Getting_Started[i]
         ul.append(li)
         started_cont_div.append(ul)
+        }
+    }else{
+        document.getElementById('getting_started_cont').style.display = 'none'
+        flag_started = true
     }
 }
 
+var flag_basics = true
 function basics(){
-    console.log('basics triggerd')
-    var basics_cont_div = document.getElementById('Basics_cont')
-    basics_cont_div.innerHTML = null
-    var ul = document.createElement('ul') 
-    ul.style.listStyle = 'circle' 
+    // console.log('basics triggerd')
+    if(flag_basics){
+        flag_basics = false
 
-    for( var i = 0 ; i < data_R[0].Basics.length ; i++){
-        var li = document.createElement('li')
-        li.textContent = data_R[0].Basics[i]
-        ul.append(li)
-        basics_cont_div.append(ul)
+        document.getElementById('Basics_cont').style.display = 'block'
+
+        var basics_cont_div = document.getElementById('Basics_cont')
+        basics_cont_div.innerHTML = null
+        var ul = document.createElement('ul') 
+        ul.style.listStyle = 'circle' 
+
+        for( var i = 0 ; i < data_R[0].Basics.length ; i++){
+            var li = document.createElement('li')
+            li.textContent = data_R[0].Basics[i]
+            ul.append(li)
+            basics_cont_div.append(ul)
+        }
+
+    }else{
+        document.getElementById('Basics_cont').style.display = 'none'
+        flag_basics = true
     }
 }
 
+var flag_con = true
 function con(){
-    console.log('conclude triggerd')
-    var conclude_cont_div = document.getElementById('Coclusion_cont')
-    conclude_cont_div.innerHTML = null
-    var ul = document.createElement('ul') 
-    ul.style.listStyle = 'circle' 
+    // console.log('conclude triggerd')
+    if(flag_con){
 
-    for( var i = 0 ; i < data_R[0].Conclusions.length ; i++){
-        var li = document.createElement('li')        
-        li.textContent = data_R[0].Conclusions[i]
-        ul.append(li)
-        conclude_cont_div.append(ul)
+        flag_con = false
+        document.getElementById('Coclusion_cont').style.display = 'block'
+
+            var conclude_cont_div = document.getElementById('Coclusion_cont')
+            conclude_cont_div.innerHTML = null
+            var ul = document.createElement('ul') 
+            ul.style.listStyle = 'circle' 
+
+        for( var i = 0 ; i < data_R[0].Conclusions.length ; i++){
+            var li = document.createElement('li')        
+            li.textContent = data_R[0].Conclusions[i]
+            ul.append(li)
+            conclude_cont_div.append(ul)
+        }
+    }else{
+        document.getElementById('Coclusion_cont').style.display = 'none'
+        flag_con = true
     }
 }
 
