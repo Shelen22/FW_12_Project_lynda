@@ -268,6 +268,8 @@ body{
      letter-spacing: 2px;
      color:#057642;
      margin-top:20px;  
+     display: flex;
+     justify-content: center;
   }
   #navbar-f #statuss{
     color:#057642; 
@@ -276,4 +278,12 @@ body{
   #navbar-f #movright{
     margin-left: 55%;
     font-weight: bolder;
+  }
+  #d1,#d2,#d3{
+    margin:5px;
+     display: none;
+     
+  }
+  #happy-learn{
+      display: none;
   }
