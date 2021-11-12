@@ -88,19 +88,19 @@ data_S.forEach((el)=>{
     var img_div = document.createElement('div')
     var img = document.createElement('img')
     img.src = `images/${el.img}`
-    img.style.width = '290px'
-    img.style.height = '180px'
+    img.style.width = '220px'
+    img.style.height = '130px'
     img_div.append(img)
 
     var det_div = document.createElement('div')
     
-    var h3 = document.createElement('h3')
-    h3.textContent = el.title
+    var h4 = document.createElement('h4')
+    h4.textContent = el.title
 
     var p = document.createElement('p')
     p.textContent ='By: '+ el.author
    
-    det_div.append( h3,p)
+    det_div.append( h4,p)
 
     main.append(img_div,det_div)
     parent.append(main)
@@ -324,14 +324,15 @@ data_related.forEach((el)=>{
 
     var det_div = document.createElement('div')
     
-    var h3 = document.createElement('h3')
-    h3.textContent = el.head
+    var h4 = document.createElement('h4')
+    h4.textContent = el.head
+    h4.className = 'zero_margin'
 
     var p = document.createElement('p')
     p.textContent = el.title
    
     // var hr = document.createElement('hr')
-    det_div.append( h3,p)
+    det_div.append( h4,p)
 
    
     

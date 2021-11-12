@@ -27,7 +27,7 @@ body{
 }
 
 #cont>div:nth-child(2)>div:nth-child(1){
-   width: 700px;
+   width: 70%;
 }
 
 #bigimg{
@@ -73,7 +73,7 @@ body{
     overflow-y: scroll;
 }
 p{
-    font-size: large;
+    font-size: medium;
     padding-bottom: 18px;
 }
 ul{
@@ -84,7 +84,7 @@ ul{
     gap:2px;
 }
 .sub_head{
-    font-size: large;
+    font-size: medium;
 }
 .circle_border{
     border:1px solid black;
@@ -130,8 +130,8 @@ li{
 }
 #suggest_course{
     display: grid;
-    grid-template-columns:28% 28% 28%;
-    gap: 70px;
+    grid-template-columns:23% 23% 23%;
+    gap: 15%;
 }
 
 /* bottom right css starts here */
