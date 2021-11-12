@@ -16,24 +16,19 @@
 
 
 #span_1,#span_2 {
-    /* position: absolute;
-    top: 34%; */
-    font-size: 40px;
-    font-weight: 1000;
     cursor: pointer;
-    left: .5%;
-    z-index: 1;
-    margin-left: 5px;
-    margin-right: 10px;
-    border: 1px solid black;
-    border-radius: 55%;
+    float:left;
+   z-index: 1;
+   border-radius: 50%;
+    padding:0 10px;
+   border: 1px solid black;
+   transition: .5s;
+   margin:5px;
+   font-size:30px;
    
 }
-#span_1{
-    font-size: 30px;
-}
-#span_2{
-    font-size: 30px;
+#span_1:hover,#span_2:hover{
+    background-color: rgb(194, 189, 189);
 }
 .section3 {
     width: 98%;
