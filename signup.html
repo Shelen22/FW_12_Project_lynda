@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up || LinkedIn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,100;1,200;1,300;1,800&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="./style/signup.css">
+</head>
+<body>
+    <header id="main-header">
+        <div class="header-title">
+            <h1>Linked<span class="text-primary">in</span></h1>
+        </div>
+        <div class="header-text">Make The Most Of Your Professional Life</div>
+    </header>
+    <section class="main-section">
+        <form id="myForm" onsubmit="signup(event)">
+            <div id="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" />
+            </div>
+            <div >
+                <label for="username">Username</label>
+                <input type="text" id="username" />
+            </div>
+
+            <div id="">
+                <label for="password">Password(6 or more characters)</label>
+                <input type="password" id="password" />
+            </div>
+            <div class="helper-text">
+                <small>
+                    By Clicking Agree & Jion, You Agree to the LinkedIn
+                    <span class="text-primary">
+                        <a href="#">User Agreement,</a>
+                        <a href="#">Primary Policy,</a>
+                        <a href="#">Cookie Policy</a>
+
+
+                    </span>
+                </small>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Agree & Join" class="submit-btn" />
+            </div>
+            <p class="sign-in-text">
+                Already On LinkedIn?<a href="signin.html">Sign In</a>
+            </p>
+        </form>
+    </section>
+    <footer id="main-footer">
+        Linked<span>in</span> &copy;2021
+    </footer>
+
+</body>
+
+
+</html>
+<script>
+    let userId = Math.floor( Math.random()*999 ) + 100;
+    //    const myForm=document.querySelector(`.my-form`);
+    //    const emailInput=document.querySelector(`#email-input`);
+    //    const passwordInput=document.querySelector(`#password-input`);
+
+    //    myForm.addEventListener(`submit`,formSubmitted);
+
+    //    function formSubmitted(e){
+    //        e.preventDefault();
+    //        if(emailInput.value === ''){
+    //            emailInput.classList.add('error')
+    //            emailInput.placeholder='Please Enter Your Email';
+    //         }
+    //         if(passwordInput.value === ''){
+    //             passwordInput.classList.add('error')
+    //            passwordInput.placeholder='Please Enter a Strong Password';
+    //         }else{
+    //             window.location='signin.html'
+    //         }
+
+    //    }
+
+
+    async function signup(event) {
+        event.preventDefault();
+
+        let form = document.getElementById("myForm");
+
+        let user_data = {
+            name: `user${userId}`,
+            email: form.email.value,
+            password: form.password.value,
+            username: form.username.value,
+            mobile: `99${userId}8389`,
+            description: `filler`
+        }
+
+        user_data = JSON.stringify(user_data);
+        console.log(user_data);
+
+        let res = await fetch("https://masai-api-mocker.herokuapp.com/auth/register", {
+            method: "POST",
+            body: user_data,
+            headers: {
+                "Content-Type": "application/json",
+            },
+        })
+
+        res = await res.json();
+        console.log(res);
+
+        window.location.href = './signin.html';
+    }
+
+
+
+</script>
