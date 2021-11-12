@@ -114,7 +114,7 @@ ul{
 #check li::before{
     content: '✓';
 }
-li{
+.li{
     margin: 1px;
     font-size: 16px;
 }
