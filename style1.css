@@ -79,13 +79,9 @@
     height: 400px;
    
     overflow: visible;
-<<<<<<< HEAD
+
     transform:scaleY(1.2)
-=======
-    transform: scale(1.05);
-  
->>>>>>> 95bb3de19f1618ac35c0df5c1fff61e0827d0f1d
-    
+
 }
 .a7{
     display: none;
