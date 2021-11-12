@@ -233,14 +233,16 @@ showData_R()
 
 function intro(){
     // console.log('intro triggered')
-        var intro_cont_div = document.getElementById('intro_cont')
-        intro_cont_div.innerHTML = null
-        for( var i = 0 ; i < data_R[0].introduction.length ; i++){
-        var li = document.createElement('li')
         
-        li.textContent = data_R[0].introduction[i]
-        intro_cont_div.append(li)
-        }
+            var intro_cont_div = document.getElementById('intro_cont')
+            intro_cont_div.innerHTML = null
+            for( var i = 0 ; i < data_R[0].introduction.length ; i++){
+            var li = document.createElement('li')
+        
+            li.textContent = data_R[0].introduction[i]
+            intro_cont_div.append(li)
+            flag_intro = false
+            intro_cont_div.style.display = "block"
 }
 
 function started(){
