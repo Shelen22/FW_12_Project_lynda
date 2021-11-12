@@ -29,7 +29,7 @@ var parent = document.getElementById('imgdiv')
 
 function showdata(){
     dis_data.forEach((el)=>{
-        parent.style.backgroundImage = `linear-gradient(to left,rgba(255, 255, 255, 0.4),rgba(255,255,255,1)60%),url(./images/${el.image})`  
+        parent.style.backgroundImage = `linear-gradient(to left,rgba(255, 255, 255, 0.4),rgba(255,255,255,1)60%),url(images/${el.image})`  
         
         var title = document.createElement('h2')
         title.textContent = el.name
@@ -87,7 +87,7 @@ data_S.forEach((el)=>{
 
     var img_div = document.createElement('div')
     var img = document.createElement('img')
-    img.src = `./images/${el.img}`
+    img.src = `images/${el.img}`
     img.style.width = '290px'
     img.style.height = '180px'
     img_div.append(img)
@@ -316,7 +316,7 @@ data_related.forEach((el)=>{
 
     var img_div = document.createElement('div')
     var img = document.createElement('img')
-    img.src = `./images/${el.img}`
+    img.src = `images/${el.img}`
     img.style.width = '158px'
     img.style.height = '92px'
     
