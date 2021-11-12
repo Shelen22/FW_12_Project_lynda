@@ -73,7 +73,7 @@ body{
     overflow-y: scroll;
 }
 p{
-    font-size: medium;
+    font-size: small;
     padding-bottom: 18px;
 }
 ul{
