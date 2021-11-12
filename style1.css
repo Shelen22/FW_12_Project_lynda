@@ -1,8 +1,8 @@
-* {
+/* * {
     padding: 0;
     margin: 0;
   
-}
+} */
 
 .main1 {
     width: 100%;
@@ -81,7 +81,6 @@
     overflow: visible;
 
     transform:scaleY(1.2)
-
 }
 .a7{
     display: none;
