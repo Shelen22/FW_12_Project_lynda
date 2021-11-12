@@ -137,7 +137,7 @@ function update(){
     var imgdiv = document.getElementById('video-img');
     imgdiv.append(img,div,price); 
     
-    let tax = .36*obj.price;
+    let tax = .18*obj.price;
     document.getElementById('taxprice').innerHTML = '₹'+tax+'.00';
 
     let sum = tax+obj.price;
