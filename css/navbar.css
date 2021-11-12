@@ -10,7 +10,7 @@
     width: 100%;
     top: 0;
     height: 58px;
-    /* z-index: 1; */
+    z-index: 999;
     box-shadow: gray;
     /* box-shadow: 0 0 0 1px rgb(0 0 0 / 15%),
                 0 2px 3px rgb(0 0 0 / 10%); */
@@ -138,6 +138,7 @@
 .menu{
 position: absolute;
 display: none;
+z-index: 999;
 top: 50px;
 right: 370px;
 padding: 10px 0px;
@@ -240,6 +241,7 @@ transition: .5s;
   height:40px ;
   background-color:#f3f6f8;
   top: 56px;
+  z-index: 999;
   position: fixed;
   box-shadow: 0 0 0 1px rgb(0 0 0 / 15%), 0 2px 3px rgb(0 0 0 / 20%);
  }

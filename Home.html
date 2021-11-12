@@ -33,6 +33,103 @@
         />
       </div>
     </div>
+    <!-- mid part  -->
+    <div class="carousal_4">
+      <main class='main4'>
+          <div class="div4_offer">
+              <div class="div4_offer1"> 
+                  <h2>Top picks for <span id="username-chnge">user</span></h2>
+              </div>
+              <div class="div4_offer2">
+                  <span id='span_7'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" width="16" height="16" focusable="false">
+                      <path d="M7 8l4 5.9L9.5 15 5.3 8.8a1.22 1.22 0 010-1.6L9.5 1 11 2.1z"></path>
+                    </svg>
+              </span>
+                  <span id='span_8'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" width="16" height="16" focusable="false">
+                      <path d="M9 8L5 2.07 6.54 1l4.2 6.15a1.5 1.5 0 010 1.69L6.54 15 5 13.93z"></path>
+                    </svg>
+                    </span>
+              </div>
+          </div>
+         
+          <section id='sc'class='section4'>
+            
+          </section>
+      </main>
+  </div>
+  <div class="carousal_3">
+    <main class='main3'>
+        <div class="div3_offer">
+            <div class="div3_offer1">
+                <h2>New Release</h2>
+            </div>
+            <div class="div3_offer2">
+              <span id='span_1'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" width="16" height="16" focusable="false">
+                  <path d="M7 8l4 5.9L9.5 15 5.3 8.8a1.22 1.22 0 010-1.6L9.5 1 11 2.1z"></path>
+                </svg>
+          </span>
+              <span id='span_2'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" width="16" height="16" focusable="false">
+                  <path d="M9 8L5 2.07 6.54 1l4.2 6.15a1.5 1.5 0 010 1.69L6.54 15 5 13.93z"></path>
+                </svg>
+                </span>
+            </div>
+        </div>
+       
+        <section id='sc3'class='section3'>
+          
+        </section>
+    </main>
+</div>
+<div class="carousal_2">
+  <main class='main2'>
+      <div class="div2_offer">
+          <div class="div2_offer1">
+              <h2>Live office hours with experts</h2>
+          </div>
+          <div class="div2_offer2">
+
+              <!-- <span id='span_3'>&#139;&#8211;&#160;&#160;&#160;</span> -->
+              <span id='span_3'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" width="16" height="16" focusable="false">
+                  <path d="M7 8l4 5.9L9.5 15 5.3 8.8a1.22 1.22 0 010-1.6L9.5 1 11 2.1z"></path>
+                </svg>
+          </span>
+              <span id='span_4'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" width="16" height="16" focusable="false">
+                  <path d="M9 8L5 2.07 6.54 1l4.2 6.15a1.5 1.5 0 010 1.69L6.54 15 5 13.93z"></path>
+                </svg>
+                </span>
+          </div>
+      </div>
+
+      <section id='sc2' class='section2'>
+
+      </section>
+  </main>
+</div>
+<div class="carousal_1">
+  <main class='main1'>
+      <div class="div1_offer">
+          <div class="div1_offer1"> 
+              <h2>Because you saved "CIPP/US "</h2>
+          </div>
+          <div class="div1_offer2">
+              
+              <span id='span_5'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" width="16" height="16" focusable="false">
+                  <path d="M7 8l4 5.9L9.5 15 5.3 8.8a1.22 1.22 0 010-1.6L9.5 1 11 2.1z"></path>
+                </svg>
+          </span>
+              <span id='span_6'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" width="16" height="16" focusable="false">
+                  <path d="M9 8L5 2.07 6.54 1l4.2 6.15a1.5 1.5 0 010 1.69L6.54 15 5 13.93z"></path>
+                </svg>
+                </span>
+          </div>
+      </div>
+     
+      <section id='sc1'class='section1'>
+        
+      </section>
+  </main>
+</div>
+    <!-- mid part end -->
     <!-- footer start from here -->
     <div id="footer">
       <ul>
@@ -108,9 +205,14 @@
 
   let reg = document.getElementById('change');
   let reg2 = document.getElementById('chnge');
+  let reg3 = document.getElementById('username-chnge');
+
+
   if(localStorage.getItem('user') !== null){
         reg.innerHTML = JSON.parse(localStorage.getItem('user'));
         reg2.innerHTML = JSON.parse(localStorage.getItem('user'));
+        reg3.innerHTML = JSON.parse(localStorage.getItem('user'));
+
         let signup = document.querySelector(".sign-up");
         signup.style.display ="none";
         let signup2 = document.querySelector(".sign-up-remove");
@@ -124,7 +226,10 @@
         let menu = document.getElementById("menu");
         menu.style.display = "none";
         reg2.innerHTML = "username";
-        reg.innerHTML = "username";  
+        reg.innerHTML = "username";
+        reg3.innerHTML = "username";  
+
     });
 
 </script>
+<script src="./Js/Home.js"></script>
