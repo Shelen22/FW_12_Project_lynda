@@ -159,8 +159,8 @@
     move(p)
   })
   function move(data){
-    localStorage.setItem('storage',JSON.stringify(data));
-    window.location.href ='amit.html'
+    localStorage.setItem('H_data',JSON.stringify(data));
+    window.location.href ='/ay_index.html'
   }
         })
         var span7 = document.getElementById('span_7');
@@ -382,8 +382,8 @@
                 move(p)
             })
             function move(data) {
-                localStorage.setItem('storage', JSON.stringify(data));
-                window.location.href = 'amit.html'
+                localStorage.setItem('H_data', JSON.stringify(data));
+                window.location.href = 'ay_index.html'
             }
         })
         var span1 = document.getElementById('span_1');
@@ -606,8 +606,8 @@
                 move(p)
             })
             function move(data) {
-                localStorage.setItem('storage', JSON.stringify(data));
-                window.location.href = 'amit.html'
+                localStorage.setItem('H_data', JSON.stringify(data));
+                window.location.href = 'ay_index.html'
             }
         })
         var span3 = document.getElementById('span_3');
@@ -831,8 +831,8 @@
     move(p)
   })
   function move(data){
-    localStorage.setItem('storage',JSON.stringify(data));
-    window.location.href ='amit.html'
+    localStorage.setItem('H_data',JSON.stringify(data));
+    window.location.href ='/ay_index.html'
   }
         })
         var span5 = document.getElementById('span_5');

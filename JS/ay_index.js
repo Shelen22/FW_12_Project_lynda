@@ -1,37 +1,49 @@
-let data = [
-    {
-      title: "PYTHON",
-      name: "Python programming for beginners",
-      by: "By:Kethrin",
-      date: "19th September 2020",
-      video: "",
-      link: "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS",
-      time: 40,
-      price: 1500,
-      image:'1635784148148.jpeg'
-    }
-]
+// let H_data ={
+//         by: "By:shekhar",
+//         date: "09th may 2018",
+//         img: "https://www.incimages.com/uploaded_files/image/1920x1080/public-speaking-1940x900_35061.jpg",
+//         link: "https://www.tutorialspoint.com/react_native/react_native_overview.htm",
+//         name: "Create and design your own first website "
+//         price: 5999,
+//         time: 4500
+//         title: "REACT"
+// }
+
+// let data = [
+//     {
+//       title: "PYTHON",
+//       name: "Python programming for beginners",
+//       by: "By:Kethrin",
+//       date: "19th September 2020",
+//       video: "",
+//       link: "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS",
+//       time: 40,
+//       price: 1500,
+//       image:'1635784148148.jpeg'
+//     }
+// ]
 
 
-if(sessionStorage.getItem('course') == null){
-    sessionStorage.setItem('course',JSON.stringify([]))
-}
-var arr = JSON.parse(sessionStorage.getItem('course'))
-if(arr.length == 0){
-    arr.push(data[0]) 
-    sessionStorage.setItem('course',JSON.stringify(arr))
-}
-
-var dis_data = JSON.parse(sessionStorage.getItem('course'))
+// if(sessionStorage.getItem('course') == null){
+//     sessionStorage.setItem('course',JSON.stringify([]))
+// }
+// var arr = JSON.parse(sessionStorage.getItem('course'))
+// if(arr.length == 0){
+//     arr.push(data[0]) 
+//     sessionStorage.setItem('course',JSON.stringify(arr))
+// }
+var dis_data = []
+var obj = JSON.parse(localStorage.getItem('H_data'))
+dis_data.push(obj)
 console.log(dis_data)
 
 var parent = document.getElementById('imgdiv')
 
 function showdata(){
     dis_data.forEach((el)=>{
-        parent.style.backgroundImage = `linear-gradient(to left,rgba(255, 255, 255, 0.4),rgba(255,255,255,1)60%),url(images/${el.image})`  
+        parent.style.backgroundImage = `linear-gradient(to left,rgba(255, 255, 255, 0.4),rgba(255,255,255,1)60%),url("${el.img}")`;  
         
-        var title = document.createElement('h4')
+        var title = document.createElement('h6')
         title.textContent = el.name
 
         var release = document.createElement('p');
@@ -110,14 +122,14 @@ data_S.forEach((el)=>{
 
 var data_R = [
     {
-        title:"PYTHON",
+        title:"Python",
         introduction :['Learing Python','What you shoyl know','Exercise files'],
         Getting_Started:['Installing python','How to run the python examples','Installing VS Code','Chapter Quiz'],
         Basics:['Your first python program','Running Python frm VS Code','Variables and expressions','Python fuunctions'],
         Conclusions:['Next steps']
     },
     {
-        title:'MS Excel',
+        title:'MS EXCEL',
         introduction:['Welcome','Using the exercise files'],
         Getting_Started:['Using the menu system','using the Quick Access Toolbar','Understanding workbooks and worksheets','Using the Formula bar','Using the Status Bar','Using navigation tools','using shortcutmenus and the Mini toolbar','Creating new workbooks','Using Excel Help'],
         Basics:['Entering data with Autofill','Working with dates and times','Using Undo and Redo','Adding comments','Using Save or Save As'],
@@ -158,8 +170,8 @@ var parent_scroll = document.getElementById('scroll_box')
 
 function showData_R(){
     data_R.forEach((el)=>{
-        for( var i = 0 ; i < data.length ; i++ ){
-            if( el.title == data[i].title ){
+        for( var i = 0 ; i < dis_data.length ; i++ ){
+            if( el.title == dis_data[0].title ){
 
                 var click = document.createElement('h4')
                 click.textContent = '>'
@@ -227,6 +239,7 @@ function showData_R(){
             }
         }
     })
+    dis_data = []
 }
 
 showData_R()
