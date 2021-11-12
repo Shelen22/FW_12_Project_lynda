@@ -38,7 +38,7 @@ body{
 #imgdiv{
     border:1px solid rgb(253, 251, 251);
     font-size: small;
-    height: 400px;
+    height: 350px;
     background-repeat: no-repeat;
     background-position: right;
     padding:20px 0px 0px 60px; 
@@ -119,10 +119,10 @@ ul{
 #check li::before{
     content: '✓';
 }
-.li{
+/* .li{
     margin: 1px;
     font-size: 16px;
-}
+} */
 
 .instruct_img{
     width: 90px;
@@ -157,7 +157,7 @@ ul{
     font-family: 'Times New Roman', Times, serif;
     color: rgb(79, 83, 83);  
     display: flex;
-    font-size: 22px;
+    font-size: 19px;
 }
 #scroll_box{
     border: 1px solid rgb(179, 183, 184);
