@@ -7,9 +7,10 @@
     <title>Course_detail</title>
     <link rel="stylesheet" href="css/ay_style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./style/navbar.css"> -->
 </head>
 <body>
-    
+    <!-- <div id="nab"></div> -->
     <div id = 'cont'>
         <div id ='imgdiv'>
             <div id ='head_detail'></div>
@@ -123,4 +124,22 @@
     </div>
 </body>
 </html>
+<!-- <script type="module">
+      import { navbar } from "./component/navbar.js";
+
+let nab = document.getElementById("nab");
+nab.innerHTML = navbar();
+
+let dropdown = document.getElementById("drop");
+dropdown.addEventListener("click", (user) => {
+  let menu = document.getElementById("menu");
+  menu.style.display = "block";
+});
+
+let drop = document.getElementById("menu");
+drop.addEventListener("mouseleave", (users) => {
+  let menu = document.getElementById("menu");
+  menu.style.display = "none";
+});
+</script> -->
 <script src="JS/ay_index.js"></script>
