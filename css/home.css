@@ -75,8 +75,8 @@
 
 #footer{
    bottom: 0;
-   position: fixed;
-   height:110px;
+   position: relative;
+   height:120px;
    background-color: #fff;
    width: 100%;
    box-shadow: 0 0 0 1px rgb(0 0 0 / 15%),

@@ -460,3 +460,50 @@ color: grey;
     text-decoration: underline;
 
 }
+/* ---- footer start here ---- */
+
+#footer{
+    margin-bottom: -63px;
+    /* padding: 0;
+    margin: 0; */
+    position:relative;
+    height:max-content;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 15%),
+                0 6px 9px rgb(0 0 0 / 20%);
+ }
+ #footer > ul{
+   display: flex;
+   gap: 30px;
+   /* margin-top: 10px; */
+   padding: 35px 35px 10px;
+   margin-left:17%;
+ }
+ #footer > ul > li{
+   font-size:13px;
+ }
+ #footer > ul > li {
+   display: flex;
+ } 
+ #footer > ul > li:hover{
+   cursor: pointer;
+   text-decoration: underline;
+ }
+ #last-line{
+   align-items: center;  
+   justify-content:center;
+   margin-bottom:60px;
+   display: flex;
+ }
+ #last-line > h1{
+   font-size: 20px;
+ }
+ #last-line > span{
+   font-size: 12px;
+   margin-left: 14px;
+ }
+ #last-line > img{
+    width:20px;
+    height:20px;
+ }

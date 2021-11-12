@@ -1,15 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+   <link rel="stylesheet" href="./css/search.css">
+   <link rel="stylesheet" href="./css/navbar.css">
+  <body>
+    <div id="nab"></div>
+    <div id="get-items"></div>
+  </body>
 </html>
-<script>
-    
+<script type="module">
+    import { navbar } from "./component/navbar.js";
+
+let nab = document.getElementById("nab");
+nab.innerHTML = navbar();
+
+let dropdown = document.getElementById("drop");
+dropdown.addEventListener("click", (user) => {
+  let menu = document.getElementById("menu");
+  menu.style.display = "block";
+});
+
+let drop = document.getElementById("menu");
+drop.addEventListener("mouseleave", (users) => {
+  let menu = document.getElementById("menu");
+  menu.style.display = "none";
+});
 </script>
+<script src="./JS/search.js"></script>

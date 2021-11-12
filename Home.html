@@ -101,8 +101,9 @@
         return el;
       }
     });
-     console.log("scrh:", scrh);
+    //  console.log("scrh:", scrh);
      localStorage.setItem("search",JSON.stringify(scrh));
+     window.location.href = "search.html"
   }
 
   let reg = document.getElementById('change');
@@ -124,6 +125,6 @@
         menu.style.display = "none";
         reg2.innerHTML = "username";
         reg.innerHTML = "username";  
-    })
+    });
 
 </script>

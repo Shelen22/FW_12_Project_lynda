@@ -32,7 +32,7 @@ function navbar(){
             </div>
         </div>
         <div id="sign-up" class="sign-up"><a href="./signup.html">Sign up</a></div>
-        <div id="sign-up-remove" class="sign-up-remove"><a href="#">Start my free month</a></div>
+        <div id="sign-up-remove" class="sign-up-remove"><a href="./checkoutfree.html">Start my free month</a></div>
     </navbar>
 </div>
 <div id="second">
