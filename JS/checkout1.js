@@ -25,6 +25,7 @@ function payment(){
     var cvv = form.cvv.value;
     var pincode = form.pincode.value;
     
+var flag = 0;
 
     if(firstname.length > 0){
 
@@ -32,18 +33,22 @@ function payment(){
         for(let i=0 ; i<firstname.length ; i++){
             if(firstname[i] >= 0){
               count++;
+              
             }
         }
 
         if(count > 0){
             document.getElementById('wrongf').innerHTML = "Please enter valid first name";
+            flag = 0;
         }else{
             document.getElementById('wrongf').innerHTML = ""; 
+            flag++;
         }
         
     }
     else{
         document.getElementById('wrongf').innerHTML="first name Required";
+        flag = 0;
     }
 
     if(lastname.length > 0){
@@ -57,36 +62,45 @@ function payment(){
 
         if(count > 0){
             document.getElementById('wrongl').innerHTML = "Please enter valid last name";
+            flag = 0;
         }else{
             document.getElementById('wrongl').innerHTML = ""; 
+            flag++;
         }
         
     }
     else{
         document.getElementById('wrongl').innerHTML="last name Required";
+        flag = 0;
     }
 
    
 
     if(cardno == "" || cardno.length != 16 || cardno == '0000000000000000'){
-        document.getElementById('wrongc').innerHTML = "Please enter a valid card number"
+        document.getElementById('wrongc').innerHTML = "Please enter a valid card number";
+        flag = 0;
     }
     else{
         document.getElementById('wrongc').innerHTML="";
+        flag++;
     }
 
     if(cvv == "" || cvv.length != 3 || cvv == '000'){
         document.getElementById('wrongcvv').innerHTML = "Invalid security code";
+        flag = 0;
     }
     else{
         document.getElementById('wrongcvv').innerHTML="";
+        flag++;
     }
 
     if(pincode == "" || pincode.length != 6 || pincode == '000000'){
        document.getElementById('wrongpin').innerHTML = "Please enter a valid post code";
+       flag = 0 ;
     }
     else{
         document.getElementById('wrongpin').innerHTML="";
+        flag++;
     }
 
     
@@ -109,13 +123,23 @@ function payment(){
 
            if(count != 3 ){
                document.getElementById('wronge').innerHTML = "Invalid expiration date";
+               flag = 0;
            }else{
             document.getElementById('wronge').innerHTML="";
+            flag++;
            }
            
     }
     else{
         document.getElementById('wronge').innerHTML="Invalid expiration date";
+        flag = 0;
+    }
+
+    if(flag == 6){
+        function runn(){
+            window.location.href = 'thanks.html';
+        }
+        setTimeout(runn,2000);
     }
 
 }
