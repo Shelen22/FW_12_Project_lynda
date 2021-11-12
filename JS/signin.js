@@ -11,6 +11,7 @@ async function login(e) {
 
     let data = JSON.stringify(user_data);
     console.log(data);
+    // amit
 
     let res = await fetch("https://masai-api-mocker.herokuapp.com/auth/login", {
         method: "POST",
