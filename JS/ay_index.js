@@ -35,7 +35,9 @@
 var dis_data = []
 var obj = JSON.parse(localStorage.getItem('H_data'))
 dis_data.push(obj)
-console.log(dis_data)
+// console.log(dis_data)
+var local_title = dis_data[0].title
+console.log('local title is '+local_title)
 
 var parent = document.getElementById('imgdiv')
 
@@ -136,14 +138,14 @@ var data_R = [
         Conclusions:['Goodbye']
     },
     {
-        title:'Sql',
+        title:'SQL',
         introduction:['Understanding SQL','How to use the exercise files','Course overview'],
         Getting_Started:['Database organization','The SELECT statement','Selecting rows','Selecting columns','Counting rows','Inserting data','Updating data','Deleting data'],
         Basics:['Creating a table','Deleting a table','Inserting rows','Deleting rows','The Null value','Constraing columns','Changing a schema','ID columns','Filtering data'],
         Conclusions:['Goodbye']
     },
     {
-        title:'Django',
+        title:'DJANGO',
         introduction:['Rapidly create web applications','what you should know','GitHub and exercise files'],
         Getting_Started:['what is Django','install Python and Django','Create a Django project','Create A  Django app'],
         Basics:['Understand URL patterns','Implement URL patterns','Implement Django views'],
@@ -157,7 +159,7 @@ var data_R = [
         Conclusions:['Next steps']
     },
     {
-        title:'Async',
+        title:'ASYNC',
         introduction:['impplementing smart asynchronous code','What you should know','Environment setup','Getting an OpenWetherMap API key'],
         Getting_Started:['Understanding what aysnchronous means','Defining asynchronous programming','Using callbacks in asynchronous programming','Implementing callbacks for problem-solving','Using error checking with multiple callbacks'],
         Basics:['Undesrtanding the async functions with await statements','Using statements to handle errors in async/await code','Making async/await code backward compatible with polyfill'],
@@ -236,114 +238,166 @@ function showData_R(){
 
                 parent_scroll.append(div1_main,div2_main,div3_main,div4_main)
 
-            }
-        }
+
+                var flag_intro = true
+            function intro(){
+                
+                    if(flag_intro){
+                        flag_intro = false
+
+                        document.getElementById('intro_cont').style.display = 'block'
+                        
+                        var intro_cont_div = document.getElementById('intro_cont')
+                        intro_cont_div.innerHTML = null
+                        var ul = document.createElement('ul') 
+                        ul.style.listStyle = 'circle' 
+
+                        // for( var i = 0 ; i < data_R[0].introduction.length ; i++){
+                        data_R.forEach((el)=>{
+                            if(el.title == local_title){
+                                for(var i = 0 ; i < el.introduction.length ; i++){
+                                    var li = document.createElement('li')
+                                    li.textContent = el.introduction[i]
+                                    ul.append(li)
+                                    intro_cont_div.append(ul)   
+                                }     
+                            }
+                        })
+                    
+                        // }
+                    }else{
+                        document.getElementById('intro_cont').style.display = 'none'
+                        flag_intro = true
+                    }
+                }
+                        }
+                    }
+            
+                    
+                    var flag_started = true
+                    function started(){
+                        // console.log('strated triggerd')
+                        if(flag_started){
+                            flag_started = false
+                    
+                            document.getElementById('getting_started_cont').style.display = 'block'
+                    
+                            var started_cont_div = document.getElementById('getting_started_cont')
+                            started_cont_div.innerHTML = null
+                            var ul = document.createElement('ul') 
+                            ul.style.listStyle = 'circle' 
+                    
+                            data_R.forEach((el)=>{
+                                if(el.title == local_title){
+                                    for(var i = 0 ; i < el.Getting_Started.length ; i++){
+                                        var li = document.createElement('li')
+                                        li.textContent = el.Getting_Started[i]
+                                        ul.append(li)
+                                        started_cont_div.append(ul)   
+                                    }     
+                                }
+                            })
+
+                        }else{
+                            document.getElementById('getting_started_cont').style.display = 'none'
+                            flag_started = true
+                        }
+                    }
+
+
+                    var flag_basics = true
+                    function basics(){
+                        // console.log('basics triggerd')
+                        if(flag_basics){
+                            flag_basics = false
+                    
+                            document.getElementById('Basics_cont').style.display = 'block'
+                    
+                            var basics_cont_div = document.getElementById('Basics_cont')
+                            basics_cont_div.innerHTML = null
+                            var ul = document.createElement('ul') 
+                            ul.style.listStyle = 'circle' 
+
+                           data_R.forEach((el)=>{
+                               if(el.title == local_title){
+                                for( var i = 0 ; i < el.Basics.length ; i++){
+                                    var li = document.createElement('li')
+                                    li.textContent = el.Basics[i]
+                                    ul.append(li)
+                                    basics_cont_div.append(ul)
+                                }
+                               }
+                           })
+                    
+                        }else{
+                            document.getElementById('Basics_cont').style.display = 'none'
+                            flag_basics = true
+                        }
+                    }
+
+                    var flag_con = true
+                    function con(){
+                        // console.log('conclude triggerd')
+                        if(flag_con){
+                    
+                            flag_con = false
+                            document.getElementById('Coclusion_cont').style.display = 'block'
+                    
+                                var conclude_cont_div = document.getElementById('Coclusion_cont')
+                                conclude_cont_div.innerHTML = null
+                                var ul = document.createElement('ul') 
+                                ul.style.listStyle = 'circle' 
+
+                                data_R.forEach((el)=>{
+                                    if(el.title == local_title){
+                                        for( var i = 0 ; i < el.Conclusions.length ; i++){
+                                            var li = document.createElement('li')        
+                                            li.textContent = el.Conclusions[i]
+                                            ul.append(li)
+                                            conclude_cont_div.append(ul)
+                                        }
+                                    }
+                                })
+                            
+                        }else{
+                            document.getElementById('Coclusion_cont').style.display = 'none'
+                            flag_con = true
+                        }
+                    }
+                    
+                    
     })
     dis_data = []
 }
 
 showData_R()
 
-var flag_intro = true
-function intro(){
-    // console.log('intro triggered')
-        if(flag_intro){
-            flag_intro = false
 
-            document.getElementById('intro_cont').style.display = 'block'
-            
-            var intro_cont_div = document.getElementById('intro_cont')
-            intro_cont_div.innerHTML = null
-            var ul = document.createElement('ul') 
-            ul.style.listStyle = 'circle' 
 
-            for( var i = 0 ; i < data_R[0].introduction.length ; i++){
-            var li = document.createElement('li')
-            li.textContent = data_R[0].introduction[i]
-            ul.append(li)
-            intro_cont_div.append(ul)
-            }
-        }else{
-            document.getElementById('intro_cont').style.display = 'none'
-            flag_intro = true
-        }
-}
+// var flag_con = true
+// function con(){
+//     // console.log('conclude triggerd')
+//     if(flag_con){
 
-var flag_started = true
-function started(){
-    // console.log('strated triggerd')
-    if(flag_started){
-        flag_started = false
+//         flag_con = false
+//         document.getElementById('Coclusion_cont').style.display = 'block'
 
-        document.getElementById('getting_started_cont').style.display = 'block'
+//             var conclude_cont_div = document.getElementById('Coclusion_cont')
+//             conclude_cont_div.innerHTML = null
+//             var ul = document.createElement('ul') 
+//             ul.style.listStyle = 'circle' 
 
-        var started_cont_div = document.getElementById('getting_started_cont')
-        started_cont_div.innerHTML = null
-        var ul = document.createElement('ul') 
-        ul.style.listStyle = 'circle' 
-
-        for( var i = 0 ; i < data_R[0].Getting_Started.length ; i++){
-        var li = document.createElement('li')
-        li.textContent = data_R[0].Getting_Started[i]
-        ul.append(li)
-        started_cont_div.append(ul)
-        }
-    }else{
-        document.getElementById('getting_started_cont').style.display = 'none'
-        flag_started = true
-    }
-}
-
-var flag_basics = true
-function basics(){
-    // console.log('basics triggerd')
-    if(flag_basics){
-        flag_basics = false
-
-        document.getElementById('Basics_cont').style.display = 'block'
-
-        var basics_cont_div = document.getElementById('Basics_cont')
-        basics_cont_div.innerHTML = null
-        var ul = document.createElement('ul') 
-        ul.style.listStyle = 'circle' 
-
-        for( var i = 0 ; i < data_R[0].Basics.length ; i++){
-            var li = document.createElement('li')
-            li.textContent = data_R[0].Basics[i]
-            ul.append(li)
-            basics_cont_div.append(ul)
-        }
-
-    }else{
-        document.getElementById('Basics_cont').style.display = 'none'
-        flag_basics = true
-    }
-}
-
-var flag_con = true
-function con(){
-    // console.log('conclude triggerd')
-    if(flag_con){
-
-        flag_con = false
-        document.getElementById('Coclusion_cont').style.display = 'block'
-
-            var conclude_cont_div = document.getElementById('Coclusion_cont')
-            conclude_cont_div.innerHTML = null
-            var ul = document.createElement('ul') 
-            ul.style.listStyle = 'circle' 
-
-        for( var i = 0 ; i < data_R[0].Conclusions.length ; i++){
-            var li = document.createElement('li')        
-            li.textContent = data_R[0].Conclusions[i]
-            ul.append(li)
-            conclude_cont_div.append(ul)
-        }
-    }else{
-        document.getElementById('Coclusion_cont').style.display = 'none'
-        flag_con = true
-    }
-}
+//         for( var i = 0 ; i < data_R[0].Conclusions.length ; i++){
+//             var li = document.createElement('li')        
+//             li.textContent = data_R[0].Conclusions[i]
+//             ul.append(li)
+//             conclude_cont_div.append(ul)
+//         }
+//     }else{
+//         document.getElementById('Coclusion_cont').style.display = 'none'
+//         flag_con = true
+//     }
+// }
 
 // related course scripts + database starts here--------
 
