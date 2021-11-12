@@ -19,9 +19,9 @@
 <div id='happy'>
 
     <img src='https://ozrobotics.com/wp-content/uploads/2017/07/WordPress-Custom-Thank-You-Page-for-WooCommerce.jpg'/>
-    <h2 id='ordersuccess'>Course purchase Successful</h2>
+    <h2 id='ordersuccess'><span id='d1'>Course</span> <span id='d2'>purchase</span> <span id='d3'>Successful</span></h2>
 
-<h1>Happy learning!</h1>
+<h1 id='happy-learn'>Happy learning!</h1>
 </div>
 
 <div id='downspace'></div>
@@ -67,5 +67,23 @@
         window.location.href = "Home.html"
     }
 
-   // setTimeout(redirect,4000);
+    function displayy1(){
+        document.getElementById('d1').style.display = 'block';
+    }
+    function displayy2(){
+        document.getElementById('d2').style.display = 'block';
+    }
+    function displayy3(){
+        document.getElementById('d3').style.display = 'block';
+    }
+
+   setTimeout(displayy1,1000);
+   setTimeout(displayy2,2000);
+   setTimeout(displayy3,3000);
+
+   function happylearn(){
+       document.getElementById('happy-learn').style.display = 'block';
+   }
+   setTimeout(happylearn,4000);
+   // setTimeout(redirect,6000);
 </script>
