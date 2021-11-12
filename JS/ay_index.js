@@ -237,6 +237,7 @@ function intro(){
         intro_cont_div.innerHTML = null
         for( var i = 0 ; i < data_R[0].introduction.length ; i++){
         var li = document.createElement('li')
+        li.className = '.li'
         
         li.textContent = data_R[0].introduction[i]
         intro_cont_div.append(li)
@@ -249,6 +250,7 @@ function started(){
     started_cont_div.innerHTML = null
     for( var i = 0 ; i < data_R[0].Getting_Started.length ; i++){
         var li = document.createElement('li')
+        li.className = '.li'
         
         li.textContent = data_R[0].Getting_Started[i]
         started_cont_div.append(li)
@@ -261,6 +263,7 @@ function basics(){
     basics_cont_div.innerHTML = null
     for( var i = 0 ; i < data_R[0].Basics.length ; i++){
         var li = document.createElement('li')
+        li.className = '.li'
         
         li.textContent = data_R[0].Basics[i]
         basics_cont_div.append(li)
@@ -273,6 +276,7 @@ function con(){
     conclude_cont_div.innerHTML = null
     for( var i = 0 ; i < data_R[0].Conclusions.length ; i++){
         var li = document.createElement('li')
+        li.className = '.li'
         
         li.textContent = data_R[0].Conclusions[i]
         conclude_cont_div.append(li)
