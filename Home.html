@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style/navbar.css" />
-    <link rel="stylesheet" href="./style/home.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/home.css" />
   </head>
   <body>
     <div id="nab"></div>
@@ -23,7 +23,7 @@
           />
           <p>Millions of members are on LinkedIn Learning</p>
         </div>
-        <div class="strt-free">Start my free month</div>
+        <div class="strt-free"><a href="checkoutfree.html">Start my free month</a></div>
         <p class="learn">Need to train your team? Learn More.</p>
       </div>
 
@@ -96,7 +96,7 @@
     // console.log('data:', data)
 
     let scrh = data.filter((el) => {
-       
+
       if (el.title.toLowerCase().includes(input_search)) {
         return el;
       }
@@ -110,18 +110,20 @@
   if(localStorage.getItem('user') !== null){
         reg.innerHTML = JSON.parse(localStorage.getItem('user'));
         reg2.innerHTML = JSON.parse(localStorage.getItem('user'));
+        let signup = document.querySelector(".sign-up");
+        signup.style.display ="none";
+        let signup2 = document.querySelector(".sign-up-remove");
+        signup2.style.display ="block";
     }
    
     let signout = document.getElementById('signout');
     signout.addEventListener('click', signout2 =>{
         localStorage.removeItem('user');
+        
         let menu = document.getElementById("menu");
         menu.style.display = "none";
         reg2.innerHTML = "username";
-        reg.innerHTML = "username";
-
+        reg.innerHTML = "username";  
     })
-   
-//legend legend
 
 </script>

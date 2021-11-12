@@ -1,11 +1,11 @@
 function navbar(){
     return` <div id="nav">
     <navbar class="navbar">
-        <div class="logo">
+        <a href="Home.html"><div class="logo">
             <img src="https://th.bing.com/th?q=LinkedIn+Logo+HD&w=120&h=120&c=1&rs=1&qlt=90&cb=1&pid=InlineBlock&mkt=en-IN&adlt=moderate&t=1&mw=247"
                 alt="iN">
             <p>LEARNING</p>
-        </div>
+        </div></a>
         <div id="browse">
             <img src="https://img.icons8.com/material-outlined/24/000000/list.png" />
             <div>Browse</div>
