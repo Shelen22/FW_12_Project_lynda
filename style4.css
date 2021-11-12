@@ -26,7 +26,7 @@
     margin:5px;
     font-size:30px;
 }
-#span_7:hover,#span_8:hover{
+#span_7:hover,#span_:hover{
     background-color: rgb(194, 189, 189);
 }
 
@@ -124,7 +124,7 @@
     background-color: #f3f2ee;
     margin-bottom: 20px;
     overflow: hidden;
-    margin:auto;
+    margin: auto;
    
 }
 .div4 .a1{
