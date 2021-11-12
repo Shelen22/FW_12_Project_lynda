@@ -131,7 +131,7 @@ data_S.forEach((el)=>{
 
 var data_R = [
     {
-        title:"Python",
+        title:"PYTHON",
         introduction :['Learing Python','What you shoyl know','Exercise files'],
         Getting_Started:['Installing python','How to run the python examples','Installing VS Code','Chapter Quiz'],
         Basics:['Your first python program','Running Python frm VS Code','Variables and expressions','Python fuunctions'],

@@ -448,7 +448,7 @@
         
         let products2 = [
   {
-      title: "Python",
+      title: "PYTHON",
       name: "Learn Python Programming Masterclass",
       by: "By:Kethrin",
       date: "19th September 2020",
