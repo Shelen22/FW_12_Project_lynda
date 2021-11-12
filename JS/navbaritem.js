@@ -29,7 +29,7 @@ async function search() {
 
   let scrh = data.filter((el) => {
 
-    if (el.name.toLowerCase().includes(input_search)) {
+    if (el.name.toLowerCase().includes(input_search) !== null) {
       return el;
     }
   });
