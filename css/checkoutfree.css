@@ -269,3 +269,11 @@ body{
      color:#057642;
      margin-top:20px;  
   }
+  #navbar-f #statuss{
+    color:#057642; 
+    font-weight:2000;
+  }
+  #navbar-f #movright{
+    margin-left: 55%;
+    font-weight: bolder;
+  }
