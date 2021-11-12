@@ -81,6 +81,7 @@
     
     overflow: visible;
     transform: scale(1.05);
+    
 }
 .a7{
     display: none;
@@ -90,6 +91,7 @@
 .div1:hover .a7{
  display: block;
  color: #4f585e;
+
 }
 /* ---------------for first div----------------- */
 
