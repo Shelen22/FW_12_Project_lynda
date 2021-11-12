@@ -31,7 +31,8 @@ function navbar(){
                 <p>Language</p>
             </div>
         </div>
-        <div id="sign-up"><a href="./signup.html">Sign Up</a></div>
+        <div id="sign-up" class="sign-up"><a href="./signup.html">Sign up</a></div>
+        <div id="sign-up-remove" class="sign-up-remove"><a href="#">Start my free month</a></div>
     </navbar>
 </div>
 <div id="second">
@@ -46,7 +47,7 @@ function navbar(){
 </div>
 </div>
 <div class="menu" id="menu">
-    <h3>Username</h3>
+    <h3 id="chnge">Username</h3>
     <h5>Personal account</h5>
     <hr>
     <ul>
@@ -64,7 +65,7 @@ function navbar(){
         <li>Go to LinkedIn</li>
         <li>Buy for my team</li>
         <li>help Center</li>
-        <li>Sign Out</li>
+        <li id="signout">Sign Out</li>
     </ul>
 </div>`
 }

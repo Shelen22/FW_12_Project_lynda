@@ -102,7 +102,7 @@
             .then((res) => {
                 console.log("res:", res);
                 if(res.name){
-                     localStorage.setItem("user", JSON.stringify(res));
+                     localStorage.setItem("user", JSON.stringify(res.username));
                      window.location.href = "Home.html";
                     }
                 else {

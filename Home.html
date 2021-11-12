@@ -104,4 +104,24 @@
      console.log("scrh:", scrh);
      localStorage.setItem("search",JSON.stringify(scrh));
   }
+
+  let reg = document.getElementById('change');
+  let reg2 = document.getElementById('chnge');
+  if(localStorage.getItem('user') !== null){
+        reg.innerHTML = JSON.parse(localStorage.getItem('user'));
+        reg2.innerHTML = JSON.parse(localStorage.getItem('user'));
+    }
+   
+    let signout = document.getElementById('signout');
+    signout.addEventListener('click', signout2 =>{
+        localStorage.removeItem('user');
+        let menu = document.getElementById("menu");
+        menu.style.display = "none";
+        reg2.innerHTML = "username";
+        reg.innerHTML = "username";
+
+    })
+   
+
+
 </script>
