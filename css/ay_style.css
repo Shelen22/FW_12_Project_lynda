@@ -27,7 +27,7 @@ body{
 }
 
 #cont>div:nth-child(2)>div:nth-child(1){
-   width: 900px;
+   width: 700px;
 }
 
 #bigimg{
