@@ -61,6 +61,14 @@ function showdata(){
 
         var head_detail = document.getElementById('head_detail')
         head_detail.append(title,release)
+
+        var display_obj = {
+            title: el.name,
+            image: el.img,
+            price: el.price,
+            date: el.date
+        }
+        localStorage.setItem('displayed_data',JSON.stringify(display_obj))
     })
 }
 showdata()
