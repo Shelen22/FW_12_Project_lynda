@@ -19,7 +19,7 @@ let items = JSON.parse(localStorage.getItem("search"));
       let div2 = document.createElement("div");
       div2.setAttribute("class", "text-part");
       let title = document.createElement("h2");
-      title.innerText = el.title;
+      title.innerText = el.name;
 
       let p = document.createElement("p");
       p.innerText = el.p;
