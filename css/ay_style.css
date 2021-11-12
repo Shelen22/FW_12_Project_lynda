@@ -1,5 +1,5 @@
 body{
-    
+    font-size: small;
     font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","Fira Sans",Ubuntu,Oxygen,"Oxygen Sans",Cantarell,"Droid Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Emoji","Segoe UI Symbol","Lucida Grande",Helvetica,Arial,sans-serif;
 }
 .zero_margin{
@@ -31,13 +31,14 @@ body{
 }
 
 #bigimg{
-    height: 500px;
+    height: 300px;
     position: right;
     background-image: linear-gradient(to left,rgba(255, 255, 255, 0.4),rgba(255,255,255,1)60%)
 }
 #imgdiv{
     border:1px solid rgb(253, 251, 251);
-    height: 480px;
+    font-size: small;
+    height: 400px;
     background-repeat: no-repeat;
     background-position: right;
     padding:20px 0px 0px 60px; 
@@ -48,13 +49,13 @@ body{
 #bluebox{
     background-color: rgb(20, 131, 235);
     padding: 17px 100px 17px 100px;
-    font-size: x-large;
+    font-size: large;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
 }
 #whitebox{
     background-color: rgb(246, 248, 250);
     padding: 17px 100px 17px 100px;
-    font-size: x-large;
+    font-size: large;
     border:1px solid rgb(20, 131, 235);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -351,16 +352,16 @@ a{
 .menu > h3,h5{
   color: grey;
   font-size: 13px;
-  text-align: center;
+  /* text-align: center; */
   line-height: 0;
 }
 .menu > h3 a{
 font-size: 13px;
 text-align: center;
 }
-li{
+/* li{
  list-style: none;
-}
+} */
 .menu > ul > li:hover{
  opacity: 1;
  cursor: pointer;
