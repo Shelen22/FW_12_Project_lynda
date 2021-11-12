@@ -1,7 +1,7 @@
 let data = [
     {
       title: "PYTHON",
-      name: "Python programming for beginers",
+      name: "Python programming for beginners",
       by: "By:Kethrin",
       date: "19th September 2020",
       video: "",
@@ -34,7 +34,8 @@ function showdata(){
         var title = document.createElement('h2')
         title.textContent = el.name
 
-        var release = document.createElement('p')
+        var release = document.createElement('p');
+        release.setAttribute("class","date")
         release.textContent = 'Beginner • 9m 30s • '+ el.date
 
         var head_detail = document.getElementById('head_detail')

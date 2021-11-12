@@ -72,8 +72,12 @@ body{
     height: 120px;
     overflow-y: scroll;
 }
+.date{
+    font-size: 18px;
+    padding-bottom: 0px;
+}
 p{
-    font-size: small;
+    /* font-size: small; */
     padding-bottom: 18px;
 }
 ul{
@@ -348,7 +352,7 @@ a{
   color: grey;
   font-size: 13px;
   text-align: center;
-  line-height: 2;
+  line-height: 0;
 }
 .menu > h3 a{
 font-size: 13px;
@@ -363,7 +367,7 @@ li{
  background-color: rgb(230, 226, 241);
 }
 .menu > ul{
-  margin-left: 10px;
+  /* margin-left: 10px; */
   box-sizing: content-box;
   overflow:hidden;
 }
