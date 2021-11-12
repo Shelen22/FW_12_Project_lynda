@@ -1,3 +1,6 @@
+
+
+
 let items = JSON.parse(localStorage.getItem("search"));
   //  console.log('items:', items);
   let cors = document.getElementById("get-items");
