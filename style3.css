@@ -23,9 +23,18 @@
     cursor: pointer;
     left: .5%;
     z-index: 1;
-    /* background-color: red; */
+    margin-left: 5px;
+    margin-right: 10px;
+    border: 1px solid black;
+    border-radius: 55%;
+   
 }
-
+#span_1{
+    font-size: 30px;
+}
+#span_2{
+    font-size: 30px;
+}
 .section3 {
     width: 98%;
     height: 253px;
@@ -76,6 +85,7 @@
 .a7{
     display: none;
     color: #4f585e;
+    text-align: center;
 }
 .div3:hover .a7{
  display: block;
@@ -112,11 +122,12 @@
 }
 
 .carousal_3{
-    width: 100%;
+    width: 1200px;
     height: 365px;
     /* background-color: #f3f2ee; */
     margin-bottom: 20px;
-    overflow: visible;
+    overflow: hidden;
+    margin-left: 30px;
    
 }
 
@@ -142,7 +153,10 @@
      /* position: relative; */
   }
   .div3 .a3{
+    margin-top: 10px;
     width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
   }
   .a3 ,.a6{
    margin-right: 113px;

@@ -15,15 +15,23 @@
 }
 
 
-#span_1,#span_2 {
-    /* position: absolute;
-    top: 34%; */
+#span_3,#span_4 {
     font-size: 40px;
     font-weight: 1000;
     cursor: pointer;
     left: .5%;
     z-index: 1;
-    /* background-color: red; */
+    border-radius: 55%;
+    margin-left: 5px;
+    margin-right: 10px;
+    border: 1px solid black;
+   
+}
+#span_4{
+    font-size: 30px;
+}
+#span_3{
+    font-size: 30px;
 }
 
 .section2 {
@@ -76,6 +84,7 @@
 .a7{
     display: none;
     color: #4f585e;
+    text-align: center;
 }
 .div2:hover .a7{
  display: block;
@@ -112,11 +121,12 @@
 }
 
 .carousal_2{
-    width: 100%;
+    width: 1200px;
     height: 365px;
     /* background-color: #f3f2ee; */
     margin-bottom: 20px;
-    overflow: visible;
+    overflow: hidden;
+    margin-left: 30px;
    
 }
 
@@ -139,10 +149,14 @@
    font-family: Open Sans, sans-serif;
      font-size: 12px;
      font-weight: 50;
+     text-align: left;
      /* position: relative; */
   }
   .div3 .a3{
-    width: 100%;
+    margin-top: 10px;
+     width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
   }
   .a3 ,.a6{
    margin-right: 113px;
