@@ -224,7 +224,7 @@
 
         let products3 = [
   {
-      title: "PYTHON",
+      title: "skills",
       name: "Enhance Your Tech Skills",
       by: "By:Kethrin",
       date: "19th September 2020",
@@ -264,7 +264,7 @@
       price: 3999,
   },
   {
-      title: " JavaScript",
+      title: " Javascript",
       name: " JavaScript Essential Training",
       by: "By:Ashish Mehra",
       date: "04th june 2019",
@@ -488,7 +488,7 @@
       price: 3999,
   },
   {
-      title: "  Scrum: The Basics",
+      title: "Scrum",
       name: "If you've spent any time in the project management world, you've likely heard of ",
       by: "By:Ashish Mehra",
       date: "04th june 2019",
@@ -498,7 +498,7 @@
       price: 399,
   },
   {
-      title: " Communicating with Confidence",
+      title: "Communicating with Confidence",
       name: "Most people are afraid of speaking in public, but effective oral communication is a key skill in business. ",
       by: "By:Shivani Chaudhari",
       date: "01th January 2018",
@@ -528,7 +528,7 @@
       price: 5999,
   },
   {
-      title: " Strategic Thinking",
+      title: "Strategic Thinking",
       name: "Strategic thinking is the ability to think on a big and small scale",
       by: "By:Abdul Bari",
       date: "09th october 2020",
@@ -682,7 +682,7 @@
       price: 1500,
   },
   {
-      title: " AWS",
+      title: "AWS",
       name: " Amazon Web Services Essential Training",
       by: "By:shekher",
       date: "19th August 2021",
@@ -702,7 +702,7 @@
       price: 6000,
   },
   {
-      title: " Git Essential Training",
+      title: "Git Essential Training",
       name: "Learn how to use Git, the popular open-source version control software, to manage the source code for almost any project.",
       by: "By:Paul Johnson",
       date: "19th March 2017",
@@ -712,7 +712,7 @@
       price: 3999,
   },
   {
-      title: "  Scrum: The Basics",
+      title: "Scrum",
       name: "If you've spent any time in the project management world, you've likely heard of scrum—the popular framework for managing complex processes.",
       by: "By:Ashish Mehra",
       date: "04th june 2019",
@@ -722,7 +722,7 @@
       price: 399,
   },
   {
-      title: " Communicating with Confidence",
+      title: "Communicating with Confidence",
       name: "Most people are afraid of speaking in public, but effective oral communication is a key skill in business. ",
       by: "By:Shivani Chaudhari",
       date: "01th January 2018",
@@ -752,7 +752,7 @@
       price: 5999,
   },
   {
-      title: " Strategic Thinking",
+      title: "Strategic Thinking",
       name: "Strategic thinking is the ability to think on a big and small scale",
       by: "By:Abdul Bari",
       date: "09th october 2020",
@@ -772,7 +772,7 @@
       price: 9550,
   },
   {
-      title: "APTITUDE & REASONING ",
+      title: "APTITUDE & REASONING",
       name: "Learn aptitude and reasoning to crack the GATE ",
       by: "By:Swastika Mukharjee",
       date: "09th may 2018",

@@ -185,72 +185,192 @@ var data_R = [
         title:'Business Courses',
         introduction:['Welcome','Finanace from a business perspective','Important roles in corporate finance','The future of finance stratagies','Chapter Quiz'],
         Getting_Started:['Growth vs earnings','Assets amd investments','Growing revenue vs cost leadership ','The value of leverage','issuing equity or taking on debt'],
-        Basics:'',
-        Conclusions:''
+        Basics:['Consistency is key for financial strategies','Finance forecasts as decision inputs ','Finance decisions are business decisions','Set your finanacial team tradeoffs and tactics in place'],
+        Conclusions:['Chapter Quiz']
     },
     {
-        title:'',
-        introduction:'',
-        Getting_Started:'',
-        Basics:'',
-        Conclusions:''
+        title:'Teams',
+        introduction:['Welcome to Essentials of team collaboration','why team collaboiration is necessary'],
+        Getting_Started:['Develop team ground rules','Build relationships early and often','Identify team mmbers preferred communication mode','Tips for great online collaboration'],
+        Basics:['Take periodoc tempertaure checks'],
+        Conclusions:['Develop best practices to enhance team collaboration','Team collaboration challenge','Chapter Quiz']
     },
     {
-        title:'',
-        introduction:'',
-        Getting_Started:'',
-        Basics:'',
-        Conclusions:''
+        title:'Project Management',
+        introduction:['Deliver successful projects','What you should know'],
+        Getting_Started:['what is a project','what is project management','what it takes tobe a project manager','The project management life cycle','traditional vs agile project management'],
+        Basics:['initiate a project','Identify project stakeholder','Analyze project stakeholders','Identify the project goal','Define project objectives','Choose a strategy','Gather requirements'],
+        Conclusions:['goodbye']
     },
     {
-        title:'',
-        introduction:'',
-        Getting_Started:'',
-        Basics:'',
-        Conclusions:''
+        title:'Javascript',
+        introduction:['JavaScript:The soil from which the modern web grows','How to use the exercise files','Navigating the JS landscape','Tools for working with JavaScript','Limiting and formatting'],
+        Getting_Started:['Javascript ina an HTML document','JavaScript as an external file','Modern JavaScript loading','JavaScript modules'],
+        Basics:['The real-worl function','Functions and methods','A standard function','The arow function','Arrow function'],
+        Conclusions:['goodbye']
     },
     {
-        title:'',
-        introduction:'',
-        Getting_Started:'',
-        Basics:'',
-        Conclusions:''
+        title:'Spring',
+        introduction:['Spring into Spring','What you should know','Chapter Quiz'],
+        Getting_Started:['understanding Spring Boot dependencies','Configuring embedded Tomcat','Employing MVC in Spring Boot','Thymeleaf tempplates','Web application with Spring Boot','Challenge:Gernerate An MVC webpage','Solution:Generate an MVC webpage'],
+        Basics:['Booting from the web','Understanding the project','Understanding auto-configuration','Configuration in Spring Boot','Spring Profiles in Boot','Building Spring Boot applications','Containerizing Spring Boot Applications'],
+        Conclusions:['goodbye']
     },
     {
-        title:'',
-        introduction:'',
-        Getting_Started:'',
-        Basics:'',
-        Conclusions:''
+        title:'Deep Learning',
+        introduction:['Welcome','What you should know','Using the excercise files'],
+        Getting_Started:['Setting Up TensorFlow','Install TensorFlow on macOS','Install TensorFlow on Windows','Chapter Quiz'],
+        Basics:['Tensor Flow Overview','what is TEnsorFLow','Why is it called tensorFlow','Hardware,software,and language requirements'],
+        Conclusions:['Goodbye']
     },
     {
-        title:'',
-        introduction:'',
-        Getting_Started:'',
-        Basics:'',
-        Conclusions:''
+        title:'Finance',
+        introduction:['Welcome','Finanace from a business perspective','Important roles in corporate finance','The future of finance stratagies','Chapter Quiz'],
+        Getting_Started:['Growth vs earnings','Assets amd investments','Growing revenue vs cost leadership ','The value of leverage','issuing equity or taking on debt'],
+        Basics:['Consistency is key for financial strategies','Finance forecasts as decision inputs ','Finance decisions are business decisions','Set your finanacial team tradeoffs and tactics in place'],
+        Conclusions:['Chapter Quiz']
     },
     {
-        title:'',
-        introduction:'',
-        Getting_Started:'',
-        Basics:'',
-        Conclusions:''
+        title:'Scrum',
+        introduction:['Welcome','Finanace from a business perspective','Important roles in corporate finance','The future of finance stratagies','Chapter Quiz'],
+        Getting_Started:['Growth vs earnings','Assets amd investments','Growing revenue vs cost leadership ','The value of leverage','issuing equity or taking on debt'],
+        Basics:['Consistency is key for financial strategies','Finance forecasts as decision inputs ','Finance decisions are business decisions','Set your finanacial team tradeoffs and tactics in place'],
+        Conclusions:['Chapter Quiz']
     },
     {
-        title:'',
-        introduction:'',
-        Getting_Started:'',
-        Basics:'',
-        Conclusions:''
+        title:'Communicating with Confidence',
+        introduction:['Welcome','Finanace from a business perspective','Important roles in corporate finance','The future of finance stratagies','Chapter Quiz'],
+        Getting_Started:['Growth vs earnings','Assets amd investments','Growing revenue vs cost leadership ','The value of leverage','issuing equity or taking on debt'],
+        Basics:['Consistency is key for financial strategies','Finance forecasts as decision inputs ','Finance decisions are business decisions','Set your finanacial team tradeoffs and tactics in place'],
+        Conclusions:['Chapter Quiz']
     },
     {
-        title:'',
-        introduction:'',
-        Getting_Started:'',
-        Basics:'',
-        Conclusions:''
+        title:'Time Management',
+        introduction:['Welcome','Finanace from a business perspective','Important roles in corporate finance','The future of finance stratagies','Chapter Quiz'],
+        Getting_Started:['Growth vs earnings','Assets amd investments','Growing revenue vs cost leadership ','The value of leverage','issuing equity or taking on debt'],
+        Basics:['Consistency is key for financial strategies','Finance forecasts as decision inputs ','Finance decisions are business decisions','Set your finanacial team tradeoffs and tactics in place'],
+        Conclusions:['Chapter Quiz']
     },
+    {
+        title:'Strategic Thinking',
+        introduction:['Welcome','Finanace from a business perspective','Important roles in corporate finance','The future of finance stratagies','Chapter Quiz'],
+        Getting_Started:['Growth vs earnings','Assets amd investments','Growing revenue vs cost leadership ','The value of leverage','issuing equity or taking on debt'],
+        Basics:['Consistency is key for financial strategies','Finance forecasts as decision inputs ','Finance decisions are business decisions','Set your finanacial team tradeoffs and tactics in place'],
+        Conclusions:['Chapter Quiz']
+    },
+    {
+        title:'DOCKERS',
+        introduction:['Welcome','Finanace from a business perspective','Important roles in corporate finance','The future of finance stratagies','Chapter Quiz'],
+        Getting_Started:['Growth vs earnings','Assets amd investments','Growing revenue vs cost leadership ','The value of leverage','issuing equity or taking on debt'],
+        Basics:['Consistency is key for financial strategies','Finance forecasts as decision inputs ','Finance decisions are business decisions','Set your finanacial team tradeoffs and tactics in place'],
+        Conclusions:['Chapter Quiz']
+    },
+    {
+        title:'APTITUDE & REASONING',
+        introduction:['Welcome','Finanace from a business perspective','Important roles in corporate finance','The future of finance stratagies','Chapter Quiz'],
+        Getting_Started:['Growth vs earnings','Assets amd investments','Growing revenue vs cost leadership ','The value of leverage','issuing equity or taking on debt'],
+        Basics:['Consistency is key for financial strategies','Finance forecasts as decision inputs ','Finance decisions are business decisions','Set your finanacial team tradeoffs and tactics in place'],
+        Conclusions:['Chapter Quiz']
+    },
+    {
+        title:'HTML & CSS',
+        introduction:['Welcome','Finanace from a business perspective','Important roles in corporate finance','The future of finance stratagies','Chapter Quiz'],
+        Getting_Started:['Growth vs earnings','Assets amd investments','Growing revenue vs cost leadership ','The value of leverage','issuing equity or taking on debt'],
+        Basics:['Consistency is key for financial strategies','Finance forecasts as decision inputs ','Finance decisions are business decisions','Set your finanacial team tradeoffs and tactics in place'],
+        Conclusions:['Chapter Quiz']
+    },
+    {
+        title:'Critical Thinking',
+        introduction:['improve your problem Solving skills'],
+        Getting_Started:['Know yourself','Staying focused Asking questions Analyzing information','Chapter Quiz'],
+        Basics:['Important parameters simple problem-solving models','Complex problem-solving methods','Chapter Quiz'],
+        Conclusions:['Ready to practice']
+    },
+    {
+        title:'AWS',
+        introduction:['Lab overview,first look at python'],
+        Getting_Started:['building the docker image'],
+        Basics:['Working with Azure Container Registry (ACR)','Creating A GitHub Actions workflow'],
+        Conclusions:['Running the workflow']
+    },
+    {
+        title:'Developing Executive Presence',
+        introduction:['Executive presence: The key differentiator','Chapter Quiz' ],
+        Getting_Started:['Passion and positive difference','Inner presence before outer presence','Four factors of executive presence'],
+        Basics:['thinking about others','Thinking about yourself','getting things done','Chapter Quiz'],
+        Conclusions:['Emotional patterns','Being emotionally proactive','Shifting emotions','Chapter Quiz']
+    },
+    {
+        title:'Git Essential Training',
+        introduction:['Use Git version control software to manage project code'],
+        Getting_Started:['version control','the history behind git','About distributed version control','Chapter quiz'],
+        Basics:['The three trees','Git workflows','Hash values(SHA_1)','the HEAD pointer'],
+        Conclusions:['goodbye']
+    },
+    {
+        title:'Communicating with Confidence',
+        introduction:['Executive presence: The key differentiator','Chapter Quiz' ],
+        Getting_Started:['Passion and positive difference','Inner presence before outer presence','Four factors of executive presence'],
+        Basics:['thinking about others','Thinking about yourself','getting things done','Chapter Quiz'],
+        Conclusions:['Emotional patterns','Being emotionally proactive','Shifting emotions','Chapter Quiz']
+    },
+    {
+        title:'Time Management',
+        introduction:['improve your problem Solving skills'],
+        Getting_Started:['Know yourself','Staying focused Asking questions Analyzing information','Chapter Quiz'],
+        Basics:['Important parameters simple problem-solving models','Complex problem-solving methods','Chapter Quiz'],
+        Conclusions:['Ready to practice']
+    },
+    {
+        title:'REACT',
+        introduction:['improve your problem Solving skills'],
+        Getting_Started:['Know yourself','Staying focused Asking questions Analyzing information','Chapter Quiz'],
+        Basics:['Important parameters simple problem-solving models','Complex problem-solving methods','Chapter Quiz'],
+        Conclusions:['Ready to practice']
+    },
+    {
+        title:'Strategic Thinking',
+        introduction:['improve your problem Solving skills'],
+        Getting_Started:['Know yourself','Staying focused Asking questions Analyzing information','Chapter Quiz'],
+        Basics:['Important parameters simple problem-solving models','Complex problem-solving methods','Chapter Quiz'],
+        Conclusions:['Ready to practice']
+    },
+    {
+        title:'DOCKERS',
+        introduction:['improve your problem Solving skills'],
+        Getting_Started:['Know yourself','Staying focused Asking questions Analyzing information','Chapter Quiz'],
+        Basics:['Important parameters simple problem-solving models','Complex problem-solving methods','Chapter Quiz'],
+        Conclusions:['Ready to practice']
+    },
+    {
+        title:'APTITUDE & REASONING',
+        introduction:['improve your problem Solving skills'],
+        Getting_Started:['Know yourself','Staying focused Asking questions Analyzing information','Chapter Quiz'],
+        Basics:['Important parameters simple problem-solving models','Complex problem-solving methods','Chapter Quiz'],
+        Conclusions:['Ready to practice']
+    },
+    {
+        title:'HTML & CSS',
+        introduction:['improve your problem Solving skills'],
+        Getting_Started:['Know yourself','Staying focused Asking questions Analyzing information','Chapter Quiz'],
+        Basics:['Important parameters simple problem-solving models','Complex problem-solving methods','Chapter Quiz'],
+        Conclusions:['Ready to practice']
+    },
+    {
+        title:'DSA',
+        introduction:['improve your problem Solving skills'],
+        Getting_Started:['Know yourself','Staying focused Asking questions Analyzing information','Chapter Quiz'],
+        Basics:['Important parameters simple problem-solving models','Complex problem-solving methods','Chapter Quiz'],
+        Conclusions:['Ready to practice']
+    },
+    {
+        title:'skills',
+        introduction:['improve your problem Solving skills'],
+        Getting_Started:['Know yourself','Staying focused Asking questions Analyzing information','Chapter Quiz'],
+        Basics:['Important parameters simple problem-solving models','Complex problem-solving methods','Chapter Quiz'],
+        Conclusions:['Ready to practice']
+    },
+
 
 ]
 
