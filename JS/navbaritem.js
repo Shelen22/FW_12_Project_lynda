@@ -28,14 +28,17 @@ async function search() {
   // console.log('data:', data)
 
   let scrh = data.filter((el) => {
+  console.log('el:', el)
 
-    if (el.title.includes(input_search) !== null) {
+    if (el.name.toLowerCase().includes(input_search) !== null) {
       return el;
     }
   });
   //  console.log("scrh:", scrh);
    localStorage.setItem("search",JSON.stringify(scrh));
-   window.location.href = "search.html"
+   console.log('search:', search)
+
+   window.location.href = "search.html";
 }
 
 let reg = document.getElementById('change');
@@ -44,10 +47,16 @@ let reg3 = document.getElementById('username-chnge');
 
 
 if(localStorage.getItem('user') !== null){
+  if(window.location.href === "Home.html"){
       reg.innerHTML = JSON.parse(localStorage.getItem('user'));
       reg2.innerHTML = JSON.parse(localStorage.getItem('user'));
       reg3.innerHTML = JSON.parse(localStorage.getItem('user'));
 
+  }
+  else{
+    reg2.innerHTML = JSON.parse(localStorage.getItem('user'));
+
+  }
       let signup = document.querySelector(".sign-up");
       signup.style.display ="none";
       let signup2 = document.querySelector(".sign-up-remove");
