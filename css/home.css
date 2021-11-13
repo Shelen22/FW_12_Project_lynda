@@ -791,9 +791,14 @@ font-weight: 100;
   
    /* position: relative; */
    font-size: 12px;
+   margin-bottom:0;
 }
 .a5{
   align-items: baseline;
   display: flex;
   flex-direction: column;
+ 
+}
+.carousal_1 .a3,.carousal_3 .a3{
+  margin-top:0;
 }
