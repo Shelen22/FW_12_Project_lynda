@@ -36,8 +36,7 @@ let items = JSON.parse(localStorage.getItem("search"));
 
       div.append(imgdiv, div2);
       cors.append(div);
-<<<<<<< HEAD
-=======
+
 
       var obj = {
         title:el.title,
@@ -52,7 +51,7 @@ let items = JSON.parse(localStorage.getItem("search"));
       function run(){
         window.location.href = '/ay_index.html'
       }
->>>>>>> 0c5fb7c17d5d2aa1e04b18160006793bcf85f5c9
+
     });
   }
   searchitem();
