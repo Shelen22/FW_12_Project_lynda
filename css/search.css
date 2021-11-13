@@ -12,6 +12,7 @@
   .courses {
     display: flex;
     margin: 3% 10%;
+    cursor: pointer;
   }
   .imgdiv {
     width: 230px;
