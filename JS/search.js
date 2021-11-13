@@ -47,7 +47,7 @@ let items = JSON.parse(localStorage.getItem("search"));
         date:el.date,
         price:el.price
       }
-      localStorage.setItem('H_data',JSON.stringify(obj))
+      localStorage.setItem('H_data',JSON.stringify(obj));
       
       function run(){
         window.location.href = '/ay_index.html'
