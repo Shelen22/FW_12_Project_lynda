@@ -36,6 +36,23 @@ let items = JSON.parse(localStorage.getItem("search"));
 
       div.append(imgdiv, div2);
       cors.append(div);
+<<<<<<< HEAD
+=======
+
+      var obj = {
+        title:el.title,
+        img:el.img,
+        name:el.name,
+        by:el.by,
+        date:el.date,
+        price:el.price
+      }
+      localStorage.setItem('H_data',JSON.stringify(obj))
+      
+      function run(){
+        window.location.href = '/ay_index.html'
+      }
+>>>>>>> 0c5fb7c17d5d2aa1e04b18160006793bcf85f5c9
     });
   }
   searchitem();

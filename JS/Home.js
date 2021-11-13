@@ -95,7 +95,7 @@
       name: "Docker for develpers ",
       by: "By:Peter Dakota ",
       date: "28th February 2020",
-      img: "https://www.incimages.com/uploaded_files/image/1920x1080/public-speaking-1940x900_35061.jpg",
+      img: "https://developers.redhat.com/sites/default/files/styles/article_feature/public/blog/2014/05/homepage-docker-logo.png?itok=zx0e-vcP",
       link: "https://developer.mozilla.org/en-US/docs/Mozilla/QA/Running_automated_tests/Docker",
       time: 3000,
       price: 9550,
@@ -105,7 +105,7 @@
       name: "Learn aptitude and reasoning to crack the GATE ",
       by: "By:Swastika Mukharjee",
       date: "09th may 2018",
-      img: "https://www.incimages.com/uploaded_files/image/1920x1080/public-speaking-1940x900_35061.jpg",
+      img: "https://image.shutterstock.com/image-vector/capabilities-human-brain-mind-map-260nw-236140372.jpg",
       link: "https://developer.mozilla.org/en-US/docs/Mozilla/QA/Running_automated_tests/Docker",
       time: 780,
       price: 450,
@@ -115,7 +115,7 @@
       name: "create atractive ui by using html and css ",
       by: "By:Viraat sharma",
       date: "21th Februay 2014",
-      img: "https://www.incimages.com/uploaded_files/image/1920x1080/public-speaking-1940x900_35061.jpg",
+      img: "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_640.png",
       link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
       time: 788,
       price: 900,
@@ -151,7 +151,7 @@
           var div6=document.createElement('div')
           div6.setAttribute('class','a6 a7')
 
-          div6.textContent='Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit tempore ipsum ut perferendis at eum repellendus quos? Illum, aliquam placeat.'
+          div6.textContent='Let us now see a list of the Most popular Lynda Courses details that will help you to be a certified Professional. This list contains Top-rated Online Lynda Courses:'
          
           div1.append(div2,div3,div4,div5,div6)
           content.append(div1);
@@ -298,7 +298,7 @@
       name: "Create and design your own first website ",
       by: "By:shekhar",
       date: "09th may 2018",
-      img: "https://www.incimages.com/uploaded_files/image/1920x1080/public-speaking-1940x900_35061.jpg",
+      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png",
       link: "https://www.tutorialspoint.com/react_native/react_native_overview.htm",
       time: 4500,
       price: 5999,
@@ -308,7 +308,7 @@
       name: "Be a pro in data structures and algorithms",
       by: "By:Abdul Bari",
       date: "09th october 2020",
-      img: "https://www.incimages.com/uploaded_files/image/1920x1080/public-speaking-1940x900_35061.jpg",
+      img: "https://res.cloudinary.com/practicaldev/image/fetch/s--AO0dFdQ5--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://thepracticaldev.s3.amazonaws.com/i/srnvrd7vfeeq5qpxnabq.png",
       link: "https://www.geeksforgeeks.org/data-structures/",
       time: 8000,
       price: 10000,
@@ -318,7 +318,7 @@
       name: "Docker for develpers ",
       by: "By:Peter Dakota ",
       date: "28th February 2020",
-      img: "https://www.incimages.com/uploaded_files/image/1920x1080/public-speaking-1940x900_35061.jpg",
+      img: "https://developers.redhat.com/sites/default/files/styles/article_feature/public/blog/2014/05/homepage-docker-logo.png?itok=zx0e-vcP",
       link: "https://developer.mozilla.org/en-US/docs/Mozilla/QA/Running_automated_tests/Docker",
       time: 3000,
       price: 9550,
@@ -328,7 +328,7 @@
       name: "Learn aptitude and reasoning to crack the GATE ",
       by: "By:Swastika Mukharjee",
       date: "09th may 2018",
-      img: "https://www.incimages.com/uploaded_files/image/1920x1080/public-speaking-1940x900_35061.jpg",
+      img: "https://free.indialearningpoint.com/wp-content/uploads/2020/07/o8.png",
       link: "https://developer.mozilla.org/en-US/docs/Mozilla/QA/Running_automated_tests/Docker",
       time: 780,
       price: 450,
@@ -338,7 +338,7 @@
       name: "create atractive ui by using html and css ",
       by: "By:Viraat sharma",
       date: "21th Februay 2014",
-      img: "https://www.incimages.com/uploaded_files/image/1920x1080/public-speaking-1940x900_35061.jpg",
+      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png",
       link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
       time: 788,
       price: 900,
@@ -374,7 +374,7 @@
             var div6 = document.createElement('div')
             div6.setAttribute('class', 'a6 a7')
 
-            div6.textContent = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit tempore ipsum ut perferendis at eum repellendus quos? Illum, aliquam placeat.'
+            div6.textContent = 'Let us now see a list of the Most popular Lynda Courses details that will help you to be a certified Professional. This list contains Top-rated Online Lynda Courses:'
 
             div1.append(div2, div3, div4, div5, div6)
             content3.append(div1);
@@ -542,7 +542,7 @@
       name: "Docker for develpers ",
       by: "By:Peter Dakota ",
       date: "28th February 2020",
-      img: "https://www.incimages.com/uploaded_files/image/1920x1080/public-speaking-1940x900_35061.jpg",
+      img: "https://res.cloudinary.com/practicaldev/image/fetch/s--AO0dFdQ5--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://thepracticaldev.s3.amazonaws.com/i/srnvrd7vfeeq5qpxnabq.png",
       link: "https://developer.mozilla.org/en-US/docs/Mozilla/QA/Running_automated_tests/Docker",
       time: 3000,
       price: 9550,
@@ -552,7 +552,7 @@
       name: "Learn aptitude and reasoning to crack the GATE ",
       by: "By:Swastika Mukharjee",
       date: "09th may 2018",
-      img: "https://www.incimages.com/uploaded_files/image/1920x1080/public-speaking-1940x900_35061.jpg",
+      img: "https://free.indialearningpoint.com/wp-content/uploads/2020/07/o8.png",
       link: "https://developer.mozilla.org/en-US/docs/Mozilla/QA/Running_automated_tests/Docker",
       time: 780,
       price: 450,
@@ -562,7 +562,7 @@
       name: "create atractive ui by using html and css ",
       by: "By:Viraat sharma",
       date: "21th Februay 2014",
-      img: "https://www.incimages.com/uploaded_files/image/1920x1080/public-speaking-1940x900_35061.jpg",
+      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png",
       link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
       time: 788,
       price: 900,
@@ -598,7 +598,7 @@
             var div6 = document.createElement('div')
             div6.setAttribute('class', 'a6 a7')
 
-            div6.textContent = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit tempore ipsum ut perferendis at eum repellendus quos? Illum, aliquam placeat.'
+            div6.textContent = 'Let us now see a list of the Most popular Lynda Courses details that will help you to be a certified Professional. This list contains Top-rated Online Lynda Courses:'
 
             div1.append(div2, div3, div4, div5, div6)
             content2.append(div1);
@@ -762,35 +762,35 @@
       price: 10000,
   },
   {
-      title: "DOCKERS",
-      name: "Docker for develpers ",
-      by: "By:Peter Dakota ",
-      date: "28th February 2020",
-      img: "https://www.incimages.com/uploaded_files/image/1920x1080/public-speaking-1940x900_35061.jpg",
-      link: "https://developer.mozilla.org/en-US/docs/Mozilla/QA/Running_automated_tests/Docker",
-      time: 3000,
-      price: 9550,
-  },
-  {
-      title: "APTITUDE & REASONING",
-      name: "Learn aptitude and reasoning to crack the GATE ",
-      by: "By:Swastika Mukharjee",
-      date: "09th may 2018",
-      img: "https://www.incimages.com/uploaded_files/image/1920x1080/public-speaking-1940x900_35061.jpg",
-      link: "https://developer.mozilla.org/en-US/docs/Mozilla/QA/Running_automated_tests/Docker",
-      time: 780,
-      price: 450,
-  },
-  {
-      title: "HTML & CSS",
-      name: "create atractive ui by using html and css ",
-      by: "By:Viraat sharma",
-      date: "21th Februay 2014",
-      img: "https://www.incimages.com/uploaded_files/image/1920x1080/public-speaking-1940x900_35061.jpg",
-      link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
-      time: 788,
-      price: 900,
-  },
+    title: "DOCKERS",
+    name: "Docker for develpers ",
+    by: "By:Peter Dakota ",
+    date: "28th February 2020",
+    img: "https://res.cloudinary.com/practicaldev/image/fetch/s--AO0dFdQ5--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://thepracticaldev.s3.amazonaws.com/i/srnvrd7vfeeq5qpxnabq.png",
+    link: "https://developer.mozilla.org/en-US/docs/Mozilla/QA/Running_automated_tests/Docker",
+    time: 3000,
+    price: 9550,
+},
+{
+    title: "APTITUDE & REASONING ",
+    name: "Learn aptitude and reasoning to crack the GATE ",
+    by: "By:Swastika Mukharjee",
+    date: "09th may 2018",
+    img: "https://free.indialearningpoint.com/wp-content/uploads/2020/07/o8.png",
+    link: "https://developer.mozilla.org/en-US/docs/Mozilla/QA/Running_automated_tests/Docker",
+    time: 780,
+    price: 450,
+},
+{
+    title: "HTML & CSS",
+    name: "create atractive ui by using html and css ",
+    by: "By:Viraat sharma",
+    date: "21th Februay 2014",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png",
+    link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+    time: 788,
+    price: 900,
+},
 ];
         products1.forEach(function(p){
             var content1 = document.getElementById('sc1')
@@ -811,7 +811,7 @@
           var div4=document.createElement('div');
           div4.setAttribute('class','a3')
           var h4=document.createElement('h4');
-          h4.textContent='Speaking Confidently and Effectively'
+          h4.textContent=p.name
           div4.append(h4);
 
           var div5=document.createElement('div');
@@ -823,7 +823,7 @@
           var div6=document.createElement('div')
           div6.setAttribute('class','a6 a7')
 
-          div6.textContent='Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit tempore ipsum ut perferendis at eum repellendus quos? Illum, aliquam placeat.'
+          div6.textContent='Let us now see a list of the Most popular Lynda Courses details that will help you to be a certified Professional. This list contains Top-rated Online Lynda Courses:'
          
           div1.append(div2,div3,div4,div5,div6)
           content1.append(div1);
