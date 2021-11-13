@@ -64,6 +64,8 @@ body{
       text-align: start; 
       margin-left: 5%; 
       font-weight: 500;
+      height:21px;
+      overflow-y: hidden;
     }
     #flexx{
         display: flex;
