@@ -614,14 +614,15 @@ color: #4f585e;
  /* mid style 4 strt */
 
  .main4 {
-  width: 100%;
+  width: 80%;
   /* height: 428px; */
   /* margin: 200px auto; */
   /* overflow: hidden; */
-  overflow: visible;
+  overflow: hidden;
   position: relative;
   /* background: #d4e2fa; */
   height: 400px;
+  margin:auto;
 }
 
 
@@ -729,7 +730,7 @@ text-align: left;
 }
 
 .carousal_4{
-  width: 80%;
+  width: 100%;
   height: 365px;
   background-color: #f3f2ee;
   margin-bottom: 20px;
@@ -799,6 +800,6 @@ font-weight: 100;
   flex-direction: column;
  
 }
-.carousal_1 .a3,.carousal_3 .a3{
+.carousal_3 .a3,.carousal_1 .a3{
   margin-top:0;
 }
