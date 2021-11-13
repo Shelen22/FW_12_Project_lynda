@@ -787,7 +787,7 @@ text-align: left;
 .a4{
   text-align: left;
 font-weight: 100;
- color: rgb(167, 160, 160);
+ color: rgb(110, 108, 108);
 
  margin-left:2%;
    /* font-size: 12px; */
@@ -811,9 +811,4 @@ font-weight: 100;
   font-weight: 500;
   color: black;
   font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","Fira Sans",Ubuntu,Oxygen,"Oxygen Sans",Cantarell,"Droid Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Emoji","Segoe UI Symbol","Lucida Grande",Helvetica,Arial,sans-serif;
-}
-.carousal_4 .a4,.carousal_3 .a4,.carousal_2 .a4,.carousal_1 .a4{
-  font-weight: lighter;
-  font-size: small;
-  
 }
