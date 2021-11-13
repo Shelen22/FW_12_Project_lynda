@@ -332,7 +332,7 @@ display: flex;
   font-weight: bold;
   margin: 11px 11px;
   /* color: white; */
-  background: rgb(204, 201, 201);
+ 
   transition: 0.5s;
   border-radius: 7px;
   cursor: pointer;
@@ -759,7 +759,7 @@ text-align: left;
   
    /* position: relative; */
 }
-.div4 .a3{
+ .a3{
   
    width: 100%;
   text-align: left;
