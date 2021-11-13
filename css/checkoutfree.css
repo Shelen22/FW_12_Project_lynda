@@ -25,6 +25,7 @@ body{
         width:25px;
         height:25px; 
         margin-left:10%; 
+        cursor: pointer;
     }
     #trial{
         margin:auto;
@@ -63,6 +64,7 @@ body{
       text-align: start; 
       margin-left: 5%; 
       font-weight: 500;
+     
     }
     #flexx{
         display: flex;

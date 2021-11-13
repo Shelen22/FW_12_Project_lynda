@@ -10,11 +10,13 @@ let items = JSON.parse(localStorage.getItem("search"));
       //   cors.innerHTML = null;
       let div = document.createElement("div");
       div.setAttribute("class", "courses");
+      
+      div.addEventListener('click',run)
 
       let imgdiv = document.createElement("div");
       imgdiv.setAttribute("class", "imgdiv");
       let img = document.createElement("img");
-      img.src = el.image;
+      img.src = el.img;
 
       let div2 = document.createElement("div");
       div2.setAttribute("class", "text-part");
@@ -36,6 +38,16 @@ let items = JSON.parse(localStorage.getItem("search"));
 
       div.append(imgdiv, div2);
       cors.append(div);
+
+      // var obj = {
+      //   title:el.title,
+
+
+      // }
+
+      function run(){
+        window.location.href = '/ay_index.html'
+      }
     });
   }
   searchitem();
