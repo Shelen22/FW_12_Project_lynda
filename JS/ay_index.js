@@ -370,6 +370,13 @@ var data_R = [
         Basics:['Important parameters simple problem-solving models','Complex problem-solving methods','Chapter Quiz'],
         Conclusions:['Ready to practice']
     },
+    {
+        title:'C++',
+        introduction:['Learn C++','Using the exercise files','What is C++','The structure of this course'],
+        Getting_Started:['Introduction to basic syntax','Anatomy of a C++ program','Statements and expressions','Identifiers','Defining Variables','Pointers','References','Primitive arrays'],
+        Basics:['Overview of data types','integer types','integer sizes','Fixed-size integers','Floating-point types','characters and strings'],
+        Conclusions:['Goodbye']
+    }
 
 
 ]
