@@ -215,7 +215,7 @@ color: #4f585e;
   display: flex;
   text-align: center;
   height: 60px;
-  width: 350px;
+  
   /* background-color:orange; */
   font-weight: bold;
   font-family: Open Sans, sans-serif;
@@ -376,7 +376,7 @@ color: #4f585e;
   display: flex;
   text-align: center;
   height: 60px;
-  width: 350px;
+  margin-left:2%;
   /* background-color:orange; */
   font-weight: bold;
   font-family: Open Sans, sans-serif;
@@ -539,7 +539,7 @@ color: #4f585e;
   display: flex;
   text-align: center;
   height: 60px;
-  width: 350px;
+ margin-left:2%;
   /* background-color:orange; */
   font-weight: bold;
   font-family: Open Sans, sans-serif;
@@ -557,6 +557,7 @@ color: #4f585e;
   margin-bottom: 20px;
   overflow: hidden;
   margin:auto;
+  margin-top:60px;
  
 }
 
@@ -716,7 +717,7 @@ text-align: left;
   display: flex;
   text-align: center;
   height: 60px;
-  width: 350px;
+  margin-left:2%;
   /* background-color:orange; */
   font-weight: bold;
   font-family: Open Sans, sans-serif;
