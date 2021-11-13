@@ -66,7 +66,8 @@ function showdata(){
             title: el.name,
             image: el.img,
             price: el.price,
-            date: el.date
+            date: el.date,
+            by:el.by
         }
         localStorage.setItem('displayed_data',JSON.stringify(display_obj))
     })
@@ -180,7 +181,77 @@ var data_R = [
         Basics:['Undesrtanding the async functions with await statements','Using statements to handle errors in async/await code','Making async/await code backward compatible with polyfill'],
         Conclusions:['Asynchronous coding experience']
     },
-   
+    {
+        title:'Business Courses',
+        introduction:['Welcome','Finanace from a business perspective','Important roles in corporate finance','The future of finance stratagies','Chapter Quiz'],
+        Getting_Started:['Growth vs earnings','Assets amd investments','Growing revenue vs cost leadership ','The value of leverage','issuing equity or taking on debt'],
+        Basics:'',
+        Conclusions:''
+    },
+    {
+        title:'',
+        introduction:'',
+        Getting_Started:'',
+        Basics:'',
+        Conclusions:''
+    },
+    {
+        title:'',
+        introduction:'',
+        Getting_Started:'',
+        Basics:'',
+        Conclusions:''
+    },
+    {
+        title:'',
+        introduction:'',
+        Getting_Started:'',
+        Basics:'',
+        Conclusions:''
+    },
+    {
+        title:'',
+        introduction:'',
+        Getting_Started:'',
+        Basics:'',
+        Conclusions:''
+    },
+    {
+        title:'',
+        introduction:'',
+        Getting_Started:'',
+        Basics:'',
+        Conclusions:''
+    },
+    {
+        title:'',
+        introduction:'',
+        Getting_Started:'',
+        Basics:'',
+        Conclusions:''
+    },
+    {
+        title:'',
+        introduction:'',
+        Getting_Started:'',
+        Basics:'',
+        Conclusions:''
+    },
+    {
+        title:'',
+        introduction:'',
+        Getting_Started:'',
+        Basics:'',
+        Conclusions:''
+    },
+    {
+        title:'',
+        introduction:'',
+        Getting_Started:'',
+        Basics:'',
+        Conclusions:''
+    },
+
 ]
 
 var parent_scroll = document.getElementById('scroll_box')
@@ -491,4 +562,12 @@ document.getElementById('whitebox').addEventListener('click',buy)
 
 function buy(){
     console.log('buy course triggered ')
+    window.location.href = "/checkout.html"
+
+}
+
+document.getElementById('bluebox').addEventListener('click',free)
+
+function free(){
+    window.location.href = "/checkoutfree.html"
 }
