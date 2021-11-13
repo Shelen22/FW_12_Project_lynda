@@ -156,10 +156,10 @@ function update(){
     var imgdiv = document.getElementById('video-img');
     imgdiv.append(img,div,price); 
     
-    let tax = Math.round(.18*obj.price);
+    let tax = Math.round(.18*Number(obj.price));
     document.getElementById('taxprice').innerHTML = '₹'+tax+'.00';
 
-    let sum = tax+obj.price;
+    let sum = tax+Number(obj.price);
     document.getElementById('tprice').innerHTML = '₹'+sum+'.00';
 }
 update();
