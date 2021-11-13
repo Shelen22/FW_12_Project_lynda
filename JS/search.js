@@ -39,6 +39,12 @@ let items = JSON.parse(localStorage.getItem("search"));
       div.append(imgdiv, div2);
       cors.append(div);
 
+      // var obj = {
+      //   title:el.title,
+
+
+      // }
+
       function run(){
         window.location.href = '/ay_index.html'
       }
