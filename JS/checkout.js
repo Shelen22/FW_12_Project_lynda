@@ -126,21 +126,16 @@ var flag = 0;
 
 }
 
-let obj = {
-    by: "By:Kethrin",
-date: "19th September 2020",
-img: "https://www.incimages.com/uploaded_files/image/1920x1080/public-speaking-1940x900_35061.jpg",
-link: "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS",
-name: "Python programming for beginers",
-price: 1500,
-time: 40,
-title: "PYTHON"}
+var obj = JSON.parse(localStorage.getItem('displayed_data'));
+console.log(obj);
+
+
 
 
 function update(){
 
     var img = document.createElement('img');
-    img.src='https://www.incimages.com/uploaded_files/image/1920x1080/public-speaking-1940x900_35061.jpg'
+    img.src=obj.image;
 
    let div = document.createElement('div'); div.setAttribute('id','divv')
 
@@ -148,7 +143,7 @@ function update(){
    course.innerText = "COURSE";
 
    let title = document.createElement('div');  title.setAttribute('id','title')
-   title.innerText = obj.name;
+   title.innerText = obj.title;
 
    let by = document.createElement('div'); by.setAttribute('id','by');
    by.innerText = obj.by;
@@ -161,10 +156,14 @@ function update(){
     var imgdiv = document.getElementById('video-img');
     imgdiv.append(img,div,price); 
     
-    let tax = .18*obj.price;
+    let tax = Math.round(.18*obj.price);
     document.getElementById('taxprice').innerHTML = '₹'+tax+'.00';
 
     let sum = tax+obj.price;
     document.getElementById('tprice').innerHTML = '₹'+sum+'.00';
 }
 update();
+
+function gotohome(){
+    window.location.href = 'Home.html';
+}
