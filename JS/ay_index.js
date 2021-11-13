@@ -35,13 +35,13 @@
 var dis_data = []
 var obj = JSON.parse(localStorage.getItem('H_data'))
 
-if(Array.isArray(obj)){
-    dis_data = obj
-}else{
-    dis_data.push(obj)
-}
+// if(Array.isArray(obj)){
+//     dis_data = obj
+// }else{
+//     dis_data.push(obj)
+// }
 
-// dis_data.push(obj)
+dis_data.push(obj)
 console.log(dis_data)
 var local_title = dis_data[0].title
 console.log('local title is '+local_title)
