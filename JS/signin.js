@@ -3,6 +3,9 @@ async function login(e) {
 
     let pass = document.getElementById('pass');
     let em = document.getElementById('em');
+    if((em.value.length&&pass.value.length)==0){
+        alert("Please Enter login details");
+    }
 
     let user_data = {
         username: em.value,
