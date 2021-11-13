@@ -29,7 +29,7 @@ async function search() {
 
   let scrh = data.filter((el) => {
 
-    if (el.title.toLowerCase().includes(input_search) !== null) {
+    if (el.title.includes(input_search) !== null) {
       return el;
     }
   });
@@ -57,11 +57,11 @@ if(localStorage.getItem('user') !== null){
   let signout = document.getElementById('signout');
   signout.addEventListener('click', signout2 =>{
       localStorage.removeItem('user');
-      
-      let menu = document.getElementById("menu");
-      menu.style.display = "none";
-      reg2.innerHTML = "username";
-      reg.innerHTML = "username";
-      reg3.innerHTML = "username";  
+      window.location.href = "Home.html";
+      // let menu = document.getElementById("menu");
+      // menu.style.display = "none";
+      // reg2.innerHTML = "username";
+      // reg.innerHTML = "username";
+      // reg3.innerHTML = "username";  
 
   });
