@@ -247,6 +247,9 @@
 
         let pass = document.getElementById('pass');
         let em = document.getElementById('em');
+        if((em.value.length&&pass.value.length)==0){
+                alert("Please Enter valid details")
+            }
 
         let user_data = {
             username: em.value,
@@ -285,8 +288,10 @@
                 console.log("res:", res);
                 if(res.name){
                      localStorage.setItem("user", JSON.stringify(res));
-                     window.location.href = "signin1.html";
+                     window.location.href = "main.html";
                     }
+                   
+
                 else {
                     alert('invalid login credentials');
                 }
@@ -297,4 +302,5 @@
     }
 
 
+    
 </script>
