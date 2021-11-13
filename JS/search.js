@@ -9,6 +9,7 @@ let items = JSON.parse(localStorage.getItem("search"));
     items.forEach((el) => {
       //   cors.innerHTML = null;
       let div = document.createElement("div");
+      div.addEventListener('click',run)
       div.setAttribute("class", "courses");
 
       let imgdiv = document.createElement("div");

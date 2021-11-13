@@ -188,12 +188,12 @@ display: flex;
 }
 .a7{
   display: none;
-  color: #4f585e;
+  color: black;
   text-align: center;
 }
 .div1:hover .a7{
 display: block;
-color: #4f585e;
+color: black;
 
 }
 /* ---------------for first div----------------- */
@@ -202,7 +202,7 @@ color: #4f585e;
   display: flex;
   text-align: center;
   margin: 20px;
-  color: #4f585e;
+  color: black;
 }
 .div1_offer{
   display: flex;
@@ -221,7 +221,7 @@ color: #4f585e;
   font-family: Open Sans, sans-serif;
   font-size: 15px;
   font-weight: 800;
-  color: #4f585e;
+  color: black;
   justify-content:space-between;
   align-items: center;
 }
@@ -251,7 +251,7 @@ color: #4f585e;
 .a2{
   /* left:0; */
   margin-right: 200px;
- color: #4f585e;
+ color: black;
  font-family: Open Sans, sans-serif;
    font-size: 12px;
    font-weight: 50;
@@ -265,7 +265,7 @@ color: #4f585e;
 }
 .a3 ,.a6{
  margin-right: 113px;
- color: #4f585e;
+ color: black;
  font-family: Open Sans, sans-serif;
    /* font-size: 12px; */
    font-weight: 50;
@@ -274,7 +274,7 @@ color: #4f585e;
 }
 .a4{
  margin-right: 113px;
- color: #4f585e;
+ color: black;
  font-family: Open Sans, sans-serif;
    /* font-size: 12px; */
    font-weight: 50;
@@ -350,12 +350,12 @@ display: flex;
 }
 .a7{
   display: none;
-  color: #4f585e;
+  color: black;
   text-align: center;
 }
 .div2:hover .a7{
 display: block;
-color: #4f585e;
+color: black;
 }
 /* ---------------for first div----------------- */
 
@@ -363,7 +363,7 @@ color: #4f585e;
   display: flex;
   text-align: center;
   margin: 20px;
-  color: #4f585e;
+  color: black;
 }
 .div2_offer{
   display: flex;
@@ -382,7 +382,7 @@ color: #4f585e;
   font-family: Open Sans, sans-serif;
   font-size: 15px;
   font-weight: 800;
-  color: #4f585e;
+  color: black;
   justify-content:space-between;
   align-items: center;
 }
@@ -412,7 +412,7 @@ color: #4f585e;
 .a2{
   /* left:0; */
   margin-right: 200px;
- color: #4f585e;
+ color: black;
  font-family: Open Sans, sans-serif;
    font-size: 12px;
    font-weight: 50;
@@ -427,7 +427,7 @@ color: #4f585e;
 }
 .a3 ,.a6{
  margin-right: 113px;
- color: #4f585e;
+ color: black;
  font-family: Open Sans, sans-serif;
    /* font-size: 12px; */
    font-weight: 50;
@@ -436,7 +436,7 @@ color: #4f585e;
 }
 .a4{
  margin-right: 113px;
- color: #4f585e;
+ color: black;
  font-family: Open Sans, sans-serif;
    /* font-size: 12px; */
    font-weight: 50;
@@ -513,12 +513,12 @@ display: flex;
 }
 .a7{
   display: none;
-  color: #4f585e;
+  color: black;
   text-align: center;
 }
 .div3:hover .a7{
 display: block;
-color: #4f585e;
+color: black;
 }
 /* ---------------for first div----------------- */
 
@@ -526,7 +526,7 @@ color: #4f585e;
   display: flex;
   text-align: center;
   margin: 20px;
-  color: #4f585e;
+  color: black;
 }
 .div3_offer{
   display: flex;
@@ -545,7 +545,7 @@ color: #4f585e;
   font-family: Open Sans, sans-serif;
   font-size: 15px;
   font-weight: 800;
-  color: #4f585e;
+  color: black;
   justify-content:space-between;
   align-items: center;
 }
@@ -576,7 +576,7 @@ color: #4f585e;
 .a2{
   /* left:0; */
   margin-right: 200px;
- color: #4f585e;
+ color: black;
  font-family: Open Sans, sans-serif;
    font-size: 12px;
    font-weight: 50;
@@ -590,7 +590,7 @@ color: #4f585e;
 }
 .a3 ,.a6{
  margin-right: 113px;
- color: #4f585e;
+ color: black;
  font-family: Open Sans, sans-serif;
    /* font-size: 12px; */
    font-weight: 50;
@@ -599,7 +599,7 @@ color: #4f585e;
 }
 .a4{
  margin-right: 113px;
- color: #4f585e;
+ color: black;
  font-family: Open Sans, sans-serif;
    /* font-size: 12px; */
    font-weight: 50;
@@ -691,12 +691,12 @@ display: flex;
 }
 .a7{
   display: none;
-  color: #4f585e;
+  color: black;
   text-align: center;
 }
 .div4:hover .a7{
 display: block;
-color: #4f585e;
+color: black;
 text-align: left;
 }
 /* ---------------for first div----------------- */
@@ -705,7 +705,7 @@ text-align: left;
   display: flex;
   text-align: center;
   margin: 20px;
-  color: #4f585e;
+  color: black;
 }
 .div4_offer{
   display: flex;
@@ -720,11 +720,11 @@ text-align: left;
   height: 60px;
   margin-left:2%;
   /* background-color:orange; */
-  font-weight: bold;
+
   font-family: Open Sans, sans-serif;
   font-size: 15px;
-  font-weight: 800;
-  color: #4f585e;
+ 
+  color:black;
   justify-content:space-between;
   align-items: center;
 }
@@ -752,9 +752,10 @@ text-align: left;
 }
 .a2{
   /* left:0; */
- font-weight: 500;
+ 
  margin:2%;
- color: #4f585e;
+ color:black;
+
 
    font-size: 12px;
    width:100%;
@@ -766,9 +767,9 @@ text-align: left;
    width: 100%;
   text-align: left;
   margin-bottom: 10px;
-  
+ 
   margin-top:0;
- color: #4f585e;
+ color: black;
  font-family: Open Sans, sans-serif;
    /* font-size: 12px; */
    font-weight: 50;
@@ -777,7 +778,7 @@ text-align: left;
 }
 .a6 {
   text-align: justify;
- 
+ opacity: .7;
   width:95%;
   margin:2%;
   
@@ -786,7 +787,8 @@ text-align: left;
 .a4{
   text-align: left;
 font-weight: 100;
- color: #4f585e;
+ color: rgb(110, 108, 108);
+
  margin-left:2%;
    /* font-size: 12px; */
   
@@ -802,4 +804,11 @@ font-weight: 100;
 }
 .carousal_3 .a3,.carousal_1 .a3{
   margin-top:0;
+  
+}
+
+.carousal_4 h2,.carousal_3 h2,.carousal_2 h2,.carousal_1 h2{
+  font-weight: 500;
+  color: black;
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","Fira Sans",Ubuntu,Oxygen,"Oxygen Sans",Cantarell,"Droid Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Emoji","Segoe UI Symbol","Lucida Grande",Helvetica,Arial,sans-serif;
 }
