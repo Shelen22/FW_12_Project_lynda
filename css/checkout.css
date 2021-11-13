@@ -232,22 +232,23 @@ select{
     font-weight:340;
     margin-left:2%;
     font-size: 14px;
+    width:87%;
 }
 #taxprice{
   
     font-weight:340;
-    margin-left:71%;
+   
     font-size: 14px;
 
 }
 #totall{
     margin-left:2%;
     font-weight: 600; 
-
+    width:85%;
 }
 #tprice{
     font-weight: 600;
-    margin-left: 72%;
+ 
 }
 #amount hr{
     width:95%;
@@ -367,10 +368,16 @@ select{
      
     font-weight: 500;
     margin-top:15px;
+    overflow-y: hidden;
+    height: 21px;
   }
   #pricefinal{
-    margin-left:30%;
+
     height: 30px;
-    
-    margin-top: 12px;
+    margin-left:7%;
+    margin-top: 14px;
+  }
+  #divv{
+      width:60%;
+     margin-left:2%;
   }
