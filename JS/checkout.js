@@ -165,5 +165,5 @@ function update(){
 update();
 
 function gotohome(){
-    window.location.href = '../Home.html';
+    window.location.href = '../index.html';
 }
