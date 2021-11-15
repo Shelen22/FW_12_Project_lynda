@@ -1,5 +1,5 @@
 function redirect(){
-    window.location.href = "../Home.html"
+    window.location.href = "../index.html"
 }
 
 function displayy1(){
