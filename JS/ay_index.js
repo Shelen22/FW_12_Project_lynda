@@ -689,12 +689,12 @@ document.getElementById('whitebox').addEventListener('click',buy)
 
 function buy(){
     console.log('buy course triggered ')
-    window.location.href = "/checkout.html"
+    window.location.href = "../html/checkout.html"
 
 }
 
 document.getElementById('bluebox').addEventListener('click',free)
 
 function free(){
-    window.location.href = "/checkoutfree.html"
+    window.location.href = "../html/checkoutfree.html"
 }
