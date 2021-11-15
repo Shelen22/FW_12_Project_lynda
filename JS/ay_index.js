@@ -118,7 +118,7 @@ data_S.forEach((el)=>{
 
     var img_div = document.createElement('div')
     var img = document.createElement('img')
-    img.src = `images/${el.img}`
+    img.src = `../images/${el.img}`
     img.style.width = '220px'
     img.style.height = '130px'
     img_div.append(img)
@@ -649,7 +649,7 @@ data_related.forEach((el)=>{
 
     var img_div = document.createElement('div')
     var img = document.createElement('img')
-    img.src = `images/${el.img}`
+    img.src = `../images/${el.img}`
     img.style.width = '158px'
     img.style.height = '92px'
     

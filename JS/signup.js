@@ -31,5 +31,5 @@ let userId = Math.floor( Math.random()*999 ) + 100;
         console.log(res);
         alert("Account created Successfully")
 
-        window.location.href = './signin.html';
+        window.location.href = '../html/signin.html';
     }

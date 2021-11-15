@@ -21,7 +21,7 @@ search_btn.addEventListener("click", search);
 async function search() {
   let input_search = document.getElementById("search-input").value;
 
-  let res = await fetch("./search-js/search.json");
+  let res = await fetch("../search-js/search.json");
   let d = await res.json();
 
   let data = d.data;
@@ -38,7 +38,7 @@ async function search() {
    localStorage.setItem("search",JSON.stringify(scrh));
  
 
-   window.location.href = "search.html";
+   window.location.href = "../html/search.html";
 }
 
 let reg = document.getElementById('change');
@@ -69,7 +69,7 @@ if(localStorage.getItem('user') !== null){
   let signout = document.getElementById('signout');
   signout.addEventListener('click', signout2 =>{
       localStorage.removeItem('user');
-      window.location.href = "Home.html";
+      window.location.href = "../Home.html";
       // let menu = document.getElementById("menu");
       // menu.style.display = "none";
       // reg2.innerHTML = "username";

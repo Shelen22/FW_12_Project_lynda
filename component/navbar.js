@@ -1,7 +1,7 @@
 function navbar(){
     return` <div id="nav">
     <navbar class="navbar">
-        <a href="Home.html"><div class="logo">
+        <a href="../Home.html"><div class="logo">
             <img src="https://th.bing.com/th?q=LinkedIn+Logo+HD&w=120&h=120&c=1&rs=1&qlt=90&cb=1&pid=InlineBlock&mkt=en-IN&adlt=moderate&t=1&mw=247"
                 alt="iN">
             <p>LEARNING</p>
@@ -31,8 +31,8 @@ function navbar(){
                 <p>Language</p>
             </div>
         </div>
-        <div id="sign-up" class="sign-up"><a href="./signup.html">Sign up</a></div>
-        <div id="sign-up-remove" class="sign-up-remove"><a href="./checkoutfree.html">Start my free month</a></div>
+        <div id="sign-up" class="sign-up"><a href="../html/signup.html">Sign up</a></div>
+        <div id="sign-up-remove" class="sign-up-remove"><a href="../html/checkoutfree.html">Start my free month</a></div>
     </navbar>
 </div>
 <div id="second">

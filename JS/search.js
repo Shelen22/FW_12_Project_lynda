@@ -50,7 +50,7 @@ let items = JSON.parse(localStorage.getItem("search"));
       localStorage.setItem('H_data',JSON.stringify(obj));
       
       function run(){
-        window.location.href = '/ay_index.html'
+        window.location.href = '../html/ay_index.html'
       }
 
     });

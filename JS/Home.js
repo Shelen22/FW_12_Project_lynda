@@ -160,7 +160,7 @@
   })
   function move(data){
     localStorage.setItem('H_data',JSON.stringify(data));
-    window.location.href ='/ay_index.html'
+    window.location.href ='../html/ay_index.html'
   }
         })
         var span7 = document.getElementById('span_7');
@@ -383,7 +383,7 @@
             })
             function move(data) {
                 localStorage.setItem('H_data', JSON.stringify(data));
-                window.location.href = 'ay_index.html'
+                window.location.href = '../html/ay_index.html'
             }
         })
         var span1 = document.getElementById('span_1');
@@ -607,7 +607,7 @@
             })
             function move(data) {
                 localStorage.setItem('H_data', JSON.stringify(data));
-                window.location.href = 'ay_index.html'
+                window.location.href = '../html/ay_index.html'
             }
         })
         var span3 = document.getElementById('span_3');
@@ -832,7 +832,7 @@
   })
   function move(data){
     localStorage.setItem('H_data',JSON.stringify(data));
-    window.location.href ='/ay_index.html'
+    window.location.href ='../html/ay_index.html'
   }
         })
         var span5 = document.getElementById('span_5');
