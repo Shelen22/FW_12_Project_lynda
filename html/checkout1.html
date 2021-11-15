@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+</head>
+
+ <link rel='stylesheet' href='../css/checkout1.css'/>
+ 
+<body>
+    
+    <div id='navbar-c'>
+        <img id="li-icon" src="https://cdn.iconscout.com/icon/free/png-64/linkedin-2752135-2284952.png" onclick='gotohome()'/>
+        
+
+        <svg class='lock-icon'>
+            <path d="M12,7H11V4A3,3,0,0,0,5,4V7H4A1,1,0,0,0,3,8v6a1,1,0,0,0,1,1h8a1,1,0,0,0,1-1V8A1,1,0,0,0,12,7ZM7,3.88a1,1,0,0,1,2,0V7H7V3.88ZM11,13H5V9h6v4Z" ></path>
+           </svg>
+
+        <p> SECURE CHECKOUT</p>
+
+        <svg class="set-icon">
+            <path d="M12,9a3,3,0,1,0,3,3A3,3,0,0,0,12,9Zm0,5.13A2.13,2.13,0,1,1,14.12,12,2.12,2.12,0,0,1,12,14.13Zm7.91-2.87L22,9.38,19.26,4.62,16.6,5.5a1,1,0,0,1-1.29-.75L14.74,2H9.26L8.69,4.75A1,1,0,0,1,7.4,5.5L4.74,4.62,2,9.38l2.09,1.87a1,1,0,0,1,0,1.49L2,14.62l2.74,4.76L7.4,18.5a1,1,0,0,1,1.29.75L9.26,22h5.48l0.57-2.75a1,1,0,0,1,1.29-.75l2.66,0.88L22,14.62l-2.09-1.87A1,1,0,0,1,19.91,11.25ZM18.4,17.12l-1.22-.4a2.86,2.86,0,0,0-3.7,2.14l-0.26,1.26H10.78l-0.26-1.26a2.86,2.86,0,0,0-3.7-2.14l-1.22.4L4.38,15l1-.86a2.88,2.88,0,0,0,0-4.29L4.38,9,5.6,6.88l1.22,0.4a2.86,2.86,0,0,0,3.7-2.14l0.26-1.26h2.44l0.26,1.26a2.86,2.86,0,0,0,3.7,2.14l1.22-.4L19.62,9l-1,.86a2.88,2.88,0,0,0,0,4.29l1,0.86Z"></path>
+        </svg>
+    </div>
+
+    <div id='checkout'>
+
+        <div id='onlylap'>
+            <div id='c'>Learning Premium Subscription</div> <div id='c-side'>start your 1-month free trial now!</div>
+        </div>
+          
+      <div id='list'> <h3 id='round'>1</h3><h3>Confirm your billing cycle</h3></div>
+        
+      <p id='save36'>Select annual to <strong>save 36% </strong>and expense with a <strong>single receipt</strong>.</p>
+
+
+     <div id='selectt'>
+
+        <div id='monthly' onclick="showmonthly()">
+            <h3>Monthly</h3>
+            <p>1-month free trial
+                then ₹1,400.00 / month</p>
+        </div>
+
+        <div id='annually' onclick="showannual()">
+            <div id='savee'>Save 36%</div>
+             <div>
+                <h3>Annual</h3>
+                <p>1-month free trial
+                    then ₹900.00 / month (₹10,800.00 annually)</p>
+             </div>
+            
+        </div>
+
+     </div>
+
+     <div id='amount'>
+      <div id='taxflex'> <p id='tax'>Monthly after free trial</p> <p id='taxprice'>₹1,400.00</p></div>
+         <hr/>
+        <div id='taxflex'> <p id='totall'>Today's total</p><p id='tprice'>₹0.00</p> </div>
+        <hr id='hrline'/>
+        <p id='ends'>You can cancel anytime before trial ends to avoid being charged and we’ll send an email reminder 7 days before the trial ends.</p>
+        </div>
+
+        <div id='amount-a'>
+            <div id='taxflex-a'> <p id='tax-a'>Total after free trial (₹900.00 x 12 months)</p> <p id='taxprice-a'>₹10,800.00</p></div>
+            <div id='d-rupe'>*₹6,000.00 saving when you buy annual</div>
+               <hr/>
+              <div id='taxflex-a'> <p id='totall-a'>Today's total</p><p id='tprice-a'>₹0.00</p> </div>
+              <hr id='hrline'/>
+              <p id='ends-a'>You can cancel anytime before trial ends to avoid being charged and we’ll send an email reminder 7 days before the trial ends.</p>
+              </div>
+
+        <div id='list'> <h3 id='round'>2</h3><h3>Payment</h3></div>
+
+        <div id='card'>
+
+              <img src="https://static-exp1.licdn.com/sc/h/8bca1rltjmsti0v31srweuz2z"/>
+              <hr/>
+
+              <div id='card-details'>
+
+                <form id='form'>
+                    <div class='info'>First name* </div>  
+                      <input id='namef' type='text'/> <div id='wrongf'></div>
+
+                      <div class='info'>Last name* </div>
+                      <input id='namel' type='text'/> <div id='wrongl'></div>
+
+                      <div class='info'>Credit or debit card number* </div>
+                      <input id='namec' type='number'/> <div id='wrongc'></div>
+                      
+                      <div id='i-flex'> 
+                     <div id='exp' class='info'>Expiration date* <input id='expdate' placeholder='MM/YY'/><div id='wronge'></div></div>  <div id="sec" class='info'>Security code* <input id='cvv'placeholder="CVV" type='number'/><div id='wrongcvv'></div></div>
+                      </div>
+
+                      <div class='info'>Country* </div>
+                      <select>
+                          <option>India</option>
+                      </select> 
+
+                      <div id='i-flex'> 
+                        <div id='exp' class='info' >Postal code* <input id='pincode'type='number'/><div id='wrongpin'></div></div>  <div id="sec" class='info'>GST<input placeholder="Optional"/></div>
+                         </div>
+                             
+                        
+                    
+                  </form>
+                             
+                        
+                    
+                  </form>
+                  <button id='btnpay' onclick="payment()">Review order</button>
+
+              </div>
+             
+        </div>
+
+      
+        
+        <div id='faq'>
+               <h3>Frequently asked questions</h3>
+                 <hr/>
+               <div id='faqflex'>
+
+                   <div id='faq-ans'> 
+                       <h5>Will I be charged during my free trial?</h5>
+                       <p>No, you won’t be charged during your free trial, which begins on November 10, 2021 and ends on December 10, 2021. You can cancel anytime before December 10, 2021 to avoid being charged.</p>
+                   </div>
+
+                   <div id='faq-ans'> 
+                    <h5>How can I cancel during my free trial?</h5>
+                    <p>Once you're signed up, a link to cancel will appear on your Settings page. Learn more about how to cancel on our Help Center.</p>
+                    </div>
+
+                <div id='faq-ans'> 
+                    <h5>What happens after the free trial period?</h5>
+                   <p>If you do not cancel before your free trial period ends on December 10, 2021, you will be automatically charged for your subscription.</p>
+                   </div>
+
+               </div>
+        </div>
+
+    </div>
+
+    <div id='link'>
+        <span >LinkedIn Corporation © 2021 -</span>  <span > <a href="">Privacy Policy</a></span>
+    </div>
+
+    
+  
+    
+</body>
+</html>
+
+<script src='../JS/checkout1.js'>
+    
+</script>
