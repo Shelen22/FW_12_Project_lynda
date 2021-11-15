@@ -144,6 +144,6 @@ var flag = 0;
 
 }
 function gotohome(){
-    window.location.href = 'Home.html';
+    window.location.href = '../Home.html';
 }
 
