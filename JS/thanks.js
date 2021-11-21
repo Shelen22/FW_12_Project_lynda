@@ -20,4 +20,4 @@ function happylearn(){
    document.getElementById('happy-learn').style.display = 'block';
 }
 setTimeout(happylearn,4000);
-setTimeout(redirect,8000);
+setTimeout(redirect,6000);
