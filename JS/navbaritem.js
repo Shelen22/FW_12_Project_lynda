@@ -69,7 +69,7 @@ if(localStorage.getItem('user') !== null){
   let signout = document.getElementById('signout');
   signout.addEventListener('click', signout2 =>{
       localStorage.removeItem('user');
-      window.location.href = "index.html";
+      window.location.href = "../index.html";
       // let menu = document.getElementById("menu");
       // menu.style.display = "none";
       // reg2.innerHTML = "username";
