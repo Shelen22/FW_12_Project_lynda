@@ -21,7 +21,7 @@ search_btn.addEventListener("click", search);
 async function search() {
   let input_search = document.getElementById("search-input").value;
 
-  let res = await fetch("./search-js/search.json");
+  let res = await fetch("../search-js/search.json");
   let d = await res.json();
 
   let data = d.data;
