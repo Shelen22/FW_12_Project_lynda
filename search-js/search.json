@@ -8,7 +8,7 @@
       "by": "By: Joe Marini",
       "view": "1,012,922 viewers",
       "date": "Jan 30, 2018",
-      "price":"2000"
+      "price": "2000"
     },
     {
       "img": "https://images.hdqwalls.com/download/python-logo-4k-i6-1080x720.jpg",
@@ -18,7 +18,7 @@
       "by": "By: Bill Weinman",
       "view": "492,047 viewers",
       "date": "Jan 18, 2018",
-      "price":"5000"
+      "price": "5000"
     },
     {
       "img": "https://hdqwalls.com/download/1080x720/python",
@@ -28,7 +28,7 @@
       "by": "By: Annyce Davis",
       "view": "330,459 viewers",
       "date": "Jul 22, 2019",
-      "price":"2200"
+      "price": "2200"
     },
     {
       "img": "https://c4.wallpaperflare.com/wallpaper/966/672/905/javascript-minimalism-wallpaper-preview.jpg",
@@ -38,7 +38,7 @@
       "by": "By: Morten Rand-Hendriksen",
       "view": "95,179 viewers",
       "date": "Jan 20, 2021",
-      "price":"3300"
+      "price": "3300"
     },
     {
       "img": "https://c4.wallpaperflare.com/wallpaper/294/834/442/reactjs-facebook-javascript-minimalism-wallpaper-preview.jpg",
@@ -48,7 +48,7 @@
       "by": "By: Joe Chellman",
       "view": "65,690 viewers",
       "date": "Feb 5, 2019",
-      "price":"3400"
+      "price": "3400"
     },
     {
       "img": "https://c4.wallpaperflare.com/wallpaper/570/369/129/node-js-javascript-hexagon-abstract-wallpaper-preview.jpg",
@@ -58,7 +58,7 @@
       "by": "By: Sasha Vodnik",
       "view": "17,045 viewers",
       "date": "Mar 20, 2019",
-      "price":"1600"
+      "price": "1600"
     },
     {
       "img": "https://c4.wallpaperflare.com/wallpaper/628/187/589/code-minimalism-programming-programming-language-wallpaper-preview.jpg",
@@ -68,7 +68,7 @@
       "by": "By: Jess Chadwick",
       "view": "35,887 viewers",
       "date": "May 2, 2016",
-      "price":"2100"
+      "price": "2100"
     },
     {
       "img": "https://c4.wallpaperflare.com/wallpaper/387/1/67/technology-programming-angularjs-coding-wallpaper-preview.jpg",
@@ -78,7 +78,7 @@
       "by": "By: Emmanuel Henri",
       "view": "91,042 viewers",
       "date": "Jul 17, 2018",
-      "price":"6400"
+      "price": "6400"
     },
     {
       "img": "https://c0.wallpaperflare.com/preview/920/519/697/abstract-php-c-analytics.jpg",
@@ -88,7 +88,7 @@
       "by": "By: Eduardo Corpeño",
       "view": "5,290 viewers",
       "date": "Sep 21, 2021",
-      "price":"7400"
+      "price": "7400"
     },
     {
       "img": "https://c0.wallpaperflare.com/preview/944/356/969/concept-construction-page-site.jpg",
@@ -98,7 +98,7 @@
       "by": "By: Bill Weinman",
       "view": "37,836 viewers",
       "date": "Nov 30, 2020",
-      "price":"3700"
+      "price": "3700"
     },
     {
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_TckuX8JW3OH7oArOb-BO7ntJUrPUUHjvng&usqp=CAU",
@@ -108,7 +108,7 @@
       "by": "By: Bill Weinman",
       "view": "133,515 viewers",
       "date": "Dec 20, 2018",
-      "price":"7630"
+      "price": "7630"
     },
     {
       "img": "data:image/png;base64,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ZgY6XfaNK/7sLiW+fyiXyQzwV5rScLQ3V8Wcj+66dHosBmdH3yWxv0cHhZxNrtdbTwoB9x9fcbU3VxLfd2053tVMNVUlnO3NuWq53mTsqLaqhLO9OVQ97K4/q5aqhre9aQ29gcpcv4S2TuFub1pWNFSYm5/nfqvKDHd7U3F2oL4emYZwCAxc3K/Q5ATam0rjfoImRzwEBizRAzg5njICQiJok2sHPZEOgcGK+whuLUw+BAYq0RdoY452CAxSoo/gvrJOOwQGKXcX0AadYHtTWdwf0B50upQR0TO0MafNumQHb13CtXtTfe7egZPja28qT/QN3IOOdQgMSKKPqqFqEdoloTARvHUJf3tTadwncLerL7RLQlkAFmC6tDd30N4d6tPeBNcY7viqTfjifgL3oNOkjIg+qIaqRZcywoJXgGlSRriP0OR4d0moTvQF3INOk/YmwMawLmUEvAJMl/YmwAJMkzICYmNYkzLCArczR+QQmMq44BrD2rQ338N70OnR3oweVEPVInYITF3g7czRpb0JsAATPASmKgALMPTuvzsXfu524AqwTudCj4Bb0aVBWkS1komJiYmJiYmJiYmJiYmJye+X/wHduL2lhBGffAAAAABJRU5ErkJggg==",
@@ -118,7 +118,7 @@
       "by": "By: Bill Weinman",
       "view": "32,883 viewers",
       "date": "Dec 20, 2018",
-      "price":"5200"
+      "price": "5200"
     },
     {
       "img": "data:image/jpeg;base64,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",
@@ -128,7 +128,7 @@
       "by": "By: Peggy Fisher",
       "view": "34,802 viewers",
       "date": "Jan 12, 2017",
-      "price":"9100"
+      "price": "9100"
     },
     {
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm_MYupIUb4kBEsvpcGyXfYC2AZBKrlThFQA&usqp=CAU",
@@ -138,7 +138,7 @@
       "by": "By: Olivia Chiu Stone",
       "view": "123,451 viewers",
       "date": "Mar 28, 2018",
-      "price":"4200"
+      "price": "4200"
     },
     {
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDjFU-GVnRtsfyY6CiCAg0GFBh7u4VnOWZEQ&usqp=CAU",
@@ -148,7 +148,7 @@
       "by": "By: Olivia Chiu Stone and Barron Stone",
       "view": "32,961 viewers",
       "date": "May 15, 2020",
-      "price":"6500"
+      "price": "6500"
     },
     {
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZtrar5TXIDaB13TDWvrggFZZyF0n_OKVmVA&usqp=CAU",
@@ -158,7 +158,7 @@
       "by": "By: Eduardo Corpeño",
       "view": "64,080 viewers",
       "date": "Mar 1, 2018",
-      "price":"7000"
+      "price": "7000"
     },
     {
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLNYsbYJRNCBjJe16YV7zA26kkCJ5ZWrrA2A&usqp=CAU",
@@ -168,7 +168,7 @@
       "by": "By: Troy Miles",
       "view": "12,289 viewers",
       "date": "Dec 6, 2018",
-      "price":"8200"
+      "price": "8200"
     },
     {
       "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAsSx9DG3RkxlOSWH-Jqh7OjjHef4Rx2uOtA&usqp=CAU",
@@ -178,7 +178,7 @@
       "by": "By: Richard Wells",
       "view": "38,226 viewers",
       "date": "Jun 28, 2018",
-      "price":"1900"
+      "price": "1900"
     }
   ]
 }
