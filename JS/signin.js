@@ -45,7 +45,7 @@ function fetchmyData(username, token) {
             console.log("res:", res);
             if(res.name){
                  localStorage.setItem("user", JSON.stringify(res.username));
-                 window.location.href = "../index.html";
+                 window.location.href = "index.html";
                 }
             else {
                 alert('invalid login credentials');
