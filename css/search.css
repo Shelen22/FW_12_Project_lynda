@@ -3,11 +3,47 @@
     margin: 0;
     font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","Fira Sans",Ubuntu,Oxygen,"Oxygen Sans",Cantarell,"Droid Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Emoji","Segoe UI Symbol","Lucida Grande",Helvetica,Arial,sans-serif;
 
+  }  
+
+  #types{
+     background-color:rgb(255, 255, 255);
+     top: 15%;
+     position: fixed;
+     height: 56px;
+     width: 100%;
+     box-sizing: border-box;
+     box-shadow: 0 0 0 1px rgb(0 0 0 / 10%)
   }
+  #types ul li > img{
+     width: 20px;
+     
+  }
+  #types ul li{
+    list-style: none;
+    border: 1px solid gray;
+    padding: 6px 12px;
+    font-size:15px;
+    font-weight: 500;
+    display: flex;
+    cursor: pointer;
+    color: grey;
+    border-radius:30px;
+  }
+
+   .reset{
+      border: none !important;
+      color: blue !important;
+   }
+  #types ul {
+     display: flex;
+     gap: 10px;
+     margin: 1% 10%;
+     box-sizing: border-box;
+    }
   
     
   #get-items{
-     margin-top:12%;
+     margin-top:13%;
   }
   .courses {
     display: flex;
