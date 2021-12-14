@@ -146,4 +146,3 @@ var flag = 0;
 function gotohome(){
     window.location.href = '../index.html';
 }
-
