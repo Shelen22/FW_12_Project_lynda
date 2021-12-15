@@ -124,9 +124,11 @@ var parent_scroll = document.getElementById('scroll_box')
 async function db2(){
     let res = await fetch("http://localhost:2244/data_R")
     var data_R = await res.json()
+    console.log('data_R:', data_R)
+
     showData_R(data_R)
 }
-
+    db2()
 function showData_R(data_R){
     data_R.forEach((el)=>{
         for( var i = 0 ; i < dis_data.length ; i++ ){
@@ -264,7 +266,7 @@ function showData_R(data_R){
 
                     var flag_basics = true
                     function basics(){
-                        // console.log('basics triggerd')
+                      
                         if(flag_basics){
                             flag_basics = false
                     
