@@ -126,6 +126,7 @@ async function db2(){
     var data_R = await res.json()
     showData_R(data_R)
 }
+db2()
 
 function showData_R(data_R){
     data_R.forEach((el)=>{
