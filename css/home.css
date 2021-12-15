@@ -26,7 +26,6 @@
  }
 .site{
   width: 35%;
-  /* border: 2px solid green; */
   overflow: hidden;
 }
 .site > img{
