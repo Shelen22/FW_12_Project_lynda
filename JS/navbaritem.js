@@ -21,10 +21,10 @@ search_btn.addEventListener("click", search);
 async function search() {
   let input_search = document.getElementById("search-input").value;
 
-  let res = await fetch("../search-js/search.json");
+  let res = await fetch("http://localhost:2244/search");
   let d = await res.json();
 
-  let data = d.data;
+  let data = d;
   console.log('data:', data)
 
   let scrh = data.filter((el) => {

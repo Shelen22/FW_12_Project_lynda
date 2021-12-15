@@ -1,127 +1,136 @@
 
-          let products = [
-    {
-      title: "PYTHON",
-      name: "Python programming for beginers",
-      by: "By:Kethrin",
-      date: "19th September 2020",
-      img: "https://www.incimages.com/uploaded_files/image/1920x1080/public-speaking-1940x900_35061.jpg",
-      link: "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS",
-      time: 40,
-      price: 1500,
-    },
-    {
-      title: "MS EXCEL",
-      name: "MS excel beginer to advance",
-      by: "By:shekher",
-      date: "19th August 2021",
-      img: "https://image.shutterstock.com/image-vector/online-education-educational-webinar-home-260nw-1875251122.jpg",
-      link: "https://www.javatpoint.com/excel-tutorial",
-      time: 4000,
-      price: 400,
-    },
-    {
-      title: "SQL",
-      name: "Be an expert in sql",
-      by: "By:Saroj yadav",
-      date: "03th july 2021",
-      img: "https://intellipaat.com/mediaFiles/2015/11/SQL-e1559106221282.png",
-      link: "https://www.simplilearn.com/tutorials/sql-tutorial/sql-advanced",
-      time: 100,
-      price: 6000,
-    },
-    {
-      title: "DJANGO",
-      name: "Django framework for intermidiate",
-      by: "By:Paul Johnson",
-      date: "19th March 2017",
-      img: "https://miro.medium.com/max/1200/1*ctRMfb38pEMBx-Q7XZAQkQ.jpeg",
-      link: "https://docs.djangoproject.com/en/3.2/",
-      time: 300,
-      price: 3999,
-    },
-    {
-      title: "MEDIA QUERIES",
-      name: "Create responsive pages using css media queries",
-      by: "By:Ashish Mehra",
-      date: "04th june 2019",
-      img: "https://i.ytimg.com/vi/HY8q4TD3KGM/maxresdefault.jpg",
-      link: "https://docs.djangoproject.com/en/3.2/",
-      time: 123,
-      price: 399,
-    },
-    {
-      title: "ASYNC",
-      name: "Learn promies be expert in async and awaits ",
-      by: "By:Shivani Chaudhari",
-      date: "01th January 2018",
-      img: "https://image.shutterstock.com/image-vector/asynchronous-learning-concept-icon-location-260nw-1832025757.jpg",
-      link: "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await",
-      time: 320,
-      price: 490,
-    },
-    {
-      title: "LEARN FIGMA",
-      name: "Create and design your own figma based website ",
-      by: "By:Tejasvi Singh",
-      date: "09th april 2013",
-      img: "https://miro.medium.com/max/1200/0*o5oUDM7g3T7wswtW.jpg",
-      link: "https://mockitt.wondershare.com/figma/figma-tutorial.html",
-      time: 600,
-      price: 999,
-    },
-    {
-      title: "REACT",
-      name: "Create and design your own first website ",
-      by: "By:shekhar",
-      date: "09th may 2018",
-      img: "https://miro.medium.com/max/1024/1*h5UGPzaL1E4dIy_JWDrsAw.png",
-      link: "https://www.tutorialspoint.com/react_native/react_native_overview.htm",
-      time: 4500,
-      price: 5999,
-    },
-    {
-      title: "DSA",
-      name: "Be a pro in data structures and algorithms",
-      by: "By:Abdul Bari",
-      date: "09th october 2020",
-      img: "https://res.cloudinary.com/twenty20/private_images/t_watermark-criss-cross-10/v1621544627000/photosp/5ba7131d-4c92-47d2-878a-8afc6c74a918/stock-photo-education-text-handmade-logo-psychology-acronym-dsa-colored-letters-stone-letters-5ba7131d-4c92-47d2-878a-8afc6c74a918.jpg",
-      link: "https://www.geeksforgeeks.org/data-structures/",
-      time: 8000,
-      price: 10000,
-    },
-    {
-      title: "DOCKERS",
-      name: "Docker for develpers ",
-      by: "By:Peter Dakota ",
-      date: "28th February 2020",
-      img: "https://developers.redhat.com/sites/default/files/styles/article_feature/public/blog/2014/05/homepage-docker-logo.png?itok=zx0e-vcP",
-      link: "https://developer.mozilla.org/en-US/docs/Mozilla/QA/Running_automated_tests/Docker",
-      time: 3000,
-      price: 9550,
-    },
-    {
-      title: "APTITUDE & REASONING ",
-      name: "Learn aptitude and reasoning to crack the GATE ",
-      by: "By:Swastika Mukharjee",
-      date: "09th may 2018",
-      img: "https://image.shutterstock.com/image-vector/capabilities-human-brain-mind-map-260nw-236140372.jpg",
-      link: "https://developer.mozilla.org/en-US/docs/Mozilla/QA/Running_automated_tests/Docker",
-      time: 780,
-      price: 450,
-    },
-    {
-      title: "HTML & CSS",
-      name: "create atractive ui by using html and css ",
-      by: "By:Viraat sharma",
-      date: "21th Februay 2014",
-      img: "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_640.png",
-      link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
-      time: 788,
-      price: 900,
-    },
-  ];
-        products.forEach(function(p){
+//           let products = [
+//     {
+//       title: "PYTHON",
+//       name: "Python programming for beginers",
+//       by: "By:Kethrin",
+//       date: "19th September 2020",
+//       img: "https://www.incimages.com/uploaded_files/image/1920x1080/public-speaking-1940x900_35061.jpg",
+//       link: "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS",
+//       time: 40,
+//       price: 1500,
+//     },
+//     {
+//       title: "MS EXCEL",
+//       name: "MS excel beginer to advance",
+//       by: "By:shekher",
+//       date: "19th August 2021",
+//       img: "https://image.shutterstock.com/image-vector/online-education-educational-webinar-home-260nw-1875251122.jpg",
+//       link: "https://www.javatpoint.com/excel-tutorial",
+//       time: 4000,
+//       price: 400,
+//     },
+//     {
+//       title: "SQL",
+//       name: "Be an expert in sql",
+//       by: "By:Saroj yadav",
+//       date: "03th july 2021",
+//       img: "https://intellipaat.com/mediaFiles/2015/11/SQL-e1559106221282.png",
+//       link: "https://www.simplilearn.com/tutorials/sql-tutorial/sql-advanced",
+//       time: 100,
+//       price: 6000,
+//     },
+//     {
+//       title: "DJANGO",
+//       name: "Django framework for intermidiate",
+//       by: "By:Paul Johnson",
+//       date: "19th March 2017",
+//       img: "https://miro.medium.com/max/1200/1*ctRMfb38pEMBx-Q7XZAQkQ.jpeg",
+//       link: "https://docs.djangoproject.com/en/3.2/",
+//       time: 300,
+//       price: 3999,
+//     },
+//     {
+//       title: "MEDIA QUERIES",
+//       name: "Create responsive pages using css media queries",
+//       by: "By:Ashish Mehra",
+//       date: "04th june 2019",
+//       img: "https://i.ytimg.com/vi/HY8q4TD3KGM/maxresdefault.jpg",
+//       link: "https://docs.djangoproject.com/en/3.2/",
+//       time: 123,
+//       price: 399,
+//     },
+//     {
+//       title: "ASYNC",
+//       name: "Learn promies be expert in async and awaits ",
+//       by: "By:Shivani Chaudhari",
+//       date: "01th January 2018",
+//       img: "https://image.shutterstock.com/image-vector/asynchronous-learning-concept-icon-location-260nw-1832025757.jpg",
+//       link: "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await",
+//       time: 320,
+//       price: 490,
+//     },
+//     {
+//       title: "LEARN FIGMA",
+//       name: "Create and design your own figma based website ",
+//       by: "By:Tejasvi Singh",
+//       date: "09th april 2013",
+//       img: "https://miro.medium.com/max/1200/0*o5oUDM7g3T7wswtW.jpg",
+//       link: "https://mockitt.wondershare.com/figma/figma-tutorial.html",
+//       time: 600,
+//       price: 999,
+//     },
+//     {
+//       title: "REACT",
+//       name: "Create and design your own first website ",
+//       by: "By:shekhar",
+//       date: "09th may 2018",
+//       img: "https://miro.medium.com/max/1024/1*h5UGPzaL1E4dIy_JWDrsAw.png",
+//       link: "https://www.tutorialspoint.com/react_native/react_native_overview.htm",
+//       time: 4500,
+//       price: 5999,
+//     },
+//     {
+//       title: "DSA",
+//       name: "Be a pro in data structures and algorithms",
+//       by: "By:Abdul Bari",
+//       date: "09th october 2020",
+//       img: "https://res.cloudinary.com/twenty20/private_images/t_watermark-criss-cross-10/v1621544627000/photosp/5ba7131d-4c92-47d2-878a-8afc6c74a918/stock-photo-education-text-handmade-logo-psychology-acronym-dsa-colored-letters-stone-letters-5ba7131d-4c92-47d2-878a-8afc6c74a918.jpg",
+//       link: "https://www.geeksforgeeks.org/data-structures/",
+//       time: 8000,
+//       price: 10000,
+//     },
+//     {
+//       title: "DOCKERS",
+//       name: "Docker for develpers ",
+//       by: "By:Peter Dakota ",
+//       date: "28th February 2020",
+//       img: "https://developers.redhat.com/sites/default/files/styles/article_feature/public/blog/2014/05/homepage-docker-logo.png?itok=zx0e-vcP",
+//       link: "https://developer.mozilla.org/en-US/docs/Mozilla/QA/Running_automated_tests/Docker",
+//       time: 3000,
+//       price: 9550,
+//     },
+//     {
+//       title: "APTITUDE & REASONING ",
+//       name: "Learn aptitude and reasoning to crack the GATE ",
+//       by: "By:Swastika Mukharjee",
+//       date: "09th may 2018",
+//       img: "https://image.shutterstock.com/image-vector/capabilities-human-brain-mind-map-260nw-236140372.jpg",
+//       link: "https://developer.mozilla.org/en-US/docs/Mozilla/QA/Running_automated_tests/Docker",
+//       time: 780,
+//       price: 450,
+//     },
+//     {
+//       title: "HTML & CSS",
+//       name: "create atractive ui by using html and css ",
+//       by: "By:Viraat sharma",
+//       date: "21th Februay 2014",
+//       img: "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_640.png",
+//       link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+//       time: 788,
+//       price: 900,
+//     },
+//   ];
+        
+async function search() {
+    // let input_search = document.getElementById("search-input").value;
+  
+    let res = await fetch("http://localhost:2244/course");
+    let d = await res.json();
+      console.log('d:', d)
+      
+
+    d.forEach(function(p){
             var content = document.getElementById('sc')
           var div1=document.createElement('div');
           div1.setAttribute('class','div4');
@@ -158,11 +167,13 @@
           div1.addEventListener('click', function(){
     move(p)
   })
+
   function move(data){
     localStorage.setItem('H_data',JSON.stringify(data));
     window.location.href ='../html/ay_index.html'
   }
         })
+    }
         var span7 = document.getElementById('span_7');
         var span8 = document.getElementById('span_8');
         // console.log(span)
