@@ -42,7 +42,7 @@ var obj = JSON.parse(localStorage.getItem('H_data'))
 // }
 
 dis_data.push(obj)
-console.log(dis_data)
+// console.log(dis_data)
 var local_title = dis_data[0].title
 console.log('local title is '+local_title)
 
@@ -82,8 +82,10 @@ showdata()
 
 async function db1(){
     let res = await fetch("http://localhost:2244/data_S")
-    var data_S = await res.json()
-    datas(data_S)
+    var data = await res.json();
+    console.log('data:', data)
+
+    datas(data)
 }
 db1()
 
@@ -129,6 +131,7 @@ async function db2(){
     showData_R(data_R)
 }
     db2()
+
 function showData_R(data_R){
     data_R.forEach((el)=>{
         for( var i = 0 ; i < dis_data.length ; i++ ){
