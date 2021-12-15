@@ -238,21 +238,24 @@ transition: .5s;
  
 #second{
   width: 100%;
-  height:40px ;
+  /* height:40px ; */
   background-color:#f3f6f8;
   top: 56px;
   z-index: 999;
   position: fixed;
+  box-sizing:border-box;
   box-shadow: 0 0 0 1px rgb(0 0 0 / 15%), 0 2px 3px rgb(0 0 0 / 20%);
  }
 #nav2{
   width: 85%;
   margin: 1% 7%;
+  box-sizing: border-box;
 }
 #nav2 > ul{
 display: flex;
 gap: 20px;
-margin-left: 48%;
+flex-wrap: nowrap;
+margin-left: 52%;
 font-size:14px;
 color: grey;
 }
@@ -266,4 +269,32 @@ color: grey;
     cursor: pointer;
     text-decoration: underline;
 
+}
+@media (max-width:750px){
+    #second{
+        display:none;
+    }
+    
+}
+@media (max-width:1200px) and (min-width:1000px){
+    #nav2{
+        width:100%;
+        box-sizing: border-box;
+    }
+     #nav2 > ul{
+         margin-left: 45%;
+         gap: 14px;
+         margin-right: 1%;
+     }
+}
+@media (max-width:1000px) and (min-width:750px){
+    #nav2{
+        width:100%;
+        box-sizing: border-box;
+    }
+     #nav2 > ul{
+         margin-left: 39%;
+         gap: 14px;
+         margin-right: 1%;
+     }
 }
