@@ -81,18 +81,18 @@ showdata()
 
 
 async function db1(){
-    let res = await fetch("http://localhost:2244/data_S")
-    var data = await res.json();
-    console.log('data:', data)
+    let res = await fetch("http://localhost:2244/data_R")
+    var data_R = await res.json();
+    console.log('data_R:', data_R)
 
-    datas(data)
+    datas(data_R)
 }
 db1()
 
 var parent = document.getElementById('suggest_course')
 
-function datas(data_S){
-data_S.forEach((el)=>{
+function datas(data_R){
+data_R.forEach((el)=>{
     var main = document.createElement('div')
 
     var img_div = document.createElement('div')
@@ -124,16 +124,16 @@ data_S.forEach((el)=>{
 var parent_scroll = document.getElementById('scroll_box')
 
 async function db2(){
-    let res = await fetch("http://localhost:2244/data_R")
-    var data_R = await res.json()
-    console.log('data_R:', data_R)
+    let res = await fetch("http://localhost:2244/data_S")
+    var data_S = await res.json()
+    console.log('data_S:', data_S)
 
-    showData_R(data_R)
+    showData_R(data_S)
 }
     db2()
 
-function showData_R(data_R){
-    data_R.forEach((el)=>{
+function showData_R(data_S){
+    data_S.forEach((el)=>{
         for( var i = 0 ; i < dis_data.length ; i++ ){
             if( el.title == dis_data[0].title ){
 
@@ -215,7 +215,7 @@ function showData_R(data_R){
                         ul.style.listStyle = 'circle' 
 
                         // for( var i = 0 ; i < data_R[0].introduction.length ; i++){
-                        data_R.forEach((el)=>{
+                        data_S.forEach((el)=>{
                             if(el.title == local_title){
                                 for(var i = 0 ; i < el.introduction.length ; i++){
                                     var li = document.createElement('li')
@@ -249,7 +249,7 @@ function showData_R(data_R){
                             var ul = document.createElement('ul') 
                             ul.style.listStyle = 'circle' 
                     
-                            data_R.forEach((el)=>{
+                            data_S.forEach((el)=>{
                                 if(el.title == local_title){
                                     for(var i = 0 ; i < el.Getting_Started.length ; i++){
                                         var li = document.createElement('li')
@@ -280,7 +280,7 @@ function showData_R(data_R){
                             var ul = document.createElement('ul') 
                             ul.style.listStyle = 'circle' 
 
-                           data_R.forEach((el)=>{
+                           data_S.forEach((el)=>{
                                if(el.title == local_title){
                                 for( var i = 0 ; i < el.Basics.length ; i++){
                                     var li = document.createElement('li')
@@ -310,7 +310,7 @@ function showData_R(data_R){
                                 var ul = document.createElement('ul') 
                                 ul.style.listStyle = 'circle' 
 
-                                data_R.forEach((el)=>{
+                                data_S.forEach((el)=>{
                                     if(el.title == local_title){
                                         for( var i = 0 ; i < el.Conclusions.length ; i++){
                                             var li = document.createElement('li')        
