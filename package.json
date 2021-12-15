@@ -14,5 +14,13 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "mongoose": "^6.1.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gautam-8/FW_12_Project_lynda.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Gautam-8/FW_12_Project_lynda/issues"
+  },
+  "homepage": "https://github.com/Gautam-8/FW_12_Project_lynda#readme"
 }
