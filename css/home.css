@@ -65,6 +65,7 @@
 }
 .learn{
   color: #004b7c;
+  width:max-content;
   font-weight: 600;
 }
 .learn:hover{
