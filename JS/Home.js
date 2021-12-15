@@ -125,12 +125,17 @@
 async function search() {
     // let input_search = document.getElementById("search-input").value;
   
-    let res = await fetch("http://localhost:2244/course");
-    let d = await res.json();
-      console.log('d:', d)
-      
+    let res = await fetch("http://localhost:2244/course/course1");
+    let course1 = await res.json();
+    console.log(course1)
+    showCourse1(course1)
+}
 
-    d.forEach(function(p){
+search();
+    
+      function showCourse1(products){
+
+    products.forEach(function(p){
             var content = document.getElementById('sc')
           var div1=document.createElement('div');
           div1.setAttribute('class','div4');
@@ -174,6 +179,7 @@ async function search() {
   }
         })
     }
+    
         var span7 = document.getElementById('span_7');
         var span8 = document.getElementById('span_8');
         // console.log(span)
@@ -233,129 +239,145 @@ async function search() {
             }
         }
 
-        let products3 = [
-  {
-      title: "skills",
-      name: "Enhance Your Tech Skills",
-      by: "By:Kethrin",
-      date: "19th September 2020",
-      img: "https://miro.medium.com/max/1200/1*4OPyDBJ6EirxQzAzRRbAmA.jpeg",
-      link: "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS",
-      time: 40,
-      price: 1500,
-  },
-  {
-      title: "Business Courses",
-      name: "Online Business Courses",
-      by: "By:shekher",
-      date: "19th August 2021",
-      img: "https://thumbs.dreamstime.com/z/group-business-people-learning-social-media-46666293.jpg",
-      link: "https://www.javatpoint.com/excel-tutorial",
-      time: 4000,
-      price: 400,
-  },
-  {
-      title: "Teams",
-      name: "Training For Teams",
-      by: "By:Saroj yadav",
-      date: "03th july 2021",
-      img: "https://image.shutterstock.com/image-photo/team-corporate-teamwork-collaboration-assistance-260nw-410505169.jpg",
-      link: "https://www.simplilearn.com/tutorials/sql-tutorial/sql-advanced",
-      time: 100,
-      price: 6000,
-  },
-  {
-      title: "Project Management",
-      name: "Project Management Foundations",
-      by: "By:Paul Johnson",
-      date: "19th March 2017",
-      img: "https://cdn.corporatefinanceinstitute.com/assets/project-management.jpeg",
-      link: "https://docs.djangoproject.com/en/3.2/",
-      time: 300,
-      price: 3999,
-  },
-  {
-      title: " Javascript",
-      name: " JavaScript Essential Training",
-      by: "By:Ashish Mehra",
-      date: "04th june 2019",
-      img: "https://static.javatpoint.com/images/javascript/javascript_logo.png",
-      link: "https://docs.djangoproject.com/en/3.2/",
-      time: 123,
-      price: 399,
-  },
-  {
-      title: "Leaders",
-      name: " Body Language for Leaders",
-      by: "By:Shivani Chaudhari",
-      date: "01th January 2018",
-      img: "https://www.incimages.com/uploaded_files/image/1920x1080/GettyImages-475636790_165141.jpg",
-      link: "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await",
-      time: 320,
-      price: 490,
-  },
-  {
-      title: "HTML",
-      name: " HTML Essential Training",
-      by: "By:Tejasvi Singh",
-      date: "09th april 2013",
-      img: "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210203170945/HTML-Tutorials.png",
-      link: "https://mockitt.wondershare.com/figma/figma-tutorial.html",
-      time: 600,
-      price: 999,
-  },
-  {
-      title: "REACT",
-      name: "Create and design your own first website ",
-      by: "By:shekhar",
-      date: "09th may 2018",
-      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png",
-      link: "https://www.tutorialspoint.com/react_native/react_native_overview.htm",
-      time: 4500,
-      price: 5999,
-  },
-  {
-      title: "DSA",
-      name: "Be a pro in data structures and algorithms",
-      by: "By:Abdul Bari",
-      date: "09th october 2020",
-      img: "https://res.cloudinary.com/practicaldev/image/fetch/s--AO0dFdQ5--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://thepracticaldev.s3.amazonaws.com/i/srnvrd7vfeeq5qpxnabq.png",
-      link: "https://www.geeksforgeeks.org/data-structures/",
-      time: 8000,
-      price: 10000,
-  },
-  {
-      title: "DOCKERS",
-      name: "Docker for develpers ",
-      by: "By:Peter Dakota ",
-      date: "28th February 2020",
-      img: "https://developers.redhat.com/sites/default/files/styles/article_feature/public/blog/2014/05/homepage-docker-logo.png?itok=zx0e-vcP",
-      link: "https://developer.mozilla.org/en-US/docs/Mozilla/QA/Running_automated_tests/Docker",
-      time: 3000,
-      price: 9550,
-  },
-  {
-      title: "APTITUDE & REASONING ",
-      name: "Learn aptitude and reasoning to crack the GATE ",
-      by: "By:Swastika Mukharjee",
-      date: "09th may 2018",
-      img: "https://free.indialearningpoint.com/wp-content/uploads/2020/07/o8.png",
-      link: "https://developer.mozilla.org/en-US/docs/Mozilla/QA/Running_automated_tests/Docker",
-      time: 780,
-      price: 450,
-  },
-  {
-      title: "HTML & CSS",
-      name: "create atractive ui by using html and css ",
-      by: "By:Viraat sharma",
-      date: "21th Februay 2014",
-      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png",
-      link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
-      time: 788,
-      price: 900,
-  },
-];
-        products3.forEach(function (p) {
+//         let products3 = [
+//   {
+//       title: "skills",
+//       name: "Enhance Your Tech Skills",
+//       by: "By:Kethrin",
+//       date: "19th September 2020",
+//       img: "https://miro.medium.com/max/1200/1*4OPyDBJ6EirxQzAzRRbAmA.jpeg",
+//       link: "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS",
+//       time: 40,
+//       price: 1500,
+//   },
+//   {
+//       title: "Business Courses",
+//       name: "Online Business Courses",
+//       by: "By:shekher",
+//       date: "19th August 2021",
+//       img: "https://thumbs.dreamstime.com/z/group-business-people-learning-social-media-46666293.jpg",
+//       link: "https://www.javatpoint.com/excel-tutorial",
+//       time: 4000,
+//       price: 400,
+//   },
+//   {
+//       title: "Teams",
+//       name: "Training For Teams",
+//       by: "By:Saroj yadav",
+//       date: "03th july 2021",
+//       img: "https://image.shutterstock.com/image-photo/team-corporate-teamwork-collaboration-assistance-260nw-410505169.jpg",
+//       link: "https://www.simplilearn.com/tutorials/sql-tutorial/sql-advanced",
+//       time: 100,
+//       price: 6000,
+//   },
+//   {
+//       title: "Project Management",
+//       name: "Project Management Foundations",
+//       by: "By:Paul Johnson",
+//       date: "19th March 2017",
+//       img: "https://cdn.corporatefinanceinstitute.com/assets/project-management.jpeg",
+//       link: "https://docs.djangoproject.com/en/3.2/",
+//       time: 300,
+//       price: 3999,
+//   },
+//   {
+//       title: " Javascript",
+//       name: " JavaScript Essential Training",
+//       by: "By:Ashish Mehra",
+//       date: "04th june 2019",
+//       img: "https://static.javatpoint.com/images/javascript/javascript_logo.png",
+//       link: "https://docs.djangoproject.com/en/3.2/",
+//       time: 123,
+//       price: 399,
+//   },
+//   {
+//       title: "Leaders",
+//       name: " Body Language for Leaders",
+//       by: "By:Shivani Chaudhari",
+//       date: "01th January 2018",
+//       img: "https://www.incimages.com/uploaded_files/image/1920x1080/GettyImages-475636790_165141.jpg",
+//       link: "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await",
+//       time: 320,
+//       price: 490,
+//   },
+//   {
+//       title: "HTML",
+//       name: " HTML Essential Training",
+//       by: "By:Tejasvi Singh",
+//       date: "09th april 2013",
+//       img: "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210203170945/HTML-Tutorials.png",
+//       link: "https://mockitt.wondershare.com/figma/figma-tutorial.html",
+//       time: 600,
+//       price: 999,
+//   },
+//   {
+//       title: "REACT",
+//       name: "Create and design your own first website ",
+//       by: "By:shekhar",
+//       date: "09th may 2018",
+//       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png",
+//       link: "https://www.tutorialspoint.com/react_native/react_native_overview.htm",
+//       time: 4500,
+//       price: 5999,
+//   },
+//   {
+//       title: "DSA",
+//       name: "Be a pro in data structures and algorithms",
+//       by: "By:Abdul Bari",
+//       date: "09th october 2020",
+//       img: "https://res.cloudinary.com/practicaldev/image/fetch/s--AO0dFdQ5--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://thepracticaldev.s3.amazonaws.com/i/srnvrd7vfeeq5qpxnabq.png",
+//       link: "https://www.geeksforgeeks.org/data-structures/",
+//       time: 8000,
+//       price: 10000,
+//   },
+//   {
+//       title: "DOCKERS",
+//       name: "Docker for develpers ",
+//       by: "By:Peter Dakota ",
+//       date: "28th February 2020",
+//       img: "https://developers.redhat.com/sites/default/files/styles/article_feature/public/blog/2014/05/homepage-docker-logo.png?itok=zx0e-vcP",
+//       link: "https://developer.mozilla.org/en-US/docs/Mozilla/QA/Running_automated_tests/Docker",
+//       time: 3000,
+//       price: 9550,
+//   },
+//   {
+//       title: "APTITUDE & REASONING ",
+//       name: "Learn aptitude and reasoning to crack the GATE ",
+//       by: "By:Swastika Mukharjee",
+//       date: "09th may 2018",
+//       img: "https://free.indialearningpoint.com/wp-content/uploads/2020/07/o8.png",
+//       link: "https://developer.mozilla.org/en-US/docs/Mozilla/QA/Running_automated_tests/Docker",
+//       time: 780,
+//       price: 450,
+//   },
+//   {
+//       title: "HTML & CSS",
+//       name: "create atractive ui by using html and css ",
+//       by: "By:Viraat sharma",
+//       date: "21th Februay 2014",
+//       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png",
+//       link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+//       time: 788,
+//       price: 900,
+//   },
+// ];
+
+
+async function search2() {
+    // let input_search = document.getElementById("search-input").value;
+  
+    let res = await fetch("http://localhost:2244/course/course2");
+    let course2 = await res.json();
+    console.log(course2)
+    showCourse2(course2)
+}
+
+search2();
+
+function showCourse2(products){
+
+
+        products.forEach(function (p) {
             var content3 = document.getElementById('sc3')
             var div1 = document.createElement('div');
             div1.setAttribute('class', 'div3');
@@ -397,6 +419,8 @@ async function search() {
                 window.location.href = '../html/ay_index.html'
             }
         })
+    }
+
         var span1 = document.getElementById('span_1');
         var span2 = document.getElementById('span_2');
         var div3 = document.getElementsByClassName('div3');
@@ -457,129 +481,144 @@ async function search() {
         }
 
         
-        let products2 = [
-  {
-      title: "PYTHON",
-      name: "Learn Python Programming Masterclass",
-      by: "By:Kethrin",
-      date: "19th September 2020",
-      img: "https://miro.medium.com/max/840/1*RJMxLdTHqVBSijKmOO5MAg.jpeg",
-      link: "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS",
-      time: 40,
-      price: 1500,
-  },
-  {
-      title: "Spring",
-      name: "Spring & Hibernate for Beginners (includes Spring Boot)",
-      by: "By:shekher",
-      date: "19th August 2021",
-      img: "https://top10onlinecourses.com/wp-content/uploads/2019/01/Spring-Online-Courses-Training-with-Certification.png",
-      link: "https://www.javatpoint.com/excel-tutorial",
-      time: 4000,
-      price: 400,
-  },
-  {
-      title: "Deep Learning",
-      name: "Deep Learning A-Z™: Hands-On Artificial Neural Networks",
-      by: "By:Saroj yadav",
-      date: "03th july 2021",
-      img: "https://online.stanford.edu/sites/default/files/styles/figure_default/public/2018-06/computer-science-deep-learning_CS230.jpg?itok=N1p1SKlh",
-      link: "https://www.simplilearn.com/tutorials/sql-tutorial/sql-advanced",
-      time: 100,
-      price: 6000,
-  },
-  {
-      title: "Finance",
-      name: "The Complete Financial Analyst Course 2021",
-      by: "By:Paul Johnson",
-      date: "19th March 2017",
-      img: "https://www.proschoolonline.com/wp-content/uploads/2018/05/finance63-300x136.jpg",
-      link: "https://docs.djangoproject.com/en/3.2/",
-      time: 300,
-      price: 3999,
-  },
-  {
-      title: "Scrum",
-      name: "If you've spent any time in the project management world, you've likely heard of ",
-      by: "By:Ashish Mehra",
-      date: "04th june 2019",
-      img: "https://miro.medium.com/max/533/0*p5Or7ISfr_dlO6UX.png",
-      link: "https://docs.djangoproject.com/en/3.2/",
-      time: 123,
-      price: 399,
-  },
-  {
-      title: "Communicating with Confidence",
-      name: "Most people are afraid of speaking in public, but effective oral communication is a key skill in business. ",
-      by: "By:Shivani Chaudhari",
-      date: "01th January 2018",
-      img: "https://wompampsupport.azureedge.net/fetchimage?siteId=7783&url=https%3A%2F%2Fspie.org%2FImages%2FGraphics%2FPhotonics%2520Focus%2Fv1_iss4%2F6_Communicating%2520with%2520Confidence-920.jpg",
-      link: "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await",
-      time: 320,
-      price: 490,
-  },
-  {
-      title: "Time Management",
-      name: "Time Management Fundamentals",
-      by: "By:Tejasvi Singh",
-      date: "09th april 2013",
-      img: "https://i.ytimg.com/vi/R6wOxVBlddM/maxresdefault.jpg",
-      link: "https://mockitt.wondershare.com/figma/figma-tutorial.html",
-      time: 600,
-      price: 999,
-  },
-  {
-      title: "REACT",
-      name: "Create and design your own first website ",
-      by: "By:shekhar",
-      date: "09th may 2018",
-      img: "https://www.incimages.com/uploaded_files/image/1920x1080/public-speaking-1940x900_35061.jpg",
-      link: "https://www.tutorialspoint.com/react_native/react_native_overview.htm",
-      time: 4500,
-      price: 5999,
-  },
-  {
-      title: "Strategic Thinking",
-      name: "Strategic thinking is the ability to think on a big and small scale",
-      by: "By:Abdul Bari",
-      date: "09th october 2020",
-      img: "https://www.mckinsey.com/~/media/mckinsey/business%20functions/strategy%20and%20corporate%20finance/our%20insights/the%20strategy%20and%20corporate%20finance%20blog/how%20to%20unleash%20your%20strategic%20thinking/4rules-linkedin.png",
-      link: "https://www.geeksforgeeks.org/data-structures/",
-      time: 8000,
-      price: 10000,
-  },
-  {
-      title: "DOCKERS",
-      name: "Docker for develpers ",
-      by: "By:Peter Dakota ",
-      date: "28th February 2020",
-      img: "https://res.cloudinary.com/practicaldev/image/fetch/s--AO0dFdQ5--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://thepracticaldev.s3.amazonaws.com/i/srnvrd7vfeeq5qpxnabq.png",
-      link: "https://developer.mozilla.org/en-US/docs/Mozilla/QA/Running_automated_tests/Docker",
-      time: 3000,
-      price: 9550,
-  },
-  {
-      title: "APTITUDE & REASONING ",
-      name: "Learn aptitude and reasoning to crack the GATE ",
-      by: "By:Swastika Mukharjee",
-      date: "09th may 2018",
-      img: "https://free.indialearningpoint.com/wp-content/uploads/2020/07/o8.png",
-      link: "https://developer.mozilla.org/en-US/docs/Mozilla/QA/Running_automated_tests/Docker",
-      time: 780,
-      price: 450,
-  },
-  {
-      title: "HTML & CSS",
-      name: "create atractive ui by using html and css ",
-      by: "By:Viraat sharma",
-      date: "21th Februay 2014",
-      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png",
-      link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
-      time: 788,
-      price: 900,
-  },
-];
-        products2.forEach(function (p) {
+//         let products2 = [
+//   {
+//       title: "PYTHON",
+//       name: "Learn Python Programming Masterclass",
+//       by: "By:Kethrin",
+//       date: "19th September 2020",
+//       img: "https://miro.medium.com/max/840/1*RJMxLdTHqVBSijKmOO5MAg.jpeg",
+//       link: "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS",
+//       time: 40,
+//       price: 1500,
+//   },
+//   {
+//       title: "Spring",
+//       name: "Spring & Hibernate for Beginners (includes Spring Boot)",
+//       by: "By:shekher",
+//       date: "19th August 2021",
+//       img: "https://top10onlinecourses.com/wp-content/uploads/2019/01/Spring-Online-Courses-Training-with-Certification.png",
+//       link: "https://www.javatpoint.com/excel-tutorial",
+//       time: 4000,
+//       price: 400,
+//   },
+//   {
+//       title: "Deep Learning",
+//       name: "Deep Learning A-Z™: Hands-On Artificial Neural Networks",
+//       by: "By:Saroj yadav",
+//       date: "03th july 2021",
+//       img: "https://online.stanford.edu/sites/default/files/styles/figure_default/public/2018-06/computer-science-deep-learning_CS230.jpg?itok=N1p1SKlh",
+//       link: "https://www.simplilearn.com/tutorials/sql-tutorial/sql-advanced",
+//       time: 100,
+//       price: 6000,
+//   },
+//   {
+//       title: "Finance",
+//       name: "The Complete Financial Analyst Course 2021",
+//       by: "By:Paul Johnson",
+//       date: "19th March 2017",
+//       img: "https://www.proschoolonline.com/wp-content/uploads/2018/05/finance63-300x136.jpg",
+//       link: "https://docs.djangoproject.com/en/3.2/",
+//       time: 300,
+//       price: 3999,
+//   },
+//   {
+//       title: "Scrum",
+//       name: "If you've spent any time in the project management world, you've likely heard of ",
+//       by: "By:Ashish Mehra",
+//       date: "04th june 2019",
+//       img: "https://miro.medium.com/max/533/0*p5Or7ISfr_dlO6UX.png",
+//       link: "https://docs.djangoproject.com/en/3.2/",
+//       time: 123,
+//       price: 399,
+//   },
+//   {
+//       title: "Communicating with Confidence",
+//       name: "Most people are afraid of speaking in public, but effective oral communication is a key skill in business. ",
+//       by: "By:Shivani Chaudhari",
+//       date: "01th January 2018",
+//       img: "https://wompampsupport.azureedge.net/fetchimage?siteId=7783&url=https%3A%2F%2Fspie.org%2FImages%2FGraphics%2FPhotonics%2520Focus%2Fv1_iss4%2F6_Communicating%2520with%2520Confidence-920.jpg",
+//       link: "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await",
+//       time: 320,
+//       price: 490,
+//   },
+//   {
+//       title: "Time Management",
+//       name: "Time Management Fundamentals",
+//       by: "By:Tejasvi Singh",
+//       date: "09th april 2013",
+//       img: "https://i.ytimg.com/vi/R6wOxVBlddM/maxresdefault.jpg",
+//       link: "https://mockitt.wondershare.com/figma/figma-tutorial.html",
+//       time: 600,
+//       price: 999,
+//   },
+//   {
+//       title: "REACT",
+//       name: "Create and design your own first website ",
+//       by: "By:shekhar",
+//       date: "09th may 2018",
+//       img: "https://www.incimages.com/uploaded_files/image/1920x1080/public-speaking-1940x900_35061.jpg",
+//       link: "https://www.tutorialspoint.com/react_native/react_native_overview.htm",
+//       time: 4500,
+//       price: 5999,
+//   },
+//   {
+//       title: "Strategic Thinking",
+//       name: "Strategic thinking is the ability to think on a big and small scale",
+//       by: "By:Abdul Bari",
+//       date: "09th october 2020",
+//       img: "https://www.mckinsey.com/~/media/mckinsey/business%20functions/strategy%20and%20corporate%20finance/our%20insights/the%20strategy%20and%20corporate%20finance%20blog/how%20to%20unleash%20your%20strategic%20thinking/4rules-linkedin.png",
+//       link: "https://www.geeksforgeeks.org/data-structures/",
+//       time: 8000,
+//       price: 10000,
+//   },
+//   {
+//       title: "DOCKERS",
+//       name: "Docker for develpers ",
+//       by: "By:Peter Dakota ",
+//       date: "28th February 2020",
+//       img: "https://res.cloudinary.com/practicaldev/image/fetch/s--AO0dFdQ5--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://thepracticaldev.s3.amazonaws.com/i/srnvrd7vfeeq5qpxnabq.png",
+//       link: "https://developer.mozilla.org/en-US/docs/Mozilla/QA/Running_automated_tests/Docker",
+//       time: 3000,
+//       price: 9550,
+//   },
+//   {
+//       title: "APTITUDE & REASONING ",
+//       name: "Learn aptitude and reasoning to crack the GATE ",
+//       by: "By:Swastika Mukharjee",
+//       date: "09th may 2018",
+//       img: "https://free.indialearningpoint.com/wp-content/uploads/2020/07/o8.png",
+//       link: "https://developer.mozilla.org/en-US/docs/Mozilla/QA/Running_automated_tests/Docker",
+//       time: 780,
+//       price: 450,
+//   },
+//   {
+//       title: "HTML & CSS",
+//       name: "create atractive ui by using html and css ",
+//       by: "By:Viraat sharma",
+//       date: "21th Februay 2014",
+//       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png",
+//       link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+//       time: 788,
+//       price: 900,
+//   },
+// ];
+
+async function search3() {
+    // let input_search = document.getElementById("search-input").value;
+  
+    let res = await fetch("http://localhost:2244/course/course3");
+    let course3 = await res.json();
+    console.log(course3)
+    showCourse3(course3)
+}
+
+search3();
+
+function showCourse3(products){
+
+
+        products.forEach(function (p) {
             var content2 = document.getElementById('sc2')
             var div1 = document.createElement('div');
             div1.setAttribute('class', 'div2');
@@ -621,6 +660,7 @@ async function search() {
                 window.location.href = '../html/ay_index.html'
             }
         })
+    }
         var span3 = document.getElementById('span_3');
         var span4 = document.getElementById('span_4');
         var div2 =  document.getElementsByClassName('div2');
@@ -681,129 +721,142 @@ async function search() {
             }
         }
 
-        let products1 = [
-  {
-      title: " Critical Thinking",
-      name: "Critical thinking is the ability to think reflectively and independently in order to make thoughtful decisions",
-      by: "By:Kethrin",
-      date: "19th September 2020",
-      img: "https://media.proprofs.com/images/QM/user_images/1826446/1624028069.jpg",
-      link: "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS",
-      time: 40,
-      price: 1500,
-  },
-  {
-      title: "AWS",
-      name: " Amazon Web Services Essential Training",
-      by: "By:shekher",
-      date: "19th August 2021",
-      img: "https://miro.medium.com/max/1364/0*2ui893KAwAT_F9wz.gif",
-      link: "https://www.javatpoint.com/excel-tutorial",
-      time: 4000,
-      price: 400,
-  },
-  {
-      title: "Developing Executive Presence",
-      name: "Learn to project self-confidence, clarity, and credibility even under conditions of stress, pressure, and uncertainty.",
-      by: "By:Saroj yadav",
-      date: "03th july 2021",
-      img: "https://careeradvancementblog.com/wp-content/uploads/2014/08/5-Ways-to-Develop-Executive-Presence-1.jpg",
-      link: "https://www.simplilearn.com/tutorials/sql-tutorial/sql-advanced",
-      time: 100,
-      price: 6000,
-  },
-  {
-      title: "Git Essential Training",
-      name: "Learn how to use Git, the popular open-source version control software, to manage the source code for almost any project.",
-      by: "By:Paul Johnson",
-      date: "19th March 2017",
-      img: "https://cdn.lynda.com/course/5030978/5030978-1592866721316-16x9.jpg",
-      link: "https://docs.djangoproject.com/en/3.2/",
-      time: 300,
-      price: 3999,
-  },
-  {
-      title: "Scrum",
-      name: "If you've spent any time in the project management world, you've likely heard of scrum—the popular framework for managing complex processes.",
-      by: "By:Ashish Mehra",
-      date: "04th june 2019",
-      img: "https://miro.medium.com/max/533/0*p5Or7ISfr_dlO6UX.png",
-      link: "https://docs.djangoproject.com/en/3.2/",
-      time: 123,
-      price: 399,
-  },
-  {
-      title: "Communicating with Confidence",
-      name: "Most people are afraid of speaking in public, but effective oral communication is a key skill in business. ",
-      by: "By:Shivani Chaudhari",
-      date: "01th January 2018",
-      img: "https://wompampsupport.azureedge.net/fetchimage?siteId=7783&url=https%3A%2F%2Fspie.org%2FImages%2FGraphics%2FPhotonics%2520Focus%2Fv1_iss4%2F6_Communicating%2520with%2520Confidence-920.jpg",
-      link: "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await",
-      time: 320,
-      price: 490,
-  },
-  {
-      title: "Time Management",
-      name: "Time Management Fundamentals",
-      by: "By:Tejasvi Singh",
-      date: "09th april 2013",
-      img: "https://i.ytimg.com/vi/R6wOxVBlddM/maxresdefault.jpg",
-      link: "https://mockitt.wondershare.com/figma/figma-tutorial.html",
-      time: 600,
-      price: 999,
-  },
-  {
-      title: "REACT",
-      name: "Create and design your own first website ",
-      by: "By:shekhar",
-      date: "09th may 2018",
-      img: "https://www.incimages.com/uploaded_files/image/1920x1080/public-speaking-1940x900_35061.jpg",
-      link: "https://www.tutorialspoint.com/react_native/react_native_overview.htm",
-      time: 4500,
-      price: 5999,
-  },
-  {
-      title: "Strategic Thinking",
-      name: "Strategic thinking is the ability to think on a big and small scale",
-      by: "By:Abdul Bari",
-      date: "09th october 2020",
-      img: "https://www.mckinsey.com/~/media/mckinsey/business%20functions/strategy%20and%20corporate%20finance/our%20insights/the%20strategy%20and%20corporate%20finance%20blog/how%20to%20unleash%20your%20strategic%20thinking/4rules-linkedin.png",
-      link: "https://www.geeksforgeeks.org/data-structures/",
-      time: 8000,
-      price: 10000,
-  },
-  {
-    title: "DOCKERS",
-    name: "Docker for develpers ",
-    by: "By:Peter Dakota ",
-    date: "28th February 2020",
-    img: "https://res.cloudinary.com/practicaldev/image/fetch/s--AO0dFdQ5--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://thepracticaldev.s3.amazonaws.com/i/srnvrd7vfeeq5qpxnabq.png",
-    link: "https://developer.mozilla.org/en-US/docs/Mozilla/QA/Running_automated_tests/Docker",
-    time: 3000,
-    price: 9550,
-},
-{
-    title: "APTITUDE & REASONING ",
-    name: "Learn aptitude and reasoning to crack the GATE ",
-    by: "By:Swastika Mukharjee",
-    date: "09th may 2018",
-    img: "https://free.indialearningpoint.com/wp-content/uploads/2020/07/o8.png",
-    link: "https://developer.mozilla.org/en-US/docs/Mozilla/QA/Running_automated_tests/Docker",
-    time: 780,
-    price: 450,
-},
-{
-    title: "HTML & CSS",
-    name: "create atractive ui by using html and css ",
-    by: "By:Viraat sharma",
-    date: "21th Februay 2014",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png",
-    link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
-    time: 788,
-    price: 900,
-},
-];
-        products1.forEach(function(p){
+//         let products1 = [
+//   {
+//       title: " Critical Thinking",
+//       name: "Critical thinking is the ability to think reflectively and independently in order to make thoughtful decisions",
+//       by: "By:Kethrin",
+//       date: "19th September 2020",
+//       img: "https://media.proprofs.com/images/QM/user_images/1826446/1624028069.jpg",
+//       link: "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS",
+//       time: 40,
+//       price: 1500,
+//   },
+//   {
+//       title: "AWS",
+//       name: " Amazon Web Services Essential Training",
+//       by: "By:shekher",
+//       date: "19th August 2021",
+//       img: "https://miro.medium.com/max/1364/0*2ui893KAwAT_F9wz.gif",
+//       link: "https://www.javatpoint.com/excel-tutorial",
+//       time: 4000,
+//       price: 400,
+//   },
+//   {
+//       title: "Developing Executive Presence",
+//       name: "Learn to project self-confidence, clarity, and credibility even under conditions of stress, pressure, and uncertainty.",
+//       by: "By:Saroj yadav",
+//       date: "03th july 2021",
+//       img: "https://careeradvancementblog.com/wp-content/uploads/2014/08/5-Ways-to-Develop-Executive-Presence-1.jpg",
+//       link: "https://www.simplilearn.com/tutorials/sql-tutorial/sql-advanced",
+//       time: 100,
+//       price: 6000,
+//   },
+//   {
+//       title: "Git Essential Training",
+//       name: "Learn how to use Git, the popular open-source version control software, to manage the source code for almost any project.",
+//       by: "By:Paul Johnson",
+//       date: "19th March 2017",
+//       img: "https://cdn.lynda.com/course/5030978/5030978-1592866721316-16x9.jpg",
+//       link: "https://docs.djangoproject.com/en/3.2/",
+//       time: 300,
+//       price: 3999,
+//   },
+//   {
+//       title: "Scrum",
+//       name: "If you've spent any time in the project management world, you've likely heard of scrum—the popular framework for managing complex processes.",
+//       by: "By:Ashish Mehra",
+//       date: "04th june 2019",
+//       img: "https://miro.medium.com/max/533/0*p5Or7ISfr_dlO6UX.png",
+//       link: "https://docs.djangoproject.com/en/3.2/",
+//       time: 123,
+//       price: 399,
+//   },
+//   {
+//       title: "Communicating with Confidence",
+//       name: "Most people are afraid of speaking in public, but effective oral communication is a key skill in business. ",
+//       by: "By:Shivani Chaudhari",
+//       date: "01th January 2018",
+//       img: "https://wompampsupport.azureedge.net/fetchimage?siteId=7783&url=https%3A%2F%2Fspie.org%2FImages%2FGraphics%2FPhotonics%2520Focus%2Fv1_iss4%2F6_Communicating%2520with%2520Confidence-920.jpg",
+//       link: "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await",
+//       time: 320,
+//       price: 490,
+//   },
+//   {
+//       title: "Time Management",
+//       name: "Time Management Fundamentals",
+//       by: "By:Tejasvi Singh",
+//       date: "09th april 2013",
+//       img: "https://i.ytimg.com/vi/R6wOxVBlddM/maxresdefault.jpg",
+//       link: "https://mockitt.wondershare.com/figma/figma-tutorial.html",
+//       time: 600,
+//       price: 999,
+//   },
+//   {
+//       title: "REACT",
+//       name: "Create and design your own first website ",
+//       by: "By:shekhar",
+//       date: "09th may 2018",
+//       img: "https://www.incimages.com/uploaded_files/image/1920x1080/public-speaking-1940x900_35061.jpg",
+//       link: "https://www.tutorialspoint.com/react_native/react_native_overview.htm",
+//       time: 4500,
+//       price: 5999,
+//   },
+//   {
+//       title: "Strategic Thinking",
+//       name: "Strategic thinking is the ability to think on a big and small scale",
+//       by: "By:Abdul Bari",
+//       date: "09th october 2020",
+//       img: "https://www.mckinsey.com/~/media/mckinsey/business%20functions/strategy%20and%20corporate%20finance/our%20insights/the%20strategy%20and%20corporate%20finance%20blog/how%20to%20unleash%20your%20strategic%20thinking/4rules-linkedin.png",
+//       link: "https://www.geeksforgeeks.org/data-structures/",
+//       time: 8000,
+//       price: 10000,
+//   },
+//   {
+//     title: "DOCKERS",
+//     name: "Docker for develpers ",
+//     by: "By:Peter Dakota ",
+//     date: "28th February 2020",
+//     img: "https://res.cloudinary.com/practicaldev/image/fetch/s--AO0dFdQ5--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://thepracticaldev.s3.amazonaws.com/i/srnvrd7vfeeq5qpxnabq.png",
+//     link: "https://developer.mozilla.org/en-US/docs/Mozilla/QA/Running_automated_tests/Docker",
+//     time: 3000,
+//     price: 9550,
+// },
+// {
+//     title: "APTITUDE & REASONING ",
+//     name: "Learn aptitude and reasoning to crack the GATE ",
+//     by: "By:Swastika Mukharjee",
+//     date: "09th may 2018",
+//     img: "https://free.indialearningpoint.com/wp-content/uploads/2020/07/o8.png",
+//     link: "https://developer.mozilla.org/en-US/docs/Mozilla/QA/Running_automated_tests/Docker",
+//     time: 780,
+//     price: 450,
+// },
+// {
+//     title: "HTML & CSS",
+//     name: "create atractive ui by using html and css ",
+//     by: "By:Viraat sharma",
+//     date: "21th Februay 2014",
+//     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png",
+//     link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+//     time: 788,
+//     price: 900,
+// },
+// ];
+
+async function search4() {
+    // let input_search = document.getElementById("search-input").value;
+  
+    let res = await fetch("http://localhost:2244/course/course4");
+    let course4 = await res.json();
+    console.log(course4)
+    showCourse4(course4)
+}
+
+search4();
+
+function showCourse4(products){
+        products.forEach(function(p){
             var content1 = document.getElementById('sc1')
           var div1=document.createElement('div');
           div1.setAttribute('class','div1');
@@ -846,6 +899,9 @@ async function search() {
     window.location.href = "../html/ay_index.html"
   }
         })
+    }
+
+
         var span5 = document.getElementById('span_5');
         var span6 = document.getElementById('span_6');
         // console.log(span)
