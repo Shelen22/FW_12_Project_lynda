@@ -381,3 +381,195 @@ select{
       width:60%;
      margin-left:2%;
   }
+ 
+
+@media (max-width:900px){
+
+    #checkout{
+        width:80%;
+    }
+    .set-icon{
+        margin-left: 50%;
+    }
+    .securelock {
+        width:38%;
+        margin-left:40%;
+       }
+   
+}
+
+@media (max-width:750px){
+
+    #video-box{
+       display:inline-block;
+    }
+    #video-box1,#video-box2{
+        width:95%;
+    }
+    .set-icon{
+        margin-left: 40%;
+    }
+    #tax, #totall{
+        width:80%;
+    }
+    #form{
+        width:85%;
+        margin-left:10%;
+    }
+    #btnpay,#review button{
+        width:24%;
+        margin-left:35%;
+    }
+    .securelock {
+        width:38%;
+        margin-left:35%;
+       }
+       .securelock h4{
+           font-size: small;
+           margin-top:22px;
+       }
+       #faqflex{
+        display: inline;
+        margin-top:0;
+    }
+    #faq-ans{
+        width: 95%;
+    }
+    #faq-ans h5,#faq-ans p{
+        margin-top: 0;
+        margin-bottom:5px;
+    }
+    #faq h3{
+        margin-bottom: 0;
+    }
+    #link {
+        margin-left:20%;
+    }
+}
+
+@media (max-width:600px){
+    .set-icon{
+        margin-left: 30%;
+       
+    }
+    .lock-icon{
+        width:26px;
+        height:16px;
+        margin-top:12px;
+       
+    }
+   #onlylap{
+      height: 60px;
+      
+   }
+   #c,#c-side{
+       font-size: 105%;
+   }
+   #c{
+      padding:5%;
+   }
+   #navbar-c{
+       height:40px;
+   }
+  #navbar-c p{
+      font-size: 80%;
+  }
+  #navbar-c img{
+      width:20px;
+      height:20px;
+  }
+  #btnpay,#review button{
+    width:34%;
+    margin-left:30%;
+}
+ #review li,#review p{
+     font-size: x-small;
+ }
+ #review li{
+    width:90%;
+ }
+ .securelock {
+ width:38%;
+ margin-left:30%;
+ margin-top: 0;
+}
+#faqflex{
+    display: inline;
+    margin-top:0;
+}
+#faq-ans{
+    width: 95%;
+}
+#faq-ans h5,#faq-ans p{
+    margin-top: 0;
+    margin-bottom:5px;
+}
+#faq h3{
+    margin-bottom: 0;
+}
+  
+}
+@media (max-width:470px){
+    body{
+        min-width:300px;
+    }
+    .set-icon{
+       display: none;
+    }
+    #onlylap{
+        height: 50px;
+        
+     }
+    #c,#c-side{
+
+        font-size: 80%;
+    }
+    #icons-space,#no-videos{
+        font-size:75%;
+        margin-top:1px;
+    }
+    #courses{
+        font-size:50%;
+    }
+    #video-img,#by,#cours{
+        font-size: 84%;
+    }
+    #include{
+        font-size: 90%;
+    }
+    #video-img img{
+        width:35%;
+    }
+    #amount{
+     height:80px;
+    }
+    #amount p{
+        font-size: small;
+    }
+    #tax, #totall{
+        width:78%;
+    }
+    #list h3{
+        font-size: medium;
+    }
+   #form{
+       width:98%;
+       margin-left:4%;
+      
+   }
+   #form input,select{
+       height:20px;
+   }
+   .info{
+       font-size: small;
+   }
+   #btnpay,#review button{
+    width:40%;
+    margin-left:27%;
+    height:30px;
+    font-size: small;
+}
+#link {
+    margin-left:10%;
+}
+}
