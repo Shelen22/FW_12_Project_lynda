@@ -127,6 +127,7 @@ var flag = 0;
 }
 
 var obj = JSON.parse(localStorage.getItem('displayed_data'));
+
 console.log(obj);
 
 
