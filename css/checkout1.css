@@ -358,4 +358,162 @@ select{
         color:red;
         
     }
- 
+    @media(max-width : 900px){
+        .set-icon{
+            margin-left:50%;
+        }
+        #checkout{
+            width:85%;
+        }
+        #taxprice{
+           margin-left: 62%;
+        }
+        #tprice{
+            margin-left: 70%;
+        }
+      
+    }
+    @media(max-width : 750px){
+        .set-icon{
+            margin-left:40%;
+        }
+        #c,#c-side{
+            font-size: 100%;
+        }
+        #onlylap{
+         height:70px;
+        }
+        #monthly p,#annually p{
+            width:90%;
+           
+        }
+        #taxprice{
+            margin-left: 56%;
+         }
+         #tprice{
+             margin-left: 66%;
+         }
+         #form{
+             margin-left: 15%;
+             width:75%;
+         }
+         #btnpay{
+            font-size: small;
+         }
+       
+    }
+    @media(max-width : 600px){
+        .set-icon{
+            margin-left:30%;
+        }
+        #save36{
+            font-size: small;
+        }
+        
+        #monthly p,#annually p{
+            width:90%;
+            font-size:xx-small ;
+        }
+        #savee{
+            font-size: x-small
+        }
+        #annually h3{
+            margin-left:15%;
+            margin-top:5px;
+        }
+        #tax,#totall,#taxprice,#tprice{
+            font-size: small;
+        }
+        #taxprice{
+            margin-left:50%;
+            
+         }
+         #tprice{
+             margin-left: 63%;
+         }
+          #amount #ends{
+              font-size: xx-small;
+          }
+          .info{
+              font-size: small;
+          }
+          #form input{
+              height: 25px;
+          }
+       #btnpay{
+           width:25%;
+       }
+       #faqflex{
+           display: inline-block;
+       }
+       #faq-ans{
+           width:95%;
+       }
+       #faq-ans h5{
+           margin:0;
+           font-size: small;
+       }
+       #faq h3{
+           font-size: medium;
+       }
+    }
+    @media(max-width : 500px){
+        body{
+            min-width: 320px;
+        }
+        .set-icon{
+            display: none;
+        }
+        #navbar-c p{
+            font-size: 90%;
+            margin-top:17px
+        }
+        #navbar-c img{
+            width:20px;
+            height:20px;
+            margin-top:17px
+        }
+        #c-side{
+            font-size: 70%;
+          
+        }
+        #c{
+            font-size: 70%;
+            padding-top: 10px;
+        }
+        #onlylap{
+            height:50px;
+           }
+           #taxprice{
+            margin-left:45%;
+            
+         }
+         #tprice{
+             margin-left: 60%;
+         }
+         #btnpay{
+            width:34%;
+            margin-left: 31%;
+        }
+
+    }
+    @media  (max-width: 420px){
+        #taxprice{
+            margin-left:36%;
+            
+         }
+         #tprice{
+             margin-left: 56%;
+         }
+        #exp{
+            width:45%;
+        }
+        #exp input{
+            width:90%;
+        }
+        .info{
+            font-size: x-small;
+        }
+    }
+        
+    
