@@ -69,7 +69,7 @@ function showdata(){
             date: el.date,
             by:el.by
         }
-        console.log(el);
+        // console.log(el);
         localStorage.setItem('displayed_data',JSON.stringify(display_obj))
     })
 }
