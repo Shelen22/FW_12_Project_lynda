@@ -371,6 +371,13 @@ select{
         #tprice{
             margin-left: 70%;
         }
+       #amount-a #taxprice-a{
+            margin-left: 52%;
+         }
+         #tprice-a{
+             margin-left: 78%;
+         }
+
       
     }
     @media(max-width : 750px){
@@ -400,6 +407,13 @@ select{
          #btnpay{
             font-size: small;
          }
+        #amount-a #taxprice-a{
+            margin-left: 35%;
+         }
+         #tprice-a{
+             margin-left:65%;
+         }
+
        
     }
     @media(max-width : 600px){
@@ -421,7 +435,7 @@ select{
             margin-left:15%;
             margin-top:5px;
         }
-        #tax,#totall,#taxprice,#tprice{
+        #tax,#totall,#taxprice,#tprice,#tax-a,#totall-a,#taxprice-a,#tprice-a{
             font-size: small;
         }
         #taxprice{
@@ -456,6 +470,12 @@ select{
        #faq h3{
            font-size: medium;
        }
+       #tprice-a{
+        margin-left:70%;
+    }       #d-rupe{
+        font-size: x-small;
+    }
+  
     }
     @media(max-width : 500px){
         body{
@@ -495,6 +515,17 @@ select{
             width:34%;
             margin-left: 31%;
         }
+        #wrongf,#wrongl,#wrongc,#wrongcvv,#wrongpin,#wronge{
+            font-size:10px;
+           
+        }
+        #amount-a #taxprice-a{
+            margin-left: 15%;
+         }
+         #tprice-a{
+             margin-left:60%;
+         }
+
 
     }
     @media  (max-width: 420px){
