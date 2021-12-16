@@ -445,7 +445,7 @@ select{
          #tprice{
              margin-left: 63%;
          }
-          #amount #ends{
+          #amount #ends,#amount-a #ends-a{
               font-size: xx-small;
           }
           .info{
