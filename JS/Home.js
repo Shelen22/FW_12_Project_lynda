@@ -4,7 +4,7 @@ async function search1() {
   
     let res = await fetch("http://localhost:2244/course/course1");
     let course1 = await res.json();
-     console.log(course1)
+    //  console.log(course1)
     showCourse1(course1)
 }
 
