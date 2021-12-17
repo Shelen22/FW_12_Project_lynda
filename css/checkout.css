@@ -445,6 +445,12 @@ select{
     #link {
         margin-left:20%;
     }
+   #sec input{
+       width:90%;
+   }
+   #exp input{ 
+       width:100%;
+   }
 }
 
 @media (max-width:600px){
@@ -509,6 +515,12 @@ select{
 }
 .set-icon{
     margin-top: 8px;
+}
+#sec{
+    width:50%;
+}
+#sec input{
+    width:90%;
 }
   
 }
@@ -578,4 +590,5 @@ select{
 #link {
     margin-left:10%;
 }
+
 }
