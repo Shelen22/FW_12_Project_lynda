@@ -1,9 +1,19 @@
 var parent = document.getElementById("content");
-var arr= JSON.parse(localStorage.getItem('S_data'))
-var len = arr.length
-var sv= document.getElementById('save')
-sv.textContent="Save"+"("+len+")"
+
+// var len = arr.length
+// var sv= document.getElementById('save')
+// sv.textContent="Save"+"("+len+")"
 //    sv.setAttribute("class", "sv1")
+
+function learningshow(){
+
+    let arr= JSON.parse(localStorage.getItem('S_data'));
+    parent.innerHTML = null;
+
+    var len = arr.length
+    var sv= document.getElementById('save')
+    sv.textContent="Save"+"("+len+")"
+
     arr.forEach((el) => {
     var s1div= document.createElement('div');
     s1div.setAttribute("class", "s1div")
@@ -36,11 +46,30 @@ sv.textContent="Save"+"("+len+")"
 
      var s4div= document.createElement('div')
      s4div.setAttribute("class","s4div")
-     s4div.textContent = "Add to collection"
+     s4div.textContent = "remove";
+
+     s4div.onclick = function (){
+         remove_course(el,arr);
+     }
 
      s1div.append(s4div)
 
      var hr= document.createElement('hr')
-     parent.append(s1div,hr)
+     parent.append(s1div,hr);
 
 })
+
+}
+learningshow();
+
+function remove_course(el,arr){
+
+let change_arr = arr.filter(( arrr) =>  arrr._id != el._id);
+console.log(change_arr)
+
+localStorage.setItem('S_data',JSON.stringify(change_arr));
+
+  learningshow();
+
+}
+
