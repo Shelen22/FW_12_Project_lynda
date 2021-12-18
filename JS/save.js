@@ -7,17 +7,27 @@ var parent = document.getElementById("content");
 
 function learningshow(){
 
-    let arr= JSON.parse(localStorage.getItem('S_data'));
-    parent.innerHTML = null;
+let arr= JSON.parse(localStorage.getItem('S_data'));
+parent.innerHTML = null;
+
+  let ids = [];
+  let unique_arr = [];
+
+  arr.forEach((el) => {
+      if(!ids.includes(el._id)){
+          ids.push(el._id);
+         unique_arr.push(el);
+        }
+  })
+
+//console.log(ids,unique_arr,arr);
 
     var len = arr.length
     var sv= document.getElementById('save')
     sv.textContent="Save"+"("+len+")"
 
- 
-
-    arr.forEach((el) => {
-        
+    unique_arr.forEach((el) => {
+  
     var s1div= document.createElement('div');
     s1div.setAttribute("class", "s1div")
      var s2div= document.createElement('div');
@@ -54,15 +64,18 @@ function learningshow(){
      var remove = document.createElement("p");
      remove.setAttribute("class" , "remove");
      remove.innerHTML = "...";
+
+     
      
      remove.onclick = function (){
          remove_course(el,arr);
      }
-
-     s1div.append(remove, s4div)
+  
+     s1div.append(remove,s4div)
 
      var hr= document.createElement('hr')
      parent.append(s1div,hr);
+    
 
 })
 
@@ -79,4 +92,9 @@ localStorage.setItem('S_data',JSON.stringify(change_arr));
   learningshow();
 
 }
+
+
+
+
+
 
