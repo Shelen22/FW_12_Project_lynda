@@ -283,6 +283,7 @@ var sdiv8 = document.createElement('div');
             div1.addEventListener('click', function () {
                 move(p)
             })
+            
             function move(data) {
                 localStorage.setItem('H_data', JSON.stringify(data));
                 if( cc!=10){

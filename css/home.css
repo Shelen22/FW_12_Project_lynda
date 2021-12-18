@@ -2,6 +2,39 @@
   margin: 0;
   padding: 0; 
 }
+/* save */
+.sdiv8{
+margin-left:210px;
+padding-bottom: 250px;
+  display: flex;
+  width:55px;
+  height:21px;
+  align-items: center;
+  /* background-color:red; */
+}
+.sdiv8:hover{
+  background:rgb(248, 245, 245);
+  width: 58px;
+  height:24px;
+}
+.sdiv9{
+  width:25px;
+  height:23px;
+  /* background-color:red; */
+}
+.sdiv9 img{
+  width:90%;
+  height: 90%;
+  background:transparent;
+}
+.sdiv10{
+  font-size:small;
+  color:rgb(99, 96, 96)
+}
+/* save */
+
+
+
 #div1{
    /* border: 2px solid red; */
    width:100%;
@@ -438,6 +471,7 @@ color: black;
    font-size: 12px;
    /* position: relative; */
 }
+
 .a4{
  margin-right: 113px;
  color: black;
