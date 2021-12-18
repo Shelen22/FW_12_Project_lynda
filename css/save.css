@@ -1,0 +1,77 @@
+.divtt{
+    margin-top: 128px;
+    margin-left: 55px;
+}
+.subhead{
+display: flex;
+font-family: Open Sans, sans-serif;
+padding-top: 40px;
+}
+.subhead span{
+margin-right: 50px;
+color: grey;
+}
+.s1div{
+display: flex;
+font-family: Open Sans, sans-serif;
+
+}
+.s2div{
+height:150px;
+width:240px;
+border-radius: 3px;
+}
+.s2div .simg{
+height: 100%;
+width:100%;
+border-radius: 3px;
+}
+.sp2{
+font-size:22px;
+margin-bottom: 6px;
+}
+.sp1,.sp3{
+font-size:14px;
+color: grey;
+margin-bottom: 1px;
+}
+.s3div{
+margin-left:20px;
+}
+.sv1{
+color:rgb(34, 219, 243)
+}
+.shead{
+height:95px;
+/* margin-top: 10px;
+margin-left: 10px; */
+}
+hr{
+height: 1px;
+background-color: #ccc;
+border: none;
+width: 1150px;
+/* margin-top: 20px; */
+margin-bottom:10px;
+}
+#hr1{
+width:100%;
+margin-left:0px;
+margin-bottom: 20px;
+}
+#content{
+margin-left: 55px;
+}
+.s4div{
+    display: flex;
+    width:150px;
+    height:45px;
+    border:1.5px solid #0073b1;
+    color: #0073b1;
+  margin-top: 75px;
+  margin-left: 500px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+}

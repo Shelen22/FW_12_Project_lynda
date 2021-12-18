@@ -4,7 +4,7 @@ async function search1() {
   
     let res = await fetch("http://localhost:2244/course/course1");
     let course1 = await res.json();
-    //  console.log(course1)
+    // console.log(course1)
     showCourse1(course1)
 }
 
@@ -42,17 +42,72 @@ search1();
           var div6=document.createElement('div')
           div6.setAttribute('class','a6 a7')
 
-          div6.textContent='Let us now see a list of the Most popular Lynda Courses details that will help you to be a certified Professional. This list contains Top-rated Online Lynda Courses:'
-         
+          div6.textContent='Let us now see a list of the Most popular Lynda Courses details that will help you to be a certified .list contains Top-rated Online Courses:'
+///////////////////////////////////////////////////////////
+          var ff = 10;
+          var sdiv8 = document.createElement('div');
+           
+            sdiv8.setAttribute("class", "sdiv8")
+
+            var sdiv9 = document.createElement('div');
+            sdiv9.setAttribute("class", "sdiv9")
+            var s2img = document.createElement('img')
+            s2img.src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwdmcZkedr2FnBmVuATzeaRoXr1SVz-dhAaKECSEDJT9QikSEPLOE6-SfyPP45yvPKx7k&usqp=CAU"
+            sdiv9.append(s2img)
+            // s2img.setAttribute("class", "s2img")
+           
+            var sdiv10 = document.createElement('div');
+            sdiv10.setAttribute("class", "sdiv10")
+
+            sdiv10.textContent="Save";
+
+
+            sdiv8.append(sdiv9,sdiv10)
+            div6.append(sdiv8)
+            sdiv8.addEventListener('click',cc);
+            function cc() {
+                if( localStorage.getItem('S_data')==null){
+                    localStorage.setItem('S_data',JSON.stringify([]));
+                }
+                var data1 = JSON.parse(localStorage.getItem('S_data'));
+                cc=10;
+                 if( sdiv10.textContent=="Save"){
+                    sdiv10.textContent="Unsave";
+                    if(data1==[])
+                    localStorage.setItem('S_data',JSON.stringify(p));
+                    else{
+                        data1.push(p);
+                        localStorage.setItem('S_data',JSON.stringify(data1));  
+                    }
+                }
+                else{
+                    sdiv10.textContent="Save"
+                    let data2 = [];
+                    for (let i = 0; i < data1.length; i++) {
+                        if (data1[i].title!= p.title) {
+                         data2.push(data1[i]);
+                        }
+                    }
+                    localStorage.setItem('S_data',JSON.stringify(data2));
+                }
+                return;
+            }
+///////////////////////////////////////////////////////////////////////
+
           div1.append(div2,div3,div4,div5,div6)
           content.append(div1);
           div1.addEventListener('click', function(){
-    move(p)
+              
+         move(p)
   })
 
   function move(data){
     localStorage.setItem('H_data',JSON.stringify(data));
-    window.location.href ='../html/ay_index.html'
+    if( cc!=10){
+        window.location.href ='../html/ay_index.html'
+    }
+    cc=11;
+    
   }
         })
     }
@@ -168,7 +223,60 @@ function showCourse2(products){
             var div6 = document.createElement('div')
             div6.setAttribute('class', 'a6 a7')
 
-            div6.textContent = 'Let us now see a list of the Most popular Lynda Courses details that will help you to be a certified Professional. This list contains Top-rated Online Lynda Courses:'
+            div6.textContent ='Let us now see a list of the Most popular Lynda Courses details that will help you to be a certified .list contains Top-rated Online Courses:'
+
+////////////////////////////////////////
+
+var ff = 10;
+var sdiv8 = document.createElement('div');
+ 
+  sdiv8.setAttribute("class", "sdiv8")
+
+  var sdiv9 = document.createElement('div');
+  sdiv9.setAttribute("class", "sdiv9")
+  var s2img = document.createElement('img')
+  s2img.src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwdmcZkedr2FnBmVuATzeaRoXr1SVz-dhAaKECSEDJT9QikSEPLOE6-SfyPP45yvPKx7k&usqp=CAU"
+  sdiv9.append(s2img)
+  // s2img.setAttribute("class", "s2img")
+ 
+  var sdiv10 = document.createElement('div');
+  sdiv10.setAttribute("class", "sdiv10")
+  
+  sdiv10.textContent="Save";
+
+
+  sdiv8.append(sdiv9,sdiv10)
+  div6.append(sdiv8)
+  sdiv8.addEventListener('click',cc);
+  function cc() {
+      if( localStorage.getItem('S_data')==null){
+          localStorage.setItem('S_data',JSON.stringify([]));
+      }
+      var data1 = JSON.parse(localStorage.getItem('S_data'));
+      cc=10;
+       if( sdiv10.textContent=="Save"){
+          sdiv10.textContent="Unsave";
+          if(data1==[])
+          localStorage.setItem('S_data',JSON.stringify(p));
+          else{
+              data1.push(p);
+              localStorage.setItem('S_data',JSON.stringify(data1));  
+          }
+      }
+      else{
+          sdiv10.textContent="Save"
+          let data2 = [];
+          for (let i = 0; i < data1.length; i++) {
+              if (data1[i].title!= p.title) {
+               data2.push(data1[i]);
+              }
+          }
+          localStorage.setItem('S_data',JSON.stringify(data2));
+      }
+      return;
+  }
+
+///////////////////////////////////////
 
             div1.append(div2, div3, div4, div5, div6)
             content3.append(div1);
@@ -177,7 +285,10 @@ function showCourse2(products){
             })
             function move(data) {
                 localStorage.setItem('H_data', JSON.stringify(data));
-                window.location.href = '../html/ay_index.html'
+                if( cc!=10){
+                    window.location.href ='../html/ay_index.html'
+                }
+                cc=11;
             }
         })
     }
@@ -293,7 +404,60 @@ function showCourse3(products){
             var div6 = document.createElement('div')
             div6.setAttribute('class', 'a6 a7')
 
-            div6.textContent = 'Let us now see a list of the Most popular Lynda Courses details that will help you to be a certified Professional. This list contains Top-rated Online Lynda Courses:'
+            div6.textContent ='Let us now see a list of the Most popular Lynda Courses details that will help you to be a certified .list contains Top-rated Online Courses:'
+
+            ///////////////////////////////////////
+
+var ff = 10;
+var sdiv8 = document.createElement('div');
+ 
+  sdiv8.setAttribute("class", "sdiv8")
+
+  var sdiv9 = document.createElement('div');
+  sdiv9.setAttribute("class", "sdiv9")
+  var s2img = document.createElement('img')
+  s2img.src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwdmcZkedr2FnBmVuATzeaRoXr1SVz-dhAaKECSEDJT9QikSEPLOE6-SfyPP45yvPKx7k&usqp=CAU"
+  sdiv9.append(s2img)
+  // s2img.setAttribute("class", "s2img")
+ 
+  var sdiv10 = document.createElement('div');
+  sdiv10.setAttribute("class", "sdiv10")
+  
+  sdiv10.textContent="Save";
+
+
+  sdiv8.append(sdiv9,sdiv10)
+  div6.append(sdiv8)
+  sdiv8.addEventListener('click',cc);
+  function cc() {
+      if( localStorage.getItem('S_data')==null){
+          localStorage.setItem('S_data',JSON.stringify([]));
+      }
+      var data1 = JSON.parse(localStorage.getItem('S_data'));
+      cc=10;
+       if( sdiv10.textContent=="Save"){
+          sdiv10.textContent="Unsave";
+          if(data1==[])
+          localStorage.setItem('S_data',JSON.stringify(p));
+          else{
+              data1.push(p);
+              localStorage.setItem('S_data',JSON.stringify(data1));  
+          }
+      }
+      else{
+          sdiv10.textContent="Save"
+          let data2 = [];
+          for (let i = 0; i < data1.length; i++) {
+              if (data1[i].title!= p.title) {
+               data2.push(data1[i]);
+              }
+          }
+          localStorage.setItem('S_data',JSON.stringify(data2));
+      }
+      return;
+  }
+
+///////////////////////////////////////
 
             div1.append(div2, div3, div4, div5, div6)
             content2.append(div1);
@@ -302,7 +466,10 @@ function showCourse3(products){
             })
             function move(data) {
                 localStorage.setItem('H_data', JSON.stringify(data));
-                window.location.href = '../html/ay_index.html'
+                if( cc!=10){
+                    window.location.href ='../html/ay_index.html'
+                }
+                cc=11;
             }
         })
     }
@@ -366,14 +533,6 @@ function showCourse3(products){
             }
         }
 
-
-
-
-
-
-
-
-
 async function search4() {
   
     let res = await fetch("http://localhost:2244/course/course4");
@@ -416,16 +575,70 @@ function showCourse4(products){
           var div6=document.createElement('div')
           div6.setAttribute('class','a6 a7')
 
-          div6.textContent='Let us now see a list of the Most popular Lynda Courses details that will help you to be a certified Professional. This list contains Top-rated Online Lynda Courses:'
-         
+          div6.textContent='Let us now see a list of the Most popular Lynda Courses details that will help you to be a certified .list contains Top-rated Online Courses:'
+                 ///////////////////////////////////////
+
+var ff = 10;
+var sdiv8 = document.createElement('div');
+ 
+  sdiv8.setAttribute("class", "sdiv8")
+
+  var sdiv9 = document.createElement('div');
+  sdiv9.setAttribute("class", "sdiv9")
+  var s2img = document.createElement('img')
+  s2img.src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwdmcZkedr2FnBmVuATzeaRoXr1SVz-dhAaKECSEDJT9QikSEPLOE6-SfyPP45yvPKx7k&usqp=CAU"
+  sdiv9.append(s2img)
+  // s2img.setAttribute("class", "s2img")
+ 
+  var sdiv10 = document.createElement('div');
+  sdiv10.setAttribute("class", "sdiv10")
+  
+  sdiv10.textContent="Save";
+
+
+  sdiv8.append(sdiv9,sdiv10)
+  div6.append(sdiv8)
+  sdiv8.addEventListener('click',cc);
+  function cc() {
+      if( localStorage.getItem('S_data')==null){
+          localStorage.setItem('S_data',JSON.stringify([]));
+      }
+      var data1 = JSON.parse(localStorage.getItem('S_data'));
+      cc=10;
+       if( sdiv10.textContent=="Save"){
+          sdiv10.textContent="Unsave";
+          if(data1==[])
+          localStorage.setItem('S_data',JSON.stringify(p));
+          else{
+              data1.push(p);
+              localStorage.setItem('S_data',JSON.stringify(data1));  
+          }
+      }
+      else{
+          sdiv10.textContent="Save"
+          let data2 = [];
+          for (let i = 0; i < data1.length; i++) {
+              if (data1[i].title!= p.title) {
+               data2.push(data1[i]);
+              }
+          }
+          localStorage.setItem('S_data',JSON.stringify(data2));
+      }
+      return;
+  }
+
+///////////////////////////////////////
+
           div1.append(div2,div3,div4,div5,div6)
           content1.append(div1);
   div1.addEventListener('click', function(){
     move(p)
   })
   function move(data){
-    localStorage.setItem('H_data',JSON.stringify(data));
-    window.location.href = "../html/ay_index.html"
+    localStorage.setItem('H_data',JSON.stringify(data));  if( cc!=10){
+        window.location.href ='../html/ay_index.html'
+    }
+    cc=11;
   }
         })
     }
