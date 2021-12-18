@@ -71,8 +71,8 @@ hr {
 .s4div {
   display: flex;
   width: 13%;
-  margin-right: 10%;
-  margin-left:auto;
+  margin-right: 13%;
+  /* margin-left:auto; */
   margin-top:6%;
   height: 30px;
   border: 1.5px solid #0073b1;
@@ -81,3 +81,20 @@ hr {
   justify-content: center;
   cursor: pointer;
   }
+
+  .remove{
+    margin-right: 1%;
+    display: flex;
+    margin-left:auto;
+  margin-top:2.5%;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 40px;
+  color: grey;
+letter-spacing: -2px;
+
+/* height: fit-content; */
+  }
+
+  
