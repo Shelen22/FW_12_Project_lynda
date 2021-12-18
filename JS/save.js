@@ -22,7 +22,7 @@ parent.innerHTML = null;
 
 //console.log(ids,unique_arr,arr);
 
-    var len = arr.length
+    var len = unique_arr.length
     var sv= document.getElementById('save')
     sv.textContent="Save"+"("+len+")"
 
