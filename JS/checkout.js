@@ -121,7 +121,7 @@ var flag = 0;
         function runn(){
             window.location.href = 'thanks.html';
         }
-        setTimeout(runn,2000);
+        setTimeout(runn,1000);
     }
 
 }
