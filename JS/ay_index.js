@@ -435,7 +435,7 @@ data_related.forEach((el)=>{
 
 // buy the course function starts frm here ---------
 
-document.getElementById('whitebox').addEventListener('click',buy)
+document.getElementById('whitebox').addEventListener('click',buy);
 
 function buy(){
     console.log('buy course triggered ')
