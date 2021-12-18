@@ -620,7 +620,9 @@ var sdiv8 = document.createElement('div');
           let data2 = [];
           for (let i = 0; i < data1.length; i++) {
               if (data1[i].title!= p.title) {
+                  
                data2.push(data1[i]);
+              
               }
           }
           localStorage.setItem('S_data',JSON.stringify(data2));
