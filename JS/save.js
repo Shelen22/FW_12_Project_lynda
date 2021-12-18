@@ -14,7 +14,10 @@ function learningshow(){
     var sv= document.getElementById('save')
     sv.textContent="Save"+"("+len+")"
 
+ 
+
     arr.forEach((el) => {
+        
     var s1div= document.createElement('div');
     s1div.setAttribute("class", "s1div")
      var s2div= document.createElement('div');
@@ -46,13 +49,17 @@ function learningshow(){
 
      var s4div= document.createElement('div')
      s4div.setAttribute("class","s4div")
-     s4div.textContent = "remove";
+     s4div.textContent = "Add to Collection";
 
-     s4div.onclick = function (){
+     var remove = document.createElement("p");
+     remove.setAttribute("class" , "remove");
+     remove.innerHTML = "...";
+     
+     remove.onclick = function (){
          remove_course(el,arr);
      }
 
-     s1div.append(s4div)
+     s1div.append(remove, s4div)
 
      var hr= document.createElement('hr')
      parent.append(s1div,hr);
