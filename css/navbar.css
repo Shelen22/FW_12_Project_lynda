@@ -110,7 +110,7 @@
     margin-left: 6px;
 }
 
-.right>div:nth-child(2)>img {
+.right>div:nth-child(2)> a > img {
     margin-left: 26px;
 }
 .right>div:nth-child(3)>img {
@@ -120,7 +120,12 @@
 .right>div:nth-child(4)>img {
     margin-left: 15px;
 }
-
+.right>div:nth-child(2)> a > p {
+    text-align: center;
+    margin-top: -5px;
+    font-size: 13px;
+    color: rgb(53, 49, 49);
+}
 .right>div>p {
     text-align: center;
     margin-top: -5px;

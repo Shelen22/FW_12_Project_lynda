@@ -20,8 +20,8 @@ function navbar(){
             <div><img src="https://img.icons8.com/material-outlined/24/000000/home--v2.png" />
                 <p>Home</p>
             </div>
-            <div><img src="https://img.icons8.com/fluency-systems-filled/24/000000/open-book.png" />
-                <p>My Learning</p>
+            <div><a href="../html/save.html"><img src="https://img.icons8.com/fluency-systems-filled/24/000000/open-book.png" />
+                <p>My Learning</p></a>
             </div>
                 <div id="drop"><img
                         src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/25/000000/external-user-user-flatart-icons-outline-flatarticons-5.png" />

@@ -65,7 +65,7 @@ hr {
   margin-bottom: 20px;
 }
 #content {
-  margin-left: 20px;
+  margin-left: 5%;
   /* width: 100%; */
 }
 .s4div {
@@ -79,5 +79,4 @@ hr {
   color: #0073b1;
   align-items: center;
   justify-content: center;
-  /* float: right; */
-}
+  }
