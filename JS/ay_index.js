@@ -137,7 +137,7 @@ function showData_R(data_S){
    
     data_S.forEach((el)=>{
         for( var i = 0 ; i < dis_data.length ; i++ ){
-            console.log(el.title,dis_data[0].title)
+            // console.log(el.title,dis_data[0].title)
             if( el.title == dis_data[0].title.trim() ){
                 
 
