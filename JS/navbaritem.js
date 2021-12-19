@@ -48,9 +48,10 @@ let reg3 = document.getElementById('username-chnge');
 
 if(localStorage.getItem('user') !== null){
   if(reg){
-      reg.innerHTML = JSON.parse(localStorage.getItem('user'));
-      reg2.innerHTML = JSON.parse(localStorage.getItem('user'));
-      reg3.innerHTML = JSON.parse(localStorage.getItem('user'));
+    let username = JSON.parse(localStorage.getItem("user"));
+      reg.innerHTML = username.username;
+      reg2.innerHTML = username.username;
+      reg3.innerHTML = username.username;
 
   }
   else{

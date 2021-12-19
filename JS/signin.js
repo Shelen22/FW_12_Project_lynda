@@ -13,10 +13,10 @@ async function login(e) {
     }
 
     let data = JSON.stringify(user_data);
-    console.log(data);
+    // console.log(data);
     // amit
 
-    let res = await fetch("https://masai-api-mocker.herokuapp.com/auth/login", {
+    let res = await fetch("http://localhost:2244/login/data/login", {
         method: "POST",
         body: data,
         headers: {
@@ -25,33 +25,22 @@ async function login(e) {
     })
 
     res = await res.json();
-    console.log(res);
+    // console.log(res);
 
     let token = res.token;
-    fetchmyData(user_data.username,token);
+    // console.log('token:', token)
+    let username = res.user.username
+
+
+    if(username){
+        localStorage.setItem("user", JSON.stringify({username,token}));
+        window.location.href = "index.html";
+       }
+   else {
+       alert('invalid login credentials');
+   }
+
+    // fetchmyData(user_data.username,token);
 }
 
-function fetchmyData(username, token) {
-    fetch(`https://masai-api-mocker.herokuapp.com/user/${username}`, {
-        headers: {
-            "Content-Type": "application/json",
-            "Authorization": `Bearer ${token}`,
-        },
-    })
-        .then((res) => {
-            return res.json();
-        })
-        .then((res) => {
-            console.log("res:", res);
-            if(res.name){
-                 localStorage.setItem("user", JSON.stringify(res.username));
-                 window.location.href = "index.html";
-                }
-            else {
-                alert('invalid login credentials');
-            }
-        })
-        .catch((err) => {
-            console.log("err:", err);
-        })
-}
+

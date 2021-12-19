@@ -44,7 +44,7 @@ var obj = JSON.parse(localStorage.getItem('H_data'))
 dis_data.push(obj)
 // console.log(dis_data)
 var local_title = dis_data[0].title
-console.log('local title is '+local_title)
+// console.log('local title is '+local_title)
 
 var parent = document.getElementById('imgdiv')
 
@@ -84,7 +84,7 @@ showdata()
 async function db1(){
     let res = await fetch("http://localhost:2244/data_R")
     var data_R = await res.json();
-    console.log('data_R:', data_R)
+    // console.log('data_R:', data_R)
 
     datas(data_R)
 }
@@ -127,7 +127,7 @@ var parent_scroll = document.getElementById('scroll_box')
 async function db2(){
     let res = await fetch("http://localhost:2244/data_S")
     var data_S = await res.json()
-    console.log('data_S:', data_S)
+    // console.log('data_S:', data_S)
 
     showData_R(data_S)
 }
@@ -439,15 +439,37 @@ data_related.forEach((el)=>{
 // buy the course function starts frm here ---------
 
 document.getElementById('whitebox').addEventListener('click',buy);
+let token = JSON.parse(localStorage.getItem('user'))
+console.log('token:', token)
+// let tokenb  = token.token;
+
+
 
 function buy(){
-    console.log('buy course triggered ')
-    window.location.href = "../html/checkout.html"
+    if(token != null){
+        // console.log('tokenb:', tokenb)
+        window.location.href = "../html/checkout.html"
 
-}
+    }else{
+        window.location.href = "../html/signup.html";
+    }
+        }
 
-document.getElementById('bluebox').addEventListener('click',free)
+
+    document.getElementById('bluebox').addEventListener('click',free)
 
 function free(){
-    window.location.href = "../html/checkoutfree.html"
-}
+        if(token != null){
+         window.location.href = "../html/checkoutfree.html"
+        }
+        else{
+            window.location.href = "../html/signup.html";
+        }
+     }
+
+ 
+
+ 
+        // window.location.href = "../html/signup.html";    
+ 
+

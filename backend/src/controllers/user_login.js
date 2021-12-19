@@ -46,8 +46,9 @@ try{
 });
 //body("username").notEmpty().withMessage("username is required"),body("password").notEmpty().isLength(6).isStrongPassword().withMessage("password is required"),
 //login);
-router.get("/data/login",async function(req,res){
-  return res.render("signin");
+router.get("/data/login",login,async function(req,res){
+  const username = await Login.find().lean().exec()
+  return res.status(200).send(username)
    
     })
 router.post("/data/login",urlencodedParser,[check("password","wrong pasword").isLength({min:5}),
@@ -63,13 +64,12 @@ async(req,res)=>{
       })
       return res.status(400).json({ errors: errors.array() });
 }
- return res.render("signup");
+ return res.status(200).send({username,token})
 })
 
 
 router.get("/data/authentication/whitebox",async function(req,res){
   return res.render("checkout");
-   
     })
 router.get("/data/authentication/qw",async(req,res)=>{
   try{
@@ -84,7 +84,5 @@ router.get("/data/authentication/qw",async(req,res)=>{
     }catch(e){
       console.log("error",e);
     }
-})
-//router.get("/user",allUser)
-//app.use("/post",post_contr);
+});
 module.exports=router;

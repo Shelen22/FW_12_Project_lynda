@@ -8,18 +8,15 @@ let userId = Math.floor( Math.random()*999 ) + 100;
         let form = document.getElementById("myForm");
 
         let user_data = {
-            name: `user${userId}`,
             email: form.email.value,
             password: form.password.value,
-            username: form.username.value,
-            mobile: `99${userId}8389`,
-            description: `filler`
+            username: form.username.value,  
         }
 
         user_data = JSON.stringify(user_data);
         console.log(user_data);
 
-        let res = await fetch("https://masai-api-mocker.herokuapp.com/auth/register", {
+        let res = await fetch("http://localhost:2244/login/Register", {
             method: "POST",
             body: user_data,
             headers: {
@@ -28,7 +25,7 @@ let userId = Math.floor( Math.random()*999 ) + 100;
         })
 
         res = await res.json();
-        console.log(res);
+        console.log(res.token);
         alert("Account created Successfully")
 
         window.location.href = '../html/signin.html';
