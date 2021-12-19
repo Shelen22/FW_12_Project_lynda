@@ -20,7 +20,7 @@ parent.innerHTML = null;
         }
   })
 
-console.log(ids,unique_arr,arr);
+//console.log(ids,unique_arr,arr);
 
     var len = unique_arr.length
     var sv= document.getElementById('save')
@@ -93,7 +93,7 @@ learningshow();
 function remove_course(el,arr){
 
 let change_arr = arr.filter(( arrr) =>  arrr._id != el._id);
-console.log(change_arr)
+//console.log(change_arr)
 
 localStorage.setItem('S_data',JSON.stringify(change_arr));
 
