@@ -20,7 +20,7 @@ const Register=async(req,res)=>{
         return res.status(400).json({ errors: errors.array() });
 }
 console.log(req.body.email)
-    let user=await  user_model.findOne({email:(req.body.email)});
+    let user=await  user_model.findOne({email:req.body.email});
     console.log(user);
     if(user){
         return res.status(400).json({
@@ -31,7 +31,7 @@ console.log(req.body.email)
    
     user= await user_model.create(req.body);
     let token=newToken(user);
-    res.render("signin",{ user, token });
+    res.status(201).json({user,token});
 };
 
 const login=async(req,res)=>{
@@ -45,7 +45,7 @@ const login=async(req,res)=>{
     // res.send("please provide valid email id")
     }
    // console.log(req.body.password);
-    const match= await user.checkPassword(req.body.password)
+    const match = await user.checkPassword(req.body.password)
 if(!match){
     return res.status(400).json({
         status: "failed",
@@ -55,7 +55,7 @@ if(!match){
 }
 
     let token=newToken(user);
-    res.render("html/index",{ user, token });
+    res.status(201).json({user,token});
 };
 const allUser= async(req,res)=>{
  let all=await  user_model.find();
