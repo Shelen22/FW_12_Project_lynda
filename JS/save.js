@@ -20,7 +20,7 @@ parent.innerHTML = null;
         }
   })
 
-//console.log(ids,unique_arr,arr);
+console.log(ids,unique_arr,arr);
 
     var len = unique_arr.length
     var sv= document.getElementById('save')
@@ -37,6 +37,10 @@ parent.innerHTML = null;
      simg.src=el.img;
      simg.setAttribute("class","simg");
 
+     simg.onclick  = function (){
+       showdetails(el);
+     }
+
      s2div.append(simg);
 
      var s3div= document.createElement('div');
@@ -49,6 +53,10 @@ parent.innerHTML = null;
      var sp2= document.createElement('p');
      sp2.setAttribute("class","sp2")
      sp2.textContent = el.name;
+
+     sp2.onclick  = function (){
+      showdetails(el);
+    }
 
      var sp3= document.createElement('p');
      sp3.setAttribute("class","sp3")
@@ -90,6 +98,16 @@ console.log(change_arr)
 localStorage.setItem('S_data',JSON.stringify(change_arr));
 
   learningshow();
+
+}
+
+function showdetails(el){
+
+  localStorage.setItem('H_data',JSON.stringify(el));
+
+  window.location.href = "../html/ay_index.html"
+
+  console.log(el);
 
 }
 
