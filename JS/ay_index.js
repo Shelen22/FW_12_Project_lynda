@@ -134,9 +134,12 @@ async function db2(){
     db2()
 
 function showData_R(data_S){
+   
     data_S.forEach((el)=>{
         for( var i = 0 ; i < dis_data.length ; i++ ){
-            if( el.title == dis_data[0].title ){
+            console.log(el.title,dis_data[0].title)
+            if( el.title == dis_data[0].title.trim() ){
+                
 
                 var click = document.createElement('h4')
                 click.textContent = '>'
@@ -217,7 +220,7 @@ function showData_R(data_S){
 
                         // for( var i = 0 ; i < data_R[0].introduction.length ; i++){
                         data_S.forEach((el)=>{
-                            if(el.title == local_title){
+                            if(el.title == local_title.trim()){
                                 for(var i = 0 ; i < el.introduction.length ; i++){
                                     var li = document.createElement('li')
                                     li.textContent = el.introduction[i]
@@ -251,7 +254,7 @@ function showData_R(data_S){
                             ul.style.listStyle = 'circle' 
                     
                             data_S.forEach((el)=>{
-                                if(el.title == local_title){
+                                if(el.title == local_title.trim()){
                                     for(var i = 0 ; i < el.Getting_Started.length ; i++){
                                         var li = document.createElement('li')
                                         li.textContent = el.Getting_Started[i]
@@ -282,7 +285,7 @@ function showData_R(data_S){
                             ul.style.listStyle = 'circle' 
 
                            data_S.forEach((el)=>{
-                               if(el.title == local_title){
+                               if(el.title == local_title.trim()){
                                 for( var i = 0 ; i < el.Basics.length ; i++){
                                     var li = document.createElement('li')
                                     li.textContent = el.Basics[i]
@@ -312,7 +315,7 @@ function showData_R(data_S){
                                 ul.style.listStyle = 'circle' 
 
                                 data_S.forEach((el)=>{
-                                    if(el.title == local_title){
+                                    if(el.title == local_title.trim()){
                                         for( var i = 0 ; i < el.Conclusions.length ; i++){
                                             var li = document.createElement('li')        
                                             li.textContent = el.Conclusions[i]
