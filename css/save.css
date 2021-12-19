@@ -107,6 +107,18 @@ letter-spacing: -2px;
     width:50%;
   }
 
+  #dremove{
+  margin-left:64%;
+  position: relative;
+  bottom:30px;
+  background-color: white;
+  padding:10px;
+  box-shadow: 1px 1px 5px 1px grey ;
+   width:90px; 
+   cursor: pointer;
+   display: none;
+  }
+
 
 
   
