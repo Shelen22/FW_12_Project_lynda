@@ -108,15 +108,23 @@ letter-spacing: -2px;
   }
 
   #dremove{
-  margin-left:64%;
+  margin-left:61%;
   position: relative;
   bottom:30px;
   background-color: white;
   padding:10px;
-  box-shadow: 1px 1px 5px 1px grey ;
-   width:90px; 
+  box-shadow: 1px 3px 5px 0px rgb(75, 73, 73) ;
+   width:150px; 
    cursor: pointer;
    display: none;
+   opacity: .7;
+   border-radius: 2px;
+   border:1px solid rgb(155, 153, 153);
+  }
+
+  #dremove:hover{
+    background-color:rgb(230, 228, 228);
+    transition: .4s;
   }
 
 
