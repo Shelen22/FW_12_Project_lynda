@@ -73,16 +73,29 @@ parent.innerHTML = null;
      remove.setAttribute("class" , "remove");
      remove.innerHTML = "...";
 
-     
-     
-     remove.onclick = function (){
-         remove_course(el,arr);
-     }
-  
-     s1div.append(remove,s4div)
+    
 
+     s1div.append(remove,s4div);
+
+     var dremove = document.createElement("div");
+     dremove.setAttribute("id" , "dremove")
+     dremove.innerHTML = "Unsave";
+
+     dremove.onclick = function (){
+      remove_course(el,arr);
+  }
+
+  remove.onclick = function (){
+    
+    if(dremove.style.display == "block"){
+      dremove.style.display = "none";
+    }else{
+      dremove.style.display = "block";
+    }
+    
+   }
      var hr= document.createElement('hr')
-     parent.append(s1div,hr);
+     parent.append(s1div,dremove,hr);
     
 
 })
@@ -110,6 +123,8 @@ function showdetails(el){
   //console.log(el);
 
 }
+
+
 
 
 
