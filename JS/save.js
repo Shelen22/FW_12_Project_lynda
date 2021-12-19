@@ -107,7 +107,7 @@ function showdetails(el){
 
   window.location.href = "../html/ay_index.html"
 
-  console.log(el);
+  //console.log(el);
 
 }
 
