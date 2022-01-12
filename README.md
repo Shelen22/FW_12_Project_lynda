@@ -4,21 +4,22 @@ Lynda is an massive open online course provider. It provides video courses taugh
 
 # Pages Cloned 
 
-<h5>Sign-up/Sign-in page</h5>
+<h4>Sign-up/Sign-in page</h4>
 
 <img src="https://miro.medium.com/max/875/0*psCiab_zBzeA97pu.png">
 <img src="https://miro.medium.com/max/875/0*Ser-i2bALz1tBhEW.png">
  
-<h5>Landing page</h5>
+<h4>Landing page</h4>
 <img src="https://miro.medium.com/max/875/0*rGmOt0ojF0DdS-kA.png">
 <img src="https://miro.medium.com/max/875/0*PrO41xw7iDVmfpWM.png">
 
-<h5>course detail and search page</h5>
+<h4>course detail and search page</h4>
 <img src="https://miro.medium.com/max/875/0*vdl-6yDoaN6rxhVV.png">
 <img src="https://miro.medium.com/max/875/0*xxZTtYZ1tePTVJQz.png">
 
 
-<h5>Checkout and Payment process page</h5>
+<h4>Checkout and Payment process page</h4>
+
 <img src="https://miro.medium.com/max/875/0*pS_y691OViTLXvP5.png">
 
 
