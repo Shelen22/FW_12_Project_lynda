@@ -1,10 +1,12 @@
 # FW_12_Project_lynda
 
-About Website
+# About Website
 Lynda is an massive open online course provider. It provides video courses taught by industry experts in software, creative, and business skills. It is a subsidiary of LinkedIn. All the courses on LinkedIn fall into 3 categories: Business, Creative, and Technology.
 
-Pages Cloned
-Sign-up/Sign-in page
+# Pages Cloned 
+
+<h4>Sign-up/Sign-in page</h4>
+
 <img src="https://miro.medium.com/max/875/0*psCiab_zBzeA97pu.png">
 <img src="https://miro.medium.com/max/875/0*Ser-i2bALz1tBhEW.png">
  
