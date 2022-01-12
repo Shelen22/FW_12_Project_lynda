@@ -6,7 +6,7 @@ Lynda is an massive open online course provider. It provides video courses taugh
 
 <h4>Sign-up/Sign-in page</h4>
 
-<img src="https://miro.medium.com/max/875/0*psCiab_zBzeA97pu.png">
+<img src="https://miro.medium.com/max/875/0*psCiab_zBzeA97pu.png" width="70%">
 <img src="https://miro.medium.com/max/875/0*Ser-i2bALz1tBhEW.png">
  
 <h4>Landing page</h4>
