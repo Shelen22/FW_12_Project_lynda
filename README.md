@@ -5,6 +5,11 @@ Lynda is an massive open online course provider. It provides video courses taugh
 # Tech stack
 <h4>HTML | CSS  | JAVASCRIPT | MONGODB | EXPRESSJS</h4> 
 
+# Deploy Link
+CLone down this repository using this [Link](https://github.com/Gautam-8/FW_12_Project_lynda/edit/main/)and open index.html file.
+
+You can also run the project live using [Lynda](gautam-8.github.io/fw_12_project_lynda/) link.
+
 
 # Pages Cloned 
 
