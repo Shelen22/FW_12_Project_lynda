@@ -16,7 +16,7 @@ async function login(e) {
     // console.log(data);
     // amit
 
-    let res = await fetch("http://localhost:2244/login/data/login", {
+    let res = await fetch("https://lynda-learning.herokuapp.com/login/data/login", {
         method: "POST",
         body: data,
         headers: {

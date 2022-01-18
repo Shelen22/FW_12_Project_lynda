@@ -82,7 +82,7 @@ showdata()
 
 
 async function db1(){
-    let res = await fetch("http://localhost:2244/data_R")
+    let res = await fetch("https://lynda-learning.herokuapp.com/data_R")
     var data_R = await res.json();
     // console.log('data_R:', data_R)
 
@@ -125,7 +125,7 @@ data_R.forEach((el)=>{
 var parent_scroll = document.getElementById('scroll_box')
 
 async function db2(){
-    let res = await fetch("http://localhost:2244/data_S")
+    let res = await fetch("https://lynda-learning.herokuapp.com/data_S")
     var data_S = await res.json()
     // console.log('data_S:', data_S)
 

@@ -16,7 +16,7 @@ let userId = Math.floor( Math.random()*999 ) + 100;
         user_data = JSON.stringify(user_data);
         console.log(user_data);
 
-        let res = await fetch("http://localhost:2244/login/Register", {
+        let res = await fetch("https://lynda-learning.herokuapp.com/login/Register", {
             method: "POST",
             body: user_data,
             headers: {

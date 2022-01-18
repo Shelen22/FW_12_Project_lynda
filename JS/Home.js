@@ -2,7 +2,7 @@
 async function search1() {
 
   
-    let res = await fetch("http://localhost:2244/course/course1");
+    let res = await fetch("https://lynda-learning.herokuapp.com/course/course1");
     let course1 = await res.json();
     // console.log(course1)
     showCourse1(course1)
@@ -182,7 +182,7 @@ search1();
 
 async function search2() {
   
-    let res = await fetch("http://localhost:2244/course/course2");
+    let res = await fetch("https://lynda-learning.herokuapp.com/course/course2");
     let course2 = await res.json();
     // console.log(course2)
     showCourse2(course2)
@@ -364,7 +364,7 @@ var sdiv8 = document.createElement('div');
 
 async function search3() {
   
-    let res = await fetch("http://localhost:2244/course/course3");
+    let res = await fetch("https://lynda-learning.herokuapp.com/course/course3");
     let course3 = await res.json();
     // console.log(course3)
     showCourse3(course3)
@@ -536,7 +536,7 @@ var sdiv8 = document.createElement('div');
 
 async function search4() {
   
-    let res = await fetch("http://localhost:2244/course/course4");
+    let res = await fetch("https://lynda-learning.herokuapp.com/course/course4");
     let course4 = await res.json();
     // console.log(course4)
     showCourse4(course4)
