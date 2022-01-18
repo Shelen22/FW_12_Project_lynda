@@ -8,7 +8,7 @@ Lynda is an massive open online course provider. It provides video courses taugh
 # Deploy Link
 CLone down this repository using this [Link](https://github.com/Gautam-8/FW_12_Project_lynda/edit/main/) and open index.html file.
 
-You can also run the project live using [Lynda](gautam-8.github.io/fw_12_project_lynda/) link.
+You can also run the project live using [Lynda](https://gautam-8.github.io/FW_12_Project_lynda/) link.
 
 
 # Pages Cloned 
